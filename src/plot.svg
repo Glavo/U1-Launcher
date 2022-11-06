@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" class="marks" width="724.5954" height="304.82162" viewBox="0 0 724.5954 304.82162" id="svg1049" sodipodi:docname="plot.svg" inkscape:version="1.0.2 (e86c870879, 2021-01-15)">
+   <metadata id="metadata1053">
+      <rdf:RDF>
+         <cc:Work rdf:about="">
+            <dc:format>image/svg+xml</dc:format>
+            <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+            <dc:title />
+         </cc:Work>
+      </rdf:RDF>
+   </metadata>
+   <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1920" inkscape:window-height="1010" id="namedview1051" showgrid="false" inkscape:pagecheckerboard="true" inkscape:zoom="1.8706431" inkscape:cx="300.08836" inkscape:cy="301.98113" inkscape:window-x="0" inkscape:window-y="33" inkscape:window-maximized="1" inkscape:current-layer="g1006" inkscape:document-rotation="0" />
+   <g fill="none" stroke-miterlimit="10" transform="translate(48.534856,25.15625)" id="g1010">
+      <g class="mark-group role-frame root" role="graphics-object" aria-roledescription="group mark container" id="g1008">
+         <g id="g1006">
+            <path class="background" aria-hidden="true" d="M 0,0 H 620 V 240 H 0 Z" id="path4" />
+            <g id="g1002">
+               <g class="mark-rect role-mark marks" role="graphics-object" aria-roledescription="rect mark container" id="g738">
+                  <path aria-label="Max of temp_max: 12.8; Day:  1; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="M 0,0 H 20 V 20 H 0 Z" fill="#a6dcb7" id="path6" />
+                  <path aria-label="Max of temp_max: 10.6; Day:  2; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="M 20,0 H 40 V 20 H 20 Z" fill="#c2e7b5" id="path8" />
+                  <path aria-label="Max of temp_max: 11.7; Day:  3; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="M 40,0 H 60 V 20 H 40 Z" fill="#b5e2b6" id="path10" />
+                  <path aria-label="Max of temp_max: 12.2; Day:  4; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="M 60,0 H 80 V 20 H 60 Z" fill="#afdfb6" id="path12" />
+                  <path aria-label="Max of temp_max: 12.2; Day:  5; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="m 80,0 h 20 V 20 H 80 Z" fill="#afdfb6" id="path14" />
+                  <path aria-label="Max of temp_max: 12.2; Day:  6; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="m 100,0 h 20 v 20 h -20 z" fill="#afdfb6" id="path16" />
+                  <path aria-label="Max of temp_max: 10; Day:  7; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="m 120,0 h 20 v 20 h -20 z" fill="#c8e9b5" id="path18" />
+                  <path aria-label="Max of temp_max: 11.7; Day:  8; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="m 140,0 h 20 v 20 h -20 z" fill="#b5e2b6" id="path20" />
+                  <path aria-label="Max of temp_max: 10; Day:  9; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="m 160,0 h 20 v 20 h -20 z" fill="#c8e9b5" id="path22" />
+                  <path aria-label="Max of temp_max: 12.8; Day: 10; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="m 180,0 h 20 v 20 h -20 z" fill="#a6dcb7" id="path24" />
+                  <path aria-label="Max of temp_max: 14.4; Day: 11; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="m 200,0 h 20 v 20 h -20 z" fill="#91d4b9" id="path26" />
+                  <path aria-label="Max of temp_max: 11.1; Day: 12; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="m 220,0 h 20 v 20 h -20 z" fill="#bde5b5" id="path28" />
+                  <path aria-label="Max of temp_max: 10.6; Day: 13; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="m 240,0 h 20 v 20 h -20 z" fill="#c2e7b5" id="path30" />
+                  <path aria-label="Max of temp_max: 11.1; Day: 14; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="m 260,0 h 20 v 20 h -20 z" fill="#bde5b5" id="path32" />
+                  <path aria-label="Max of temp_max: 11.1; Day: 15; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="m 280,0 h 20 v 20 h -20 z" fill="#bde5b5" id="path34" />
+                  <path aria-label="Max of temp_max: 11.7; Day: 16; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="m 300,0 h 20 v 20 h -20 z" fill="#b5e2b6" id="path36" />
+                  <path aria-label="Max of temp_max: 13.3; Day: 17; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="m 320,0 h 20 v 20 h -20 z" fill="#a0dab8" id="path38" />
+                  <path aria-label="Max of temp_max: 13.9; Day: 18; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="m 340,0 h 20 v 20 h -20 z" fill="#98d6b9" id="path40" />
+                  <path aria-label="Max of temp_max: 10; Day: 19; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="m 360,0 h 20 v 20 h -20 z" fill="#c8e9b5" id="path42" />
+                  <path aria-label="Max of temp_max: 10; Day: 20; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="m 380,0 h 20 v 20 h -20 z" fill="#c8e9b5" id="path44" />
+                  <path aria-label="Max of temp_max: 10; Day: 21; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="m 400,0 h 20 v 20 h -20 z" fill="#c8e9b5" id="path46" />
+                  <path aria-label="Max of temp_max: 9.4; Day: 22; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="m 420,0 h 20 v 20 h -20 z" fill="#ceecb4" id="path48" />
+                  <path aria-label="Max of temp_max: 12.2; Day: 23; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="m 440,0 h 20 v 20 h -20 z" fill="#afdfb6" id="path50" />
+                  <path aria-label="Max of temp_max: 14.4; Day: 24; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="m 460,0 h 20 v 20 h -20 z" fill="#91d4b9" id="path52" />
+                  <path aria-label="Max of temp_max: 17.2; Day: 25; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="m 480,0 h 20 v 20 h -20 z" fill="#6ac5be" id="path54" />
+                  <path aria-label="Max of temp_max: 16.1; Day: 26; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="m 500,0 h 20 v 20 h -20 z" fill="#79cbbc" id="path56" />
+                  <path aria-label="Max of temp_max: 11.1; Day: 27; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="m 520,0 h 20 v 20 h -20 z" fill="#bde5b5" id="path58" />
+                  <path aria-label="Max of temp_max: 12.2; Day: 28; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="m 540,0 h 20 v 20 h -20 z" fill="#afdfb6" id="path60" />
+                  <path aria-label="Max of temp_max: 12.2; Day: 29; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="m 560,0 h 20 v 20 h -20 z" fill="#afdfb6" id="path62" />
+                  <path aria-label="Max of temp_max: 8.9; Day: 30; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="m 580,0 h 20 v 20 h -20 z" fill="#d3eeb4" id="path64" />
+                  <path aria-label="Max of temp_max: 9.4; Day: 31; Level: L" role="graphics-symbol" aria-roledescription="rect mark" d="m 600,0 h 20 v 20 h -20 z" fill="#ceecb4" id="path66" />
+                  <path aria-label="Max of temp_max: 11.7; Day:  1; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="M 0,20 H 20 V 40 H 0 Z" fill="#b5e2b6" id="path68" />
+                  <path aria-label="Max of temp_max: 11.1; Day:  2; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="M 20,20 H 40 V 40 H 20 Z" fill="#bde5b5" id="path70" />
+                  <path aria-label="Max of temp_max: 14.4; Day:  3; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="M 40,20 H 60 V 40 H 40 Z" fill="#91d4b9" id="path72" />
+                  <path aria-label="Max of temp_max: 15.6; Day:  4; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="M 60,20 H 80 V 40 H 60 Z" fill="#80cebb" id="path74" />
+                  <path aria-label="Max of temp_max: 13.9; Day:  5; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="m 80,20 h 20 V 40 H 80 Z" fill="#98d6b9" id="path76" />
+                  <path aria-label="Max of temp_max: 16.1; Day:  6; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="m 100,20 h 20 v 20 h -20 z" fill="#79cbbc" id="path78" />
+                  <path aria-label="Max of temp_max: 15.6; Day:  7; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="m 120,20 h 20 v 20 h -20 z" fill="#80cebb" id="path80" />
+                  <path aria-label="Max of temp_max: 15; Day:  8; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="m 140,20 h 20 v 20 h -20 z" fill="#88d1ba" id="path82" />
+                  <path aria-label="Max of temp_max: 13.3; Day:  9; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="m 160,20 h 20 v 20 h -20 z" fill="#a0dab8" id="path84" />
+                  <path aria-label="Max of temp_max: 12.8; Day: 10; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="m 180,20 h 20 v 20 h -20 z" fill="#a6dcb7" id="path86" />
+                  <path aria-label="Max of temp_max: 12.8; Day: 11; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="m 200,20 h 20 v 20 h -20 z" fill="#a6dcb7" id="path88" />
+                  <path aria-label="Max of temp_max: 16.7; Day: 12; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="m 220,20 h 20 v 20 h -20 z" fill="#71c8bd" id="path90" />
+                  <path aria-label="Max of temp_max: 15.6; Day: 13; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="m 240,20 h 20 v 20 h -20 z" fill="#80cebb" id="path92" />
+                  <path aria-label="Max of temp_max: 14.4; Day: 14; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="m 260,20 h 20 v 20 h -20 z" fill="#91d4b9" id="path94" />
+                  <path aria-label="Max of temp_max: 13.3; Day: 15; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="m 280,20 h 20 v 20 h -20 z" fill="#a0dab8" id="path96" />
+                  <path aria-label="Max of temp_max: 15; Day: 16; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="m 300,20 h 20 v 20 h -20 z" fill="#88d1ba" id="path98" />
+                  <path aria-label="Max of temp_max: 16.1; Day: 17; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="m 320,20 h 20 v 20 h -20 z" fill="#79cbbc" id="path100" />
+                  <path aria-label="Max of temp_max: 12.2; Day: 18; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="m 340,20 h 20 v 20 h -20 z" fill="#afdfb6" id="path102" />
+                  <path aria-label="Max of temp_max: 10.6; Day: 19; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="m 360,20 h 20 v 20 h -20 z" fill="#c2e7b5" id="path104" />
+                  <path aria-label="Max of temp_max: 11.1; Day: 20; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="m 380,20 h 20 v 20 h -20 z" fill="#bde5b5" id="path106" />
+                  <path aria-label="Max of temp_max: 12.2; Day: 21; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="m 400,20 h 20 v 20 h -20 z" fill="#afdfb6" id="path108" />
+                  <path aria-label="Max of temp_max: 11.7; Day: 22; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="m 420,20 h 20 v 20 h -20 z" fill="#b5e2b6" id="path110" />
+                  <path aria-label="Max of temp_max: 12.8; Day: 23; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="m 440,20 h 20 v 20 h -20 z" fill="#a6dcb7" id="path112" />
+                  <path aria-label="Max of temp_max: 11.1; Day: 24; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="m 460,20 h 20 v 20 h -20 z" fill="#bde5b5" id="path114" />
+                  <path aria-label="Max of temp_max: 12.2; Day: 25; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="m 480,20 h 20 v 20 h -20 z" fill="#afdfb6" id="path116" />
+                  <path aria-label="Max of temp_max: 13.9; Day: 26; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="m 500,20 h 20 v 20 h -20 z" fill="#98d6b9" id="path118" />
+                  <path aria-label="Max of temp_max: 12.8; Day: 27; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="m 520,20 h 20 v 20 h -20 z" fill="#a6dcb7" id="path120" />
+                  <path aria-label="Max of temp_max: 14.4; Day: 28; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="m 540,20 h 20 v 20 h -20 z" fill="#91d4b9" id="path122" />
+                  <path aria-label="Max of temp_max: 5; Day: 29; Level: K" role="graphics-symbol" aria-roledescription="rect mark" d="m 560,20 h 20 v 20 h -20 z" fill="#eff9bd" id="path124" />
+                  <path aria-label="Max of temp_max: 15; Day:  1; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="M 0,40 H 20 V 60 H 0 Z" fill="#88d1ba" id="path126" />
+                  <path aria-label="Max of temp_max: 13.9; Day:  2; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="M 20,40 H 40 V 60 H 20 Z" fill="#98d6b9" id="path128" />
+                  <path aria-label="Max of temp_max: 14.4; Day:  3; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="M 40,40 H 60 V 60 H 40 Z" fill="#91d4b9" id="path130" />
+                  <path aria-label="Max of temp_max: 13.9; Day:  4; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="M 60,40 H 80 V 60 H 60 Z" fill="#98d6b9" id="path132" />
+                  <path aria-label="Max of temp_max: 15.6; Day:  5; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="m 80,40 h 20 V 60 H 80 Z" fill="#80cebb" id="path134" />
+                  <path aria-label="Max of temp_max: 15; Day:  6; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="m 100,40 h 20 v 20 h -20 z" fill="#88d1ba" id="path136" />
+                  <path aria-label="Max of temp_max: 16.7; Day:  7; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="m 120,40 h 20 v 20 h -20 z" fill="#71c8bd" id="path138" />
+                  <path aria-label="Max of temp_max: 17.2; Day:  8; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="m 140,40 h 20 v 20 h -20 z" fill="#6ac5be" id="path140" />
+                  <path aria-label="Max of temp_max: 15; Day:  9; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="m 160,40 h 20 v 20 h -20 z" fill="#88d1ba" id="path142" />
+                  <path aria-label="Max of temp_max: 13.3; Day: 10; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="m 180,40 h 20 v 20 h -20 z" fill="#a0dab8" id="path144" />
+                  <path aria-label="Max of temp_max: 14.4; Day: 11; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="m 200,40 h 20 v 20 h -20 z" fill="#91d4b9" id="path146" />
+                  <path aria-label="Max of temp_max: 17.8; Day: 12; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="m 220,40 h 20 v 20 h -20 z" fill="#62c2bf" id="path148" />
+                  <path aria-label="Max of temp_max: 17.2; Day: 13; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="m 240,40 h 20 v 20 h -20 z" fill="#6ac5be" id="path150" />
+                  <path aria-label="Max of temp_max: 14.4; Day: 14; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="m 260,40 h 20 v 20 h -20 z" fill="#91d4b9" id="path152" />
+                  <path aria-label="Max of temp_max: 16.7; Day: 15; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="m 280,40 h 20 v 20 h -20 z" fill="#71c8bd" id="path154" />
+                  <path aria-label="Max of temp_max: 13.9; Day: 16; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="m 300,40 h 20 v 20 h -20 z" fill="#98d6b9" id="path156" />
+                  <path aria-label="Max of temp_max: 13.3; Day: 17; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="m 320,40 h 20 v 20 h -20 z" fill="#a0dab8" id="path158" />
+                  <path aria-label="Max of temp_max: 15.6; Day: 18; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="m 340,40 h 20 v 20 h -20 z" fill="#80cebb" id="path160" />
+                  <path aria-label="Max of temp_max: 15.6; Day: 19; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="m 360,40 h 20 v 20 h -20 z" fill="#80cebb" id="path162" />
+                  <path aria-label="Max of temp_max: 13.9; Day: 20; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="m 380,40 h 20 v 20 h -20 z" fill="#98d6b9" id="path164" />
+                  <path aria-label="Max of temp_max: 13.3; Day: 21; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="m 400,40 h 20 v 20 h -20 z" fill="#a0dab8" id="path166" />
+                  <path aria-label="Max of temp_max: 11.7; Day: 22; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="m 420,40 h 20 v 20 h -20 z" fill="#b5e2b6" id="path168" />
+                  <path aria-label="Max of temp_max: 12.8; Day: 23; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="m 440,40 h 20 v 20 h -20 z" fill="#a6dcb7" id="path170" />
+                  <path aria-label="Max of temp_max: 18.9; Day: 24; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="m 460,40 h 20 v 20 h -20 z" fill="#55bcc0" id="path172" />
+                  <path aria-label="Max of temp_max: 16.7; Day: 25; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="m 480,40 h 20 v 20 h -20 z" fill="#71c8bd" id="path174" />
+                  <path aria-label="Max of temp_max: 20.6; Day: 26; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="m 500,40 h 20 v 20 h -20 z" fill="#43b2c2" id="path176" />
+                  <path aria-label="Max of temp_max: 18.3; Day: 27; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="m 520,40 h 20 v 20 h -20 z" fill="#5dbfbf" id="path178" />
+                  <path aria-label="Max of temp_max: 16.1; Day: 28; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="m 540,40 h 20 v 20 h -20 z" fill="#79cbbc" id="path180" />
+                  <path aria-label="Max of temp_max: 18.3; Day: 29; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="m 560,40 h 20 v 20 h -20 z" fill="#5dbfbf" id="path182" />
+                  <path aria-label="Max of temp_max: 20; Day: 30; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="m 580,40 h 20 v 20 h -20 z" fill="#49b6c2" id="path184" />
+                  <path aria-label="Max of temp_max: 20.6; Day: 31; Level: J" role="graphics-symbol" aria-roledescription="rect mark" d="m 600,40 h 20 v 20 h -20 z" fill="#43b2c2" id="path186" />
+                  <path aria-label="Max of temp_max: 17.2; Day:  1; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="M 0,60 H 20 V 80 H 0 Z" fill="#6ac5be" id="path188" />
+                  <path aria-label="Max of temp_max: 16.7; Day:  2; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="M 20,60 H 40 V 80 H 20 Z" fill="#71c8bd" id="path190" />
+                  <path aria-label="Max of temp_max: 16.7; Day:  3; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="M 40,60 H 60 V 80 H 40 Z" fill="#71c8bd" id="path192" />
+                  <path aria-label="Max of temp_max: 14.4; Day:  4; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="M 60,60 H 80 V 80 H 60 Z" fill="#91d4b9" id="path194" />
+                  <path aria-label="Max of temp_max: 16.7; Day:  5; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="m 80,60 h 20 V 80 H 80 Z" fill="#71c8bd" id="path196" />
+                  <path aria-label="Max of temp_max: 13.9; Day:  6; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="m 100,60 h 20 v 20 h -20 z" fill="#98d6b9" id="path198" />
+                  <path aria-label="Max of temp_max: 21.1; Day:  7; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="m 120,60 h 20 v 20 h -20 z" fill="#3eaec1" id="path200" />
+                  <path aria-label="Max of temp_max: 21.1; Day:  8; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="m 140,60 h 20 v 20 h -20 z" fill="#3eaec1" id="path202" />
+                  <path aria-label="Max of temp_max: 20; Day:  9; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="m 160,60 h 20 v 20 h -20 z" fill="#49b6c2" id="path204" />
+                  <path aria-label="Max of temp_max: 17.8; Day: 10; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="m 180,60 h 20 v 20 h -20 z" fill="#62c2bf" id="path206" />
+                  <path aria-label="Max of temp_max: 17.2; Day: 11; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="m 200,60 h 20 v 20 h -20 z" fill="#6ac5be" id="path208" />
+                  <path aria-label="Max of temp_max: 16.1; Day: 12; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="m 220,60 h 20 v 20 h -20 z" fill="#79cbbc" id="path210" />
+                  <path aria-label="Max of temp_max: 20.6; Day: 13; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="m 240,60 h 20 v 20 h -20 z" fill="#43b2c2" id="path212" />
+                  <path aria-label="Max of temp_max: 20; Day: 14; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="m 260,60 h 20 v 20 h -20 z" fill="#49b6c2" id="path214" />
+                  <path aria-label="Max of temp_max: 16.1; Day: 15; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="m 280,60 h 20 v 20 h -20 z" fill="#79cbbc" id="path216" />
+                  <path aria-label="Max of temp_max: 17.8; Day: 16; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="m 300,60 h 20 v 20 h -20 z" fill="#62c2bf" id="path218" />
+                  <path aria-label="Max of temp_max: 18.9; Day: 17; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="m 320,60 h 20 v 20 h -20 z" fill="#55bcc0" id="path220" />
+                  <path aria-label="Max of temp_max: 18.9; Day: 18; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="m 340,60 h 20 v 20 h -20 z" fill="#55bcc0" id="path222" />
+                  <path aria-label="Max of temp_max: 21.1; Day: 19; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="m 360,60 h 20 v 20 h -20 z" fill="#3eaec1" id="path224" />
+                  <path aria-label="Max of temp_max: 22.8; Day: 20; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="m 380,60 h 20 v 20 h -20 z" fill="#31a2c0" id="path226" />
+                  <path aria-label="Max of temp_max: 20; Day: 21; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="m 400,60 h 20 v 20 h -20 z" fill="#49b6c2" id="path228" />
+                  <path aria-label="Max of temp_max: 23.3; Day: 22; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="m 420,60 h 20 v 20 h -20 z" fill="#2c9ec0" id="path230" />
+                  <path aria-label="Max of temp_max: 21.7; Day: 23; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="m 440,60 h 20 v 20 h -20 z" fill="#3aaac1" id="path232" />
+                  <path aria-label="Max of temp_max: 21.1; Day: 24; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="m 460,60 h 20 v 20 h -20 z" fill="#3eaec1" id="path234" />
+                  <path aria-label="Max of temp_max: 21.7; Day: 25; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="m 480,60 h 20 v 20 h -20 z" fill="#3aaac1" id="path236" />
+                  <path aria-label="Max of temp_max: 20.6; Day: 26; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="m 500,60 h 20 v 20 h -20 z" fill="#43b2c2" id="path238" />
+                  <path aria-label="Max of temp_max: 25; Day: 27; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="m 520,60 h 20 v 20 h -20 z" fill="#268fbc" id="path240" />
+                  <path aria-label="Max of temp_max: 16.1; Day: 28; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="m 540,60 h 20 v 20 h -20 z" fill="#79cbbc" id="path242" />
+                  <path aria-label="Max of temp_max: 25; Day: 29; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="m 560,60 h 20 v 20 h -20 z" fill="#268fbc" id="path244" />
+                  <path aria-label="Max of temp_max: 27.8; Day: 30; Level: I" role="graphics-symbol" aria-roledescription="rect mark" d="m 580,60 h 20 v 20 h -20 z" fill="#2174b2" id="path246" />
+                  <path aria-label="Max of temp_max: 29.4; Day:  1; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 0,80 h 20 v 20 H 0 Z" fill="#2164aa" id="path248" />
+                  <path aria-label="Max of temp_max: 20.6; Day:  2; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 20,80 h 20 v 20 H 20 Z" fill="#43b2c2" id="path250" />
+                  <path aria-label="Max of temp_max: 21.7; Day:  3; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 40,80 h 20 v 20 H 40 Z" fill="#3aaac1" id="path252" />
+                  <path aria-label="Max of temp_max: 25; Day:  4; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 60,80 h 20 v 20 H 60 Z" fill="#268fbc" id="path254" />
+                  <path aria-label="Max of temp_max: 28.9; Day:  5; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 80,80 h 20 v 20 H 80 Z" fill="#2169ad" id="path256" />
+                  <path aria-label="Max of temp_max: 30.6; Day:  6; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 100,80 h 20 v 20 h -20 z" fill="#2259a5" id="path258" />
+                  <path aria-label="Max of temp_max: 23.9; Day:  7; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 120,80 h 20 v 20 h -20 z" fill="#2a99bf" id="path260" />
+                  <path aria-label="Max of temp_max: 23.9; Day:  8; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 140,80 h 20 v 20 h -20 z" fill="#2a99bf" id="path262" />
+                  <path aria-label="Max of temp_max: 26.7; Day:  9; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 160,80 h 20 v 20 h -20 z" fill="#217fb7" id="path264" />
+                  <path aria-label="Max of temp_max: 26.1; Day: 10; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 180,80 h 20 v 20 h -20 z" fill="#2285b9" id="path266" />
+                  <path aria-label="Max of temp_max: 27.2; Day: 11; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 200,80 h 20 v 20 h -20 z" fill="#217ab4" id="path268" />
+                  <path aria-label="Max of temp_max: 24.4; Day: 12; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 220,80 h 20 v 20 h -20 z" fill="#2894bd" id="path270" />
+                  <path aria-label="Max of temp_max: 26.7; Day: 13; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 240,80 h 20 v 20 h -20 z" fill="#217fb7" id="path272" />
+                  <path aria-label="Max of temp_max: 27.8; Day: 14; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 260,80 h 20 v 20 h -20 z" fill="#2174b2" id="path274" />
+                  <path aria-label="Max of temp_max: 26.7; Day: 15; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 280,80 h 20 v 20 h -20 z" fill="#217fb7" id="path276" />
+                  <path aria-label="Max of temp_max: 21.7; Day: 16; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 300,80 h 20 v 20 h -20 z" fill="#3aaac1" id="path278" />
+                  <path aria-label="Max of temp_max: 20; Day: 17; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 320,80 h 20 v 20 h -20 z" fill="#49b6c2" id="path280" />
+                  <path aria-label="Max of temp_max: 25.6; Day: 18; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 340,80 h 20 v 20 h -20 z" fill="#248aba" id="path282" />
+                  <path aria-label="Max of temp_max: 21.7; Day: 19; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 360,80 h 20 v 20 h -20 z" fill="#3aaac1" id="path284" />
+                  <path aria-label="Max of temp_max: 23.3; Day: 20; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 380,80 h 20 v 20 h -20 z" fill="#2c9ec0" id="path286" />
+                  <path aria-label="Max of temp_max: 25.6; Day: 21; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 400,80 h 20 v 20 h -20 z" fill="#248aba" id="path288" />
+                  <path aria-label="Max of temp_max: 24.4; Day: 22; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 420,80 h 20 v 20 h -20 z" fill="#2894bd" id="path290" />
+                  <path aria-label="Max of temp_max: 20; Day: 23; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 440,80 h 20 v 20 h -20 z" fill="#49b6c2" id="path292" />
+                  <path aria-label="Max of temp_max: 18.3; Day: 24; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 460,80 h 20 v 20 h -20 z" fill="#5dbfbf" id="path294" />
+                  <path aria-label="Max of temp_max: 22.2; Day: 25; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 480,80 h 20 v 20 h -20 z" fill="#35a6c1" id="path296" />
+                  <path aria-label="Max of temp_max: 22.2; Day: 26; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 500,80 h 20 v 20 h -20 z" fill="#35a6c1" id="path298" />
+                  <path aria-label="Max of temp_max: 24.4; Day: 27; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 520,80 h 20 v 20 h -20 z" fill="#2894bd" id="path300" />
+                  <path aria-label="Max of temp_max: 27.8; Day: 28; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 540,80 h 20 v 20 h -20 z" fill="#2174b2" id="path302" />
+                  <path aria-label="Max of temp_max: 26.1; Day: 29; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 560,80 h 20 v 20 h -20 z" fill="#2285b9" id="path304" />
+                  <path aria-label="Max of temp_max: 22.8; Day: 30; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 580,80 h 20 v 20 h -20 z" fill="#31a2c0" id="path306" />
+                  <path aria-label="Max of temp_max: 25; Day: 31; Level: H" role="graphics-symbol" aria-roledescription="rect mark" d="m 600,80 h 20 v 20 h -20 z" fill="#268fbc" id="path308" />
+                  <path aria-label="Max of temp_max: 22.8; Day:  1; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 0,100 h 20 v 20 H 0 Z" fill="#31a2c0" id="path310" />
+                  <path aria-label="Max of temp_max: 23.3; Day:  2; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 20,100 h 20 v 20 H 20 Z" fill="#2c9ec0" id="path312" />
+                  <path aria-label="Max of temp_max: 22.2; Day:  3; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 40,100 h 20 v 20 H 40 Z" fill="#35a6c1" id="path314" />
+                  <path aria-label="Max of temp_max: 26.1; Day:  4; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 60,100 h 20 v 20 H 60 Z" fill="#2285b9" id="path316" />
+                  <path aria-label="Max of temp_max: 26.7; Day:  5; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 80,100 h 20 v 20 H 80 Z" fill="#217fb7" id="path318" />
+                  <path aria-label="Max of temp_max: 29.4; Day:  6; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 100,100 h 20 v 20 h -20 z" fill="#2164aa" id="path320" />
+                  <path aria-label="Max of temp_max: 31.1; Day:  7; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 120,100 h 20 v 20 h -20 z" fill="#2254a3" id="path322" />
+                  <path aria-label="Max of temp_max: 30.6; Day:  8; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 140,100 h 20 v 20 h -20 z" fill="#2259a5" id="path324" />
+                  <path aria-label="Max of temp_max: 28.9; Day:  9; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 160,100 h 20 v 20 h -20 z" fill="#2169ad" id="path326" />
+                  <path aria-label="Max of temp_max: 25.6; Day: 10; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 180,100 h 20 v 20 h -20 z" fill="#248aba" id="path328" />
+                  <path aria-label="Max of temp_max: 24.4; Day: 11; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 200,100 h 20 v 20 h -20 z" fill="#2894bd" id="path330" />
+                  <path aria-label="Max of temp_max: 21.7; Day: 12; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 220,100 h 20 v 20 h -20 z" fill="#3aaac1" id="path332" />
+                  <path aria-label="Max of temp_max: 23.9; Day: 13; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 240,100 h 20 v 20 h -20 z" fill="#2a99bf" id="path334" />
+                  <path aria-label="Max of temp_max: 27.8; Day: 14; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 260,100 h 20 v 20 h -20 z" fill="#2174b2" id="path336" />
+                  <path aria-label="Max of temp_max: 30; Day: 15; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 280,100 h 20 v 20 h -20 z" fill="#215ea8" id="path338" />
+                  <path aria-label="Max of temp_max: 23.9; Day: 16; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 300,100 h 20 v 20 h -20 z" fill="#2a99bf" id="path340" />
+                  <path aria-label="Max of temp_max: 25.6; Day: 17; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 320,100 h 20 v 20 h -20 z" fill="#248aba" id="path342" />
+                  <path aria-label="Max of temp_max: 24.4; Day: 18; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 340,100 h 20 v 20 h -20 z" fill="#2894bd" id="path344" />
+                  <path aria-label="Max of temp_max: 25.6; Day: 19; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 360,100 h 20 v 20 h -20 z" fill="#248aba" id="path346" />
+                  <path aria-label="Max of temp_max: 25; Day: 20; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 380,100 h 20 v 20 h -20 z" fill="#268fbc" id="path348" />
+                  <path aria-label="Max of temp_max: 25.6; Day: 21; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 400,100 h 20 v 20 h -20 z" fill="#248aba" id="path350" />
+                  <path aria-label="Max of temp_max: 25.6; Day: 22; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 420,100 h 20 v 20 h -20 z" fill="#248aba" id="path352" />
+                  <path aria-label="Max of temp_max: 26.1; Day: 23; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 440,100 h 20 v 20 h -20 z" fill="#2285b9" id="path354" />
+                  <path aria-label="Max of temp_max: 25.6; Day: 24; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 460,100 h 20 v 20 h -20 z" fill="#248aba" id="path356" />
+                  <path aria-label="Max of temp_max: 30.6; Day: 25; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 480,100 h 20 v 20 h -20 z" fill="#2259a5" id="path358" />
+                  <path aria-label="Max of temp_max: 31.7; Day: 26; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 500,100 h 20 v 20 h -20 z" fill="#224fa0" id="path360" />
+                  <path aria-label="Max of temp_max: 33.3; Day: 27; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 520,100 h 20 v 20 h -20 z" fill="#214296" id="path362" />
+                  <path aria-label="Max of temp_max: 30.6; Day: 28; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 540,100 h 20 v 20 h -20 z" fill="#2259a5" id="path364" />
+                  <path aria-label="Max of temp_max: 30; Day: 29; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 560,100 h 20 v 20 h -20 z" fill="#215ea8" id="path366" />
+                  <path aria-label="Max of temp_max: 33.9; Day: 30; Level: G" role="graphics-symbol" aria-roledescription="rect mark" d="m 580,100 h 20 v 20 h -20 z" fill="#203d92" id="path368" />
+                  <path aria-label="Max of temp_max: 34.4; Day:  1; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 0,120 h 20 v 20 H 0 Z" fill="#1f3a8e" id="path370" />
+                  <path aria-label="Max of temp_max: 33.9; Day:  2; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 20,120 h 20 v 20 H 20 Z" fill="#203d92" id="path372" />
+                  <path aria-label="Max of temp_max: 33.3; Day:  3; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 40,120 h 20 v 20 H 40 Z" fill="#214296" id="path374" />
+                  <path aria-label="Max of temp_max: 33.3; Day:  4; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 60,120 h 20 v 20 H 60 Z" fill="#214296" id="path376" />
+                  <path aria-label="Max of temp_max: 32.8; Day:  5; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 80,120 h 20 v 20 H 80 Z" fill="#22459a" id="path378" />
+                  <path aria-label="Max of temp_max: 29.4; Day:  6; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 100,120 h 20 v 20 h -20 z" fill="#2164aa" id="path380" />
+                  <path aria-label="Max of temp_max: 27.2; Day:  7; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 120,120 h 20 v 20 h -20 z" fill="#217ab4" id="path382" />
+                  <path aria-label="Max of temp_max: 30; Day:  8; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 140,120 h 20 v 20 h -20 z" fill="#215ea8" id="path384" />
+                  <path aria-label="Max of temp_max: 30; Day:  9; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 160,120 h 20 v 20 h -20 z" fill="#215ea8" id="path386" />
+                  <path aria-label="Max of temp_max: 28.9; Day: 10; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 180,120 h 20 v 20 h -20 z" fill="#2169ad" id="path388" />
+                  <path aria-label="Max of temp_max: 31.1; Day: 11; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 200,120 h 20 v 20 h -20 z" fill="#2254a3" id="path390" />
+                  <path aria-label="Max of temp_max: 32.2; Day: 12; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 220,120 h 20 v 20 h -20 z" fill="#234a9e" id="path392" />
+                  <path aria-label="Max of temp_max: 29.4; Day: 13; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 240,120 h 20 v 20 h -20 z" fill="#2164aa" id="path394" />
+                  <path aria-label="Max of temp_max: 27.8; Day: 14; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 260,120 h 20 v 20 h -20 z" fill="#2174b2" id="path396" />
+                  <path aria-label="Max of temp_max: 31.1; Day: 15; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 280,120 h 20 v 20 h -20 z" fill="#2254a3" id="path398" />
+                  <path aria-label="Max of temp_max: 31.1; Day: 16; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 300,120 h 20 v 20 h -20 z" fill="#2254a3" id="path400" />
+                  <path aria-label="Max of temp_max: 27.8; Day: 17; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 320,120 h 20 v 20 h -20 z" fill="#2174b2" id="path402" />
+                  <path aria-label="Max of temp_max: 33.3; Day: 18; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 340,120 h 20 v 20 h -20 z" fill="#214296" id="path404" />
+                  <path aria-label="Max of temp_max: 35; Day: 19; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 360,120 h 20 v 20 h -20 z" fill="#1d358a" id="path406" />
+                  <path aria-label="Max of temp_max: 26.7; Day: 20; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 380,120 h 20 v 20 h -20 z" fill="#217fb7" id="path408" />
+                  <path aria-label="Max of temp_max: 23.9; Day: 21; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 400,120 h 20 v 20 h -20 z" fill="#2a99bf" id="path410" />
+                  <path aria-label="Max of temp_max: 26.1; Day: 22; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 420,120 h 20 v 20 h -20 z" fill="#2285b9" id="path412" />
+                  <path aria-label="Max of temp_max: 31.1; Day: 23; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 440,120 h 20 v 20 h -20 z" fill="#2254a3" id="path414" />
+                  <path aria-label="Max of temp_max: 31.1; Day: 24; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 460,120 h 20 v 20 h -20 z" fill="#2254a3" id="path416" />
+                  <path aria-label="Max of temp_max: 31.1; Day: 25; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 480,120 h 20 v 20 h -20 z" fill="#2254a3" id="path418" />
+                  <path aria-label="Max of temp_max: 31.1; Day: 26; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 500,120 h 20 v 20 h -20 z" fill="#2254a3" id="path420" />
+                  <path aria-label="Max of temp_max: 28.3; Day: 27; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 520,120 h 20 v 20 h -20 z" fill="#216faf" id="path422" />
+                  <path aria-label="Max of temp_max: 30.6; Day: 28; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 540,120 h 20 v 20 h -20 z" fill="#2259a5" id="path424" />
+                  <path aria-label="Max of temp_max: 32.2; Day: 29; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 560,120 h 20 v 20 h -20 z" fill="#234a9e" id="path426" />
+                  <path aria-label="Max of temp_max: 34.4; Day: 30; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 580,120 h 20 v 20 h -20 z" fill="#1f3a8e" id="path428" />
+                  <path aria-label="Max of temp_max: 34.4; Day: 31; Level: F" role="graphics-symbol" aria-roledescription="rect mark" d="m 600,120 h 20 v 20 h -20 z" fill="#1f3a8e" id="path430" />
+                  <path aria-label="Max of temp_max: 33.3; Day:  1; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 0,140 h 20 v 20 H 0 Z" fill="#214296" id="path432" />
+                  <path aria-label="Max of temp_max: 30.6; Day:  2; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 20,140 h 20 v 20 H 20 Z" fill="#2259a5" id="path434" />
+                  <path aria-label="Max of temp_max: 31.7; Day:  3; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 40,140 h 20 v 20 H 40 Z" fill="#224fa0" id="path436" />
+                  <path aria-label="Max of temp_max: 33.9; Day:  4; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 60,140 h 20 v 20 H 60 Z" fill="#203d92" id="path438" />
+                  <path aria-label="Max of temp_max: 33.9; Day:  5; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 80,140 h 20 v 20 H 80 Z" fill="#203d92" id="path440" />
+                  <path aria-label="Max of temp_max: 30.6; Day:  6; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 100,140 h 20 v 20 h -20 z" fill="#2259a5" id="path442" />
+                  <path aria-label="Max of temp_max: 31.1; Day:  7; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 120,140 h 20 v 20 h -20 z" fill="#2254a3" id="path444" />
+                  <path aria-label="Max of temp_max: 28.3; Day:  8; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 140,140 h 20 v 20 h -20 z" fill="#216faf" id="path446" />
+                  <path aria-label="Max of temp_max: 28.3; Day:  9; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 160,140 h 20 v 20 h -20 z" fill="#216faf" id="path448" />
+                  <path aria-label="Max of temp_max: 30.6; Day: 10; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 180,140 h 20 v 20 h -20 z" fill="#2259a5" id="path450" />
+                  <path aria-label="Max of temp_max: 35.6; Day: 11; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 200,140 h 20 v 20 h -20 z" fill="#1c3185" id="path452" />
+                  <path aria-label="Max of temp_max: 30.6; Day: 12; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 220,140 h 20 v 20 h -20 z" fill="#2259a5" id="path454" />
+                  <path aria-label="Max of temp_max: 30.6; Day: 13; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 240,140 h 20 v 20 h -20 z" fill="#2259a5" id="path456" />
+                  <path aria-label="Max of temp_max: 28.9; Day: 14; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 260,140 h 20 v 20 h -20 z" fill="#2169ad" id="path458" />
+                  <path aria-label="Max of temp_max: 31.1; Day: 15; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 280,140 h 20 v 20 h -20 z" fill="#2254a3" id="path460" />
+                  <path aria-label="Max of temp_max: 34.4; Day: 16; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 300,140 h 20 v 20 h -20 z" fill="#1f3a8e" id="path462" />
+                  <path aria-label="Max of temp_max: 32.8; Day: 17; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 320,140 h 20 v 20 h -20 z" fill="#22459a" id="path464" />
+                  <path aria-label="Max of temp_max: 30; Day: 18; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 340,140 h 20 v 20 h -20 z" fill="#215ea8" id="path466" />
+                  <path aria-label="Max of temp_max: 31.7; Day: 19; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 360,140 h 20 v 20 h -20 z" fill="#224fa0" id="path468" />
+                  <path aria-label="Max of temp_max: 25.6; Day: 20; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 380,140 h 20 v 20 h -20 z" fill="#248aba" id="path470" />
+                  <path aria-label="Max of temp_max: 27.8; Day: 21; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 400,140 h 20 v 20 h -20 z" fill="#2174b2" id="path472" />
+                  <path aria-label="Max of temp_max: 28.9; Day: 22; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 420,140 h 20 v 20 h -20 z" fill="#2169ad" id="path474" />
+                  <path aria-label="Max of temp_max: 27.8; Day: 23; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 440,140 h 20 v 20 h -20 z" fill="#2174b2" id="path476" />
+                  <path aria-label="Max of temp_max: 25; Day: 24; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 460,140 h 20 v 20 h -20 z" fill="#268fbc" id="path478" />
+                  <path aria-label="Max of temp_max: 28.9; Day: 25; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 480,140 h 20 v 20 h -20 z" fill="#2169ad" id="path480" />
+                  <path aria-label="Max of temp_max: 31.1; Day: 26; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 500,140 h 20 v 20 h -20 z" fill="#2254a3" id="path482" />
+                  <path aria-label="Max of temp_max: 29.4; Day: 27; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 520,140 h 20 v 20 h -20 z" fill="#2164aa" id="path484" />
+                  <path aria-label="Max of temp_max: 26.7; Day: 28; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 540,140 h 20 v 20 h -20 z" fill="#217fb7" id="path486" />
+                  <path aria-label="Max of temp_max: 23.9; Day: 29; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 560,140 h 20 v 20 h -20 z" fill="#2a99bf" id="path488" />
+                  <path aria-label="Max of temp_max: 26.1; Day: 30; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 580,140 h 20 v 20 h -20 z" fill="#2285b9" id="path490" />
+                  <path aria-label="Max of temp_max: 27.8; Day: 31; Level: E" role="graphics-symbol" aria-roledescription="rect mark" d="m 600,140 h 20 v 20 h -20 z" fill="#2174b2" id="path492" />
+                  <path aria-label="Max of temp_max: 27.8; Day:  1; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 0,160 h 20 v 20 H 0 Z" fill="#2174b2" id="path494" />
+                  <path aria-label="Max of temp_max: 27.8; Day:  2; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 20,160 h 20 v 20 H 20 Z" fill="#2174b2" id="path496" />
+                  <path aria-label="Max of temp_max: 25; Day:  3; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 40,160 h 20 v 20 H 40 Z" fill="#268fbc" id="path498" />
+                  <path aria-label="Max of temp_max: 24.4; Day:  4; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 60,160 h 20 v 20 H 60 Z" fill="#2894bd" id="path500" />
+                  <path aria-label="Max of temp_max: 27.8; Day:  5; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 80,160 h 20 v 20 H 80 Z" fill="#2174b2" id="path502" />
+                  <path aria-label="Max of temp_max: 32.2; Day:  6; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 100,160 h 20 v 20 h -20 z" fill="#234a9e" id="path504" />
+                  <path aria-label="Max of temp_max: 32.2; Day:  7; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 120,160 h 20 v 20 h -20 z" fill="#234a9e" id="path506" />
+                  <path aria-label="Max of temp_max: 26.7; Day:  8; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 140,160 h 20 v 20 h -20 z" fill="#217fb7" id="path508" />
+                  <path aria-label="Max of temp_max: 26.1; Day:  9; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 160,160 h 20 v 20 h -20 z" fill="#2285b9" id="path510" />
+                  <path aria-label="Max of temp_max: 26.7; Day: 10; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 180,160 h 20 v 20 h -20 z" fill="#217fb7" id="path512" />
+                  <path aria-label="Max of temp_max: 33.9; Day: 11; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 200,160 h 20 v 20 h -20 z" fill="#203d92" id="path514" />
+                  <path aria-label="Max of temp_max: 26.7; Day: 12; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 220,160 h 20 v 20 h -20 z" fill="#217fb7" id="path516" />
+                  <path aria-label="Max of temp_max: 28.3; Day: 13; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 240,160 h 20 v 20 h -20 z" fill="#216faf" id="path518" />
+                  <path aria-label="Max of temp_max: 30; Day: 14; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 260,160 h 20 v 20 h -20 z" fill="#215ea8" id="path520" />
+                  <path aria-label="Max of temp_max: 30.6; Day: 15; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 280,160 h 20 v 20 h -20 z" fill="#2259a5" id="path522" />
+                  <path aria-label="Max of temp_max: 24.4; Day: 16; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 300,160 h 20 v 20 h -20 z" fill="#2894bd" id="path524" />
+                  <path aria-label="Max of temp_max: 27.8; Day: 17; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 320,160 h 20 v 20 h -20 z" fill="#2174b2" id="path526" />
+                  <path aria-label="Max of temp_max: 27.8; Day: 18; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 340,160 h 20 v 20 h -20 z" fill="#2174b2" id="path528" />
+                  <path aria-label="Max of temp_max: 25.6; Day: 19; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 360,160 h 20 v 20 h -20 z" fill="#248aba" id="path530" />
+                  <path aria-label="Max of temp_max: 24.4; Day: 20; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 380,160 h 20 v 20 h -20 z" fill="#2894bd" id="path532" />
+                  <path aria-label="Max of temp_max: 26.1; Day: 21; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 400,160 h 20 v 20 h -20 z" fill="#2285b9" id="path534" />
+                  <path aria-label="Max of temp_max: 22.2; Day: 22; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 420,160 h 20 v 20 h -20 z" fill="#35a6c1" id="path536" />
+                  <path aria-label="Max of temp_max: 20.6; Day: 23; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 440,160 h 20 v 20 h -20 z" fill="#43b2c2" id="path538" />
+                  <path aria-label="Max of temp_max: 22.2; Day: 24; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 460,160 h 20 v 20 h -20 z" fill="#35a6c1" id="path540" />
+                  <path aria-label="Max of temp_max: 21.7; Day: 25; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 480,160 h 20 v 20 h -20 z" fill="#3aaac1" id="path542" />
+                  <path aria-label="Max of temp_max: 20; Day: 26; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 500,160 h 20 v 20 h -20 z" fill="#49b6c2" id="path544" />
+                  <path aria-label="Max of temp_max: 22.8; Day: 27; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 520,160 h 20 v 20 h -20 z" fill="#31a2c0" id="path546" />
+                  <path aria-label="Max of temp_max: 25; Day: 28; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 540,160 h 20 v 20 h -20 z" fill="#268fbc" id="path548" />
+                  <path aria-label="Max of temp_max: 21.7; Day: 29; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 560,160 h 20 v 20 h -20 z" fill="#3aaac1" id="path550" />
+                  <path aria-label="Max of temp_max: 21.1; Day: 30; Level: D" role="graphics-symbol" aria-roledescription="rect mark" d="m 580,160 h 20 v 20 h -20 z" fill="#3eaec1" id="path552" />
+                  <path aria-label="Max of temp_max: 23.3; Day:  1; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 0,180 h 20 v 20 H 0 Z" fill="#2c9ec0" id="path554" />
+                  <path aria-label="Max of temp_max: 19.4; Day:  2; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 20,180 h 20 v 20 H 20 Z" fill="#50b9c1" id="path556" />
+                  <path aria-label="Max of temp_max: 22.2; Day:  3; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 40,180 h 20 v 20 H 40 Z" fill="#35a6c1" id="path558" />
+                  <path aria-label="Max of temp_max: 22.8; Day:  4; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 60,180 h 20 v 20 H 60 Z" fill="#31a2c0" id="path560" />
+                  <path aria-label="Max of temp_max: 23.9; Day:  5; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 80,180 h 20 v 20 H 80 Z" fill="#2a99bf" id="path562" />
+                  <path aria-label="Max of temp_max: 25.6; Day:  6; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 100,180 h 20 v 20 h -20 z" fill="#248aba" id="path564" />
+                  <path aria-label="Max of temp_max: 23.9; Day:  7; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 120,180 h 20 v 20 h -20 z" fill="#2a99bf" id="path566" />
+                  <path aria-label="Max of temp_max: 21.1; Day:  8; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 140,180 h 20 v 20 h -20 z" fill="#3eaec1" id="path568" />
+                  <path aria-label="Max of temp_max: 19.4; Day:  9; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 160,180 h 20 v 20 h -20 z" fill="#50b9c1" id="path570" />
+                  <path aria-label="Max of temp_max: 21.1; Day: 10; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 180,180 h 20 v 20 h -20 z" fill="#3eaec1" id="path572" />
+                  <path aria-label="Max of temp_max: 18.3; Day: 11; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 200,180 h 20 v 20 h -20 z" fill="#5dbfbf" id="path574" />
+                  <path aria-label="Max of temp_max: 18.3; Day: 12; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 220,180 h 20 v 20 h -20 z" fill="#5dbfbf" id="path576" />
+                  <path aria-label="Max of temp_max: 21.1; Day: 13; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 240,180 h 20 v 20 h -20 z" fill="#3eaec1" id="path578" />
+                  <path aria-label="Max of temp_max: 17.8; Day: 14; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 260,180 h 20 v 20 h -20 z" fill="#62c2bf" id="path580" />
+                  <path aria-label="Max of temp_max: 21.1; Day: 15; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 280,180 h 20 v 20 h -20 z" fill="#3eaec1" id="path582" />
+                  <path aria-label="Max of temp_max: 20.6; Day: 16; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 300,180 h 20 v 20 h -20 z" fill="#43b2c2" id="path584" />
+                  <path aria-label="Max of temp_max: 19.4; Day: 17; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 320,180 h 20 v 20 h -20 z" fill="#50b9c1" id="path586" />
+                  <path aria-label="Max of temp_max: 19.4; Day: 18; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 340,180 h 20 v 20 h -20 z" fill="#50b9c1" id="path588" />
+                  <path aria-label="Max of temp_max: 22.2; Day: 19; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 360,180 h 20 v 20 h -20 z" fill="#35a6c1" id="path590" />
+                  <path aria-label="Max of temp_max: 17.8; Day: 20; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 380,180 h 20 v 20 h -20 z" fill="#62c2bf" id="path592" />
+                  <path aria-label="Max of temp_max: 16.1; Day: 21; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 400,180 h 20 v 20 h -20 z" fill="#79cbbc" id="path594" />
+                  <path aria-label="Max of temp_max: 16.1; Day: 22; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 420,180 h 20 v 20 h -20 z" fill="#79cbbc" id="path596" />
+                  <path aria-label="Max of temp_max: 14.4; Day: 23; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 440,180 h 20 v 20 h -20 z" fill="#91d4b9" id="path598" />
+                  <path aria-label="Max of temp_max: 15; Day: 24; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 460,180 h 20 v 20 h -20 z" fill="#88d1ba" id="path600" />
+                  <path aria-label="Max of temp_max: 19.4; Day: 25; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 480,180 h 20 v 20 h -20 z" fill="#50b9c1" id="path602" />
+                  <path aria-label="Max of temp_max: 12.8; Day: 26; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 500,180 h 20 v 20 h -20 z" fill="#a6dcb7" id="path604" />
+                  <path aria-label="Max of temp_max: 16.1; Day: 27; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 520,180 h 20 v 20 h -20 z" fill="#79cbbc" id="path606" />
+                  <path aria-label="Max of temp_max: 15; Day: 28; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 540,180 h 20 v 20 h -20 z" fill="#88d1ba" id="path608" />
+                  <path aria-label="Max of temp_max: 16.7; Day: 29; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 560,180 h 20 v 20 h -20 z" fill="#71c8bd" id="path610" />
+                  <path aria-label="Max of temp_max: 17.2; Day: 30; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 580,180 h 20 v 20 h -20 z" fill="#6ac5be" id="path612" />
+                  <path aria-label="Max of temp_max: 15.6; Day: 31; Level: C" role="graphics-symbol" aria-roledescription="rect mark" d="m 600,180 h 20 v 20 h -20 z" fill="#80cebb" id="path614" />
+                  <path aria-label="Max of temp_max: 17.8; Day:  1; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 0,200 h 20 v 20 H 0 Z" fill="#62c2bf" id="path616" />
+                  <path aria-label="Max of temp_max: 15; Day:  2; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 20,200 h 20 v 20 H 20 Z" fill="#88d1ba" id="path618" />
+                  <path aria-label="Max of temp_max: 15.6; Day:  3; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 40,200 h 20 v 20 H 40 Z" fill="#80cebb" id="path620" />
+                  <path aria-label="Max of temp_max: 17.8; Day:  4; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 60,200 h 20 v 20 H 60 Z" fill="#62c2bf" id="path622" />
+                  <path aria-label="Max of temp_max: 15; Day:  5; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 80,200 h 20 v 20 H 80 Z" fill="#88d1ba" id="path624" />
+                  <path aria-label="Max of temp_max: 16.7; Day:  6; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 100,200 h 20 v 20 h -20 z" fill="#71c8bd" id="path626" />
+                  <path aria-label="Max of temp_max: 14.4; Day:  7; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 120,200 h 20 v 20 h -20 z" fill="#91d4b9" id="path628" />
+                  <path aria-label="Max of temp_max: 13.3; Day:  8; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 140,200 h 20 v 20 h -20 z" fill="#a0dab8" id="path630" />
+                  <path aria-label="Max of temp_max: 13.3; Day:  9; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 160,200 h 20 v 20 h -20 z" fill="#a0dab8" id="path632" />
+                  <path aria-label="Max of temp_max: 11.1; Day: 10; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 180,200 h 20 v 20 h -20 z" fill="#bde5b5" id="path634" />
+                  <path aria-label="Max of temp_max: 16.1; Day: 11; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 200,200 h 20 v 20 h -20 z" fill="#79cbbc" id="path636" />
+                  <path aria-label="Max of temp_max: 15.6; Day: 12; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 220,200 h 20 v 20 h -20 z" fill="#80cebb" id="path638" />
+                  <path aria-label="Max of temp_max: 13.9; Day: 13; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 240,200 h 20 v 20 h -20 z" fill="#98d6b9" id="path640" />
+                  <path aria-label="Max of temp_max: 11.1; Day: 14; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 260,200 h 20 v 20 h -20 z" fill="#bde5b5" id="path642" />
+                  <path aria-label="Max of temp_max: 10.6; Day: 15; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 280,200 h 20 v 20 h -20 z" fill="#c2e7b5" id="path644" />
+                  <path aria-label="Max of temp_max: 10; Day: 16; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 300,200 h 20 v 20 h -20 z" fill="#c8e9b5" id="path646" />
+                  <path aria-label="Max of temp_max: 13.3; Day: 17; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 320,200 h 20 v 20 h -20 z" fill="#a0dab8" id="path648" />
+                  <path aria-label="Max of temp_max: 12.8; Day: 18; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 340,200 h 20 v 20 h -20 z" fill="#a6dcb7" id="path650" />
+                  <path aria-label="Max of temp_max: 13.3; Day: 19; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 360,200 h 20 v 20 h -20 z" fill="#a0dab8" id="path652" />
+                  <path aria-label="Max of temp_max: 11.1; Day: 20; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 380,200 h 20 v 20 h -20 z" fill="#bde5b5" id="path654" />
+                  <path aria-label="Max of temp_max: 11.1; Day: 21; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 400,200 h 20 v 20 h -20 z" fill="#bde5b5" id="path656" />
+                  <path aria-label="Max of temp_max: 10; Day: 22; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 420,200 h 20 v 20 h -20 z" fill="#c8e9b5" id="path658" />
+                  <path aria-label="Max of temp_max: 12.8; Day: 23; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 440,200 h 20 v 20 h -20 z" fill="#a6dcb7" id="path660" />
+                  <path aria-label="Max of temp_max: 11.7; Day: 24; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 460,200 h 20 v 20 h -20 z" fill="#b5e2b6" id="path662" />
+                  <path aria-label="Max of temp_max: 13.9; Day: 25; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 480,200 h 20 v 20 h -20 z" fill="#98d6b9" id="path664" />
+                  <path aria-label="Max of temp_max: 15; Day: 26; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 500,200 h 20 v 20 h -20 z" fill="#88d1ba" id="path666" />
+                  <path aria-label="Max of temp_max: 14.4; Day: 27; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 520,200 h 20 v 20 h -20 z" fill="#91d4b9" id="path668" />
+                  <path aria-label="Max of temp_max: 12.8; Day: 28; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 540,200 h 20 v 20 h -20 z" fill="#a6dcb7" id="path670" />
+                  <path aria-label="Max of temp_max: 12.8; Day: 29; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 560,200 h 20 v 20 h -20 z" fill="#a6dcb7" id="path672" />
+                  <path aria-label="Max of temp_max: 15; Day: 30; Level: B" role="graphics-symbol" aria-roledescription="rect mark" d="m 580,200 h 20 v 20 h -20 z" fill="#88d1ba" id="path674" />
+                  <path aria-label="Max of temp_max: 13.3; Day:  1; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 0,220 h 20 v 20 H 0 Z" fill="#a0dab8" id="path676" />
+                  <path aria-label="Max of temp_max: 10.6; Day:  2; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 20,220 h 20 v 20 H 20 Z" fill="#c2e7b5" id="path678" />
+                  <path aria-label="Max of temp_max: 15.6; Day:  3; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 40,220 h 20 v 20 H 40 Z" fill="#80cebb" id="path680" />
+                  <path aria-label="Max of temp_max: 11.7; Day:  4; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 60,220 h 20 v 20 H 60 Z" fill="#b5e2b6" id="path682" />
+                  <path aria-label="Max of temp_max: 12.8; Day:  5; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 80,220 h 20 v 20 H 80 Z" fill="#a6dcb7" id="path684" />
+                  <path aria-label="Max of temp_max: 12.8; Day:  6; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 100,220 h 20 v 20 h -20 z" fill="#a6dcb7" id="path686" />
+                  <path aria-label="Max of temp_max: 14.4; Day:  7; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 120,220 h 20 v 20 h -20 z" fill="#91d4b9" id="path688" />
+                  <path aria-label="Max of temp_max: 15.6; Day:  8; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 140,220 h 20 v 20 h -20 z" fill="#80cebb" id="path690" />
+                  <path aria-label="Max of temp_max: 16.1; Day:  9; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 160,220 h 20 v 20 h -20 z" fill="#79cbbc" id="path692" />
+                  <path aria-label="Max of temp_max: 18.9; Day: 10; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 180,220 h 20 v 20 h -20 z" fill="#55bcc0" id="path694" />
+                  <path aria-label="Max of temp_max: 14.4; Day: 11; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 200,220 h 20 v 20 h -20 z" fill="#91d4b9" id="path696" />
+                  <path aria-label="Max of temp_max: 11.1; Day: 12; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 220,220 h 20 v 20 h -20 z" fill="#bde5b5" id="path698" />
+                  <path aria-label="Max of temp_max: 10; Day: 13; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 240,220 h 20 v 20 h -20 z" fill="#c8e9b5" id="path700" />
+                  <path aria-label="Max of temp_max: 12.8; Day: 14; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 260,220 h 20 v 20 h -20 z" fill="#a6dcb7" id="path702" />
+                  <path aria-label="Max of temp_max: 12.2; Day: 15; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 280,220 h 20 v 20 h -20 z" fill="#afdfb6" id="path704" />
+                  <path aria-label="Max of temp_max: 10; Day: 16; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 300,220 h 20 v 20 h -20 z" fill="#c8e9b5" id="path706" />
+                  <path aria-label="Max of temp_max: 8.9; Day: 17; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 320,220 h 20 v 20 h -20 z" fill="#d3eeb4" id="path708" />
+                  <path aria-label="Max of temp_max: 9.4; Day: 18; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 340,220 h 20 v 20 h -20 z" fill="#ceecb4" id="path710" />
+                  <path aria-label="Max of temp_max: 11.1; Day: 19; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 360,220 h 20 v 20 h -20 z" fill="#bde5b5" id="path712" />
+                  <path aria-label="Max of temp_max: 12.8; Day: 20; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 380,220 h 20 v 20 h -20 z" fill="#a6dcb7" id="path714" />
+                  <path aria-label="Max of temp_max: 12.8; Day: 21; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 400,220 h 20 v 20 h -20 z" fill="#a6dcb7" id="path716" />
+                  <path aria-label="Max of temp_max: 10.6; Day: 22; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 420,220 h 20 v 20 h -20 z" fill="#c2e7b5" id="path718" />
+                  <path aria-label="Max of temp_max: 12.2; Day: 23; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 440,220 h 20 v 20 h -20 z" fill="#afdfb6" id="path720" />
+                  <path aria-label="Max of temp_max: 8.3; Day: 24; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 460,220 h 20 v 20 h -20 z" fill="#d9f0b4" id="path722" />
+                  <path aria-label="Max of temp_max: 7.8; Day: 25; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 480,220 h 20 v 20 h -20 z" fill="#ddf2b5" id="path724" />
+                  <path aria-label="Max of temp_max: 6.7; Day: 26; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 500,220 h 20 v 20 h -20 z" fill="#e4f5b8" id="path726" />
+                  <path aria-label="Max of temp_max: 9.4; Day: 27; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 520,220 h 20 v 20 h -20 z" fill="#ceecb4" id="path728" />
+                  <path aria-label="Max of temp_max: 9.4; Day: 28; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 540,220 h 20 v 20 h -20 z" fill="#ceecb4" id="path730" />
+                  <path aria-label="Max of temp_max: 7.2; Day: 29; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 560,220 h 20 v 20 h -20 z" fill="#e1f3b7" id="path732" />
+                  <path aria-label="Max of temp_max: 8.9; Day: 30; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 580,220 h 20 v 20 h -20 z" fill="#d3eeb4" id="path734" />
+                  <path aria-label="Max of temp_max: 8.3; Day: 31; Level: A" role="graphics-symbol" aria-roledescription="rect mark" d="m 600,220 h 20 v 20 h -20 z" fill="#d9f0b4" id="path736" />
+               </g>
+               <g class="mark-group role-legend" role="graphics-symbol" aria-roledescription="legend" aria-label="Gradient legend for fill color with values from 5 to 36" id="g770" transform="translate(8,20)">
+                  <g transform="translate(638)" id="g768">
+                     <path class="background" aria-hidden="true" d="M 0,0 H 30 V 200 H 0 Z" pointer-events="none" id="path740" />
+                     <g id="g764">
+                        <g class="mark-group role-legend-entry" id="g762">
+                           <g id="g760">
+                              <path class="background" aria-hidden="true" d="M 0,0 Z" pointer-events="none" id="path742" />
+                              <g id="g756">
+                                 <g class="mark-rect role-legend-gradient" pointer-events="none" id="g746">
+                                    <path d="M 0,0 H 16 V 200 H 0 Z" fill="url(#gradient_1)" stroke="#dddddd" stroke-width="0" opacity="1" id="path744" style="fill:url(#gradient_1)" />
+                                 </g>
+                                 <g class="mark-text role-legend-label" pointer-events="none" id="g754" style="fill:#ffffff;fill-opacity:1">
+                                    <text text-anchor="start" transform="translate(18,170.32026)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text748" style="fill:#ffffff;fill-opacity:1">10</text>
+                                    <text text-anchor="start" transform="translate(18,104.96078)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text750" style="fill:#ffffff;fill-opacity:1">20</text>
+                                    <text text-anchor="start" transform="translate(18,39.601307)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text752" style="fill:#ffffff;fill-opacity:1">30</text>
+                                 </g>
+                              </g>
+                              <path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none" id="path758" />
+                           </g>
+                        </g>
+                     </g>
+                     <path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none" id="path766" />
+                  </g>
+               </g>
+               <g class="mark-group role-title" id="g784">
+                  <g transform="translate(310,-21)" id="g782" style="fill:#ffffff;fill-opacity:1">
+                     <path class="background" aria-hidden="true" d="M 0,0 Z" pointer-events="none" id="path772" style="fill:#ffffff;fill-opacity:1" />
+                     <g id="g778" style="fill:#ffffff;fill-opacity:1">
+                        <g class="mark-text role-title-text" role="graphics-symbol" aria-roledescription="title" aria-label="Title text 'Daily max temperatures (C) in Seattle, WA'" pointer-events="none" id="g776" style="fill:#ffffff;fill-opacity:1" transform="translate(0,-2)">
+                           <text text-anchor="middle" transform="translate(0,10)" font-family="sans-serif" font-size="13px" font-weight="bold" fill="#000" opacity="1" id="text774" style="font-size:16px;fill:#ffffff;fill-opacity:1">Daily Network Route (T) in Matrix Network</text>
+                        </g>
+                     </g>
+                     <path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none" id="path780" style="fill:#ffffff;fill-opacity:1" />
+                  </g>
+               </g>
+               <g class="mark-group role-axis" role="graphics-symbol" aria-roledescription="axis" aria-label="X-axis titled 'Day' for a discrete scale with 31 values:  1,  2,  3,  4,  5, ending with 31" id="g930">
+                  <g transform="translate(0.5,240.5)" id="g928">
+                     <path class="background" aria-hidden="true" d="M 0,0 Z" pointer-events="none" id="path786" />
+                     <g id="g924">
+                        <g class="mark-rule role-axis-tick" pointer-events="none" id="g850">
+                           <line transform="translate(10)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line788" x1="0" y1="0" />
+                           <line transform="translate(30)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line790" x1="0" y1="0" />
+                           <line transform="translate(50)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line792" x1="0" y1="0" />
+                           <line transform="translate(70)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line794" x1="0" y1="0" />
+                           <line transform="translate(90)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line796" x1="0" y1="0" />
+                           <line transform="translate(110)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line798" x1="0" y1="0" />
+                           <line transform="translate(130)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line800" x1="0" y1="0" />
+                           <line transform="translate(150)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line802" x1="0" y1="0" />
+                           <line transform="translate(170)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line804" x1="0" y1="0" />
+                           <line transform="translate(190)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line806" x1="0" y1="0" />
+                           <line transform="translate(210)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line808" x1="0" y1="0" />
+                           <line transform="translate(230)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line810" x1="0" y1="0" />
+                           <line transform="translate(250)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line812" x1="0" y1="0" />
+                           <line transform="translate(270)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line814" x1="0" y1="0" />
+                           <line transform="translate(290)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line816" x1="0" y1="0" />
+                           <line transform="translate(310)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line818" x1="0" y1="0" />
+                           <line transform="translate(330)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line820" x1="0" y1="0" />
+                           <line transform="translate(350)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line822" x1="0" y1="0" />
+                           <line transform="translate(370)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line824" x1="0" y1="0" />
+                           <line transform="translate(390)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line826" x1="0" y1="0" />
+                           <line transform="translate(410)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line828" x1="0" y1="0" />
+                           <line transform="translate(430)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line830" x1="0" y1="0" />
+                           <line transform="translate(450)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line832" x1="0" y1="0" />
+                           <line transform="translate(470)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line834" x1="0" y1="0" />
+                           <line transform="translate(490)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line836" x1="0" y1="0" />
+                           <line transform="translate(510)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line838" x1="0" y1="0" />
+                           <line transform="translate(530)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line840" x1="0" y1="0" />
+                           <line transform="translate(550)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line842" x1="0" y1="0" />
+                           <line transform="translate(570)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line844" x1="0" y1="0" />
+                           <line transform="translate(590)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line846" x1="0" y1="0" />
+                           <line transform="translate(610)" x2="0" y2="5" stroke="#888888" stroke-width="1" opacity="1" id="line848" x1="0" y1="0" />
+                        </g>
+                        <g class="mark-text role-axis-label" pointer-events="none" id="g914" style="fill:#ffffff;fill-opacity:1">
+                           <text text-anchor="middle" transform="translate(9.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text852" style="fill:#ffffff;fill-opacity:1">1</text>
+                           <text text-anchor="middle" transform="translate(29.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text854" style="fill:#ffffff;fill-opacity:1">2</text>
+                           <text text-anchor="middle" transform="translate(49.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text856" style="fill:#ffffff;fill-opacity:1">3</text>
+                           <text text-anchor="middle" transform="translate(69.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text858" style="fill:#ffffff;fill-opacity:1">4</text>
+                           <text text-anchor="middle" transform="translate(89.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text860" style="fill:#ffffff;fill-opacity:1">5</text>
+                           <text text-anchor="middle" transform="translate(109.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text862" style="fill:#ffffff;fill-opacity:1">6</text>
+                           <text text-anchor="middle" transform="translate(129.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text864" style="fill:#ffffff;fill-opacity:1">7</text>
+                           <text text-anchor="middle" transform="translate(149.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text866" style="fill:#ffffff;fill-opacity:1">8</text>
+                           <text text-anchor="middle" transform="translate(169.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text868" style="fill:#ffffff;fill-opacity:1">9</text>
+                           <text text-anchor="middle" transform="translate(189.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text870" style="fill:#ffffff;fill-opacity:1">10</text>
+                           <text text-anchor="middle" transform="translate(209.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text872" style="fill:#ffffff;fill-opacity:1">11</text>
+                           <text text-anchor="middle" transform="translate(229.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text874" style="fill:#ffffff;fill-opacity:1">12</text>
+                           <text text-anchor="middle" transform="translate(249.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text876" style="fill:#ffffff;fill-opacity:1">13</text>
+                           <text text-anchor="middle" transform="translate(269.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text878" style="fill:#ffffff;fill-opacity:1">14</text>
+                           <text text-anchor="middle" transform="translate(289.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text880" style="fill:#ffffff;fill-opacity:1">15</text>
+                           <text text-anchor="middle" transform="translate(309.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text882" style="fill:#ffffff;fill-opacity:1">16</text>
+                           <text text-anchor="middle" transform="translate(329.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text884" style="fill:#ffffff;fill-opacity:1">17</text>
+                           <text text-anchor="middle" transform="translate(349.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text886" style="fill:#ffffff;fill-opacity:1">18</text>
+                           <text text-anchor="middle" transform="translate(369.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text888" style="fill:#ffffff;fill-opacity:1">19</text>
+                           <text text-anchor="middle" transform="translate(389.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text890" style="fill:#ffffff;fill-opacity:1">20</text>
+                           <text text-anchor="middle" transform="translate(409.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text892" style="fill:#ffffff;fill-opacity:1">21</text>
+                           <text text-anchor="middle" transform="translate(429.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text894" style="fill:#ffffff;fill-opacity:1">22</text>
+                           <text text-anchor="middle" transform="translate(449.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text896" style="fill:#ffffff;fill-opacity:1">23</text>
+                           <text text-anchor="middle" transform="translate(469.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text898" style="fill:#ffffff;fill-opacity:1">24</text>
+                           <text text-anchor="middle" transform="translate(489.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text900" style="fill:#ffffff;fill-opacity:1">25</text>
+                           <text text-anchor="middle" transform="translate(509.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text902" style="fill:#ffffff;fill-opacity:1">26</text>
+                           <text text-anchor="middle" transform="translate(529.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text904" style="fill:#ffffff;fill-opacity:1">27</text>
+                           <text text-anchor="middle" transform="translate(549.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text906" style="fill:#ffffff;fill-opacity:1">28</text>
+                           <text text-anchor="middle" transform="translate(569.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text908" style="fill:#ffffff;fill-opacity:1">29</text>
+                           <text text-anchor="middle" transform="translate(589.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text910" style="fill:#ffffff;fill-opacity:1">30</text>
+                           <text text-anchor="middle" transform="translate(609.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text912" style="fill:#ffffff;fill-opacity:1">31</text>
+                        </g>
+                        <g class="mark-rule role-axis-domain" pointer-events="none" id="g918">
+                           <line x2="620" y2="0" stroke="#888888" stroke-width="1" opacity="1" id="line916" x1="0" y1="0" />
+                        </g>
+                        <g class="mark-text role-axis-title" pointer-events="none" id="g922" style="fill:#ffffff;fill-opacity:1" transform="translate(0,4)">
+                           <text text-anchor="middle" font-family="sans-serif" font-size="11px" font-weight="bold" fill="#000" opacity="1" id="text920" style="font-size:14.6667px;fill:#ffffff;fill-opacity:1" x="310" y="32">Day</text>
+                        </g>
+                     </g>
+                     <path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none" id="path926" />
+                  </g>
+               </g>
+               <g class="mark-group role-axis" role="graphics-symbol" aria-roledescription="axis" aria-label="Y-axis titled 'Level' for a discrete scale with 12 values: January, February, March, April, H, ending with December" id="g1000">
+                  <g transform="translate(0.5,0.5)" id="g998">
+                     <path class="background" aria-hidden="true" d="M 0,0 Z" pointer-events="none" id="path932" />
+                     <g id="g994">
+                        <g class="mark-rule role-axis-tick" pointer-events="none" id="g958">
+                           <line transform="translate(0,10)" x2="-5" y2="0" stroke="#888888" stroke-width="1" opacity="1" id="line934" x1="0" y1="0" />
+                           <line transform="translate(0,30)" x2="-5" y2="0" stroke="#888888" stroke-width="1" opacity="1" id="line936" x1="0" y1="0" />
+                           <line transform="translate(0,50)" x2="-5" y2="0" stroke="#888888" stroke-width="1" opacity="1" id="line938" x1="0" y1="0" />
+                           <line transform="translate(0,70)" x2="-5" y2="0" stroke="#888888" stroke-width="1" opacity="1" id="line940" x1="0" y1="0" />
+                           <line transform="translate(0,90)" x2="-5" y2="0" stroke="#888888" stroke-width="1" opacity="1" id="line942" x1="0" y1="0" />
+                           <line transform="translate(0,110)" x2="-5" y2="0" stroke="#888888" stroke-width="1" opacity="1" id="line944" x1="0" y1="0" />
+                           <line transform="translate(0,130)" x2="-5" y2="0" stroke="#888888" stroke-width="1" opacity="1" id="line946" x1="0" y1="0" />
+                           <line transform="translate(0,150)" x2="-5" y2="0" stroke="#888888" stroke-width="1" opacity="1" id="line948" x1="0" y1="0" />
+                           <line transform="translate(0,170)" x2="-5" y2="0" stroke="#888888" stroke-width="1" opacity="1" id="line950" x1="0" y1="0" />
+                           <line transform="translate(0,190)" x2="-5" y2="0" stroke="#888888" stroke-width="1" opacity="1" id="line952" x1="0" y1="0" />
+                           <line transform="translate(0,210)" x2="-5" y2="0" stroke="#888888" stroke-width="1" opacity="1" id="line954" x1="0" y1="0" />
+                           <line transform="translate(0,230)" x2="-5" y2="0" stroke="#888888" stroke-width="1" opacity="1" id="line956" x1="0" y1="0" />
+                        </g>
+                        <g class="mark-text role-axis-label" pointer-events="none" id="g984" style="fill:#ffffff;fill-opacity:1">
+                           <text text-anchor="end" transform="translate(-7,12.5)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text960" style="fill:#ffffff;fill-opacity:1">L</text>
+                           <text text-anchor="end" transform="translate(-7,32.5)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text962" style="fill:#ffffff;fill-opacity:1">K</text>
+                           <text text-anchor="end" transform="translate(-7,52.5)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text964" style="fill:#ffffff;fill-opacity:1">J</text>
+                           <text text-anchor="end" transform="translate(-7,72.5)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text966" style="fill:#ffffff;fill-opacity:1">I</text>
+                           <text text-anchor="end" transform="translate(-7,92.5)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text968" style="fill:#ffffff;fill-opacity:1">H</text>
+                           <text text-anchor="end" transform="translate(-7,112.5)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text970" style="fill:#ffffff;fill-opacity:1">G</text>
+                           <text text-anchor="end" transform="translate(-7,132.5)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text972" style="fill:#ffffff;fill-opacity:1">F</text>
+                           <text text-anchor="end" transform="translate(-7,152.5)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text974" style="fill:#ffffff;fill-opacity:1">E</text>
+                           <text text-anchor="end" transform="translate(-7,172.5)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text976" style="fill:#ffffff;fill-opacity:1">D</text>
+                           <text text-anchor="end" transform="translate(-7,192.5)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text978" style="fill:#ffffff;fill-opacity:1">C</text>
+                           <text text-anchor="end" transform="translate(-7,212.5)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text980" style="fill:#ffffff;fill-opacity:1">B</text>
+                           <text text-anchor="end" transform="translate(-7,232.5)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1" id="text982" style="fill:#ffffff;fill-opacity:1">A</text>
+                        </g>
+                        <g class="mark-rule role-axis-domain" pointer-events="none" id="g988">
+                           <line x2="0" y2="240" stroke="#888888" stroke-width="1" opacity="1" id="line986" x1="0" y1="0" />
+                        </g>
+                        <g class="mark-text role-axis-title" pointer-events="none" id="g992" transform="translate(-4)">
+                           <text text-anchor="middle" transform="rotate(-90)" font-family="sans-serif" font-size="11px" font-weight="bold" fill="#000" opacity="1" id="text990" style="font-size:14.6667px;fill:#ffffff;fill-opacity:1" x="-120" y="-33.891602">Level</text>
+                        </g>
+                     </g>
+                     <path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none" id="path996" />
+                  </g>
+               </g>
+            </g>
+            <path class="foreground" aria-hidden="true" d="" display="none" id="path1004" />
+         </g>
+      </g>
+   </g>
+   <defs id="defs1047">
+      <linearGradient id="gradient_1" x1="-1.7677669e-06" x2="-1.7677669e-06" y1="56.568542" y2="-1.4142137e-07" gradientTransform="scale(0.28284272,3.5355338)" gradientUnits="userSpaceOnUse">
+         <stop offset="0" stop-color="rgb(239, 249, 189)" id="stop1012" />
+         <stop offset="0.032679738562091505" stop-color="rgb(232, 246, 186)" id="stop1014" />
+         <stop offset="0.09803921568627451" stop-color="rgb(219, 241, 180)" id="stop1016" />
+         <stop offset="0.16339869281045752" stop-color="rgb(200, 233, 181)" id="stop1018" />
+         <stop offset="0.22875816993464052" stop-color="rgb(177, 224, 182)" id="stop1020" />
+         <stop offset="0.29411764705882354" stop-color="rgb(150, 214, 185)" id="stop1022" />
+         <stop offset="0.35947712418300654" stop-color="rgb(122, 203, 188)" id="stop1024" />
+         <stop offset="0.42483660130718953" stop-color="rgb(96, 193, 191)" id="stop1026" />
+         <stop offset="0.49019607843137253" stop-color="rgb(73, 182, 194)" id="stop1028" />
+         <stop offset="0.5555555555555556" stop-color="rgb(55, 168, 193)" id="stop1030" />
+         <stop offset="0.6209150326797386" stop-color="rgb(42, 152, 190)" id="stop1032" />
+         <stop offset="0.6862745098039216" stop-color="rgb(35, 134, 185)" id="stop1034" />
+         <stop offset="0.7516339869281046" stop-color="rgb(33, 114, 177)" id="stop1036" />
+         <stop offset="0.8169934640522876" stop-color="rgb(33, 94, 168)" id="stop1038" />
+         <stop offset="0.8823529411764706" stop-color="rgb(35, 76, 158)" id="stop1040" />
+         <stop offset="0.9477124183006536" stop-color="rgb(32, 61, 145)" id="stop1042" />
+         <stop offset="1" stop-color="rgb(28, 49, 133)" id="stop1044" />
+      </linearGradient>
+   </defs>
+</svg>
