@@ -19,17 +19,20 @@ package org.jackhuang.hmcl.ui;
 
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXDialogLayout;
-import javafx.concurrent.Worker;
+import javafx.application.Platform;
 import javafx.scene.control.Label;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import org.jackhuang.hmcl.Metadata;
+import org.jackhuang.hmcl.task.Schedulers;
 import org.jackhuang.hmcl.ui.construct.DialogCloseEvent;
 import org.jackhuang.hmcl.upgrade.RemoteVersion;
+import org.jackhuang.hmcl.util.io.HttpRequest;
 
+import java.io.IOException;
+import java.util.concurrent.CompletableFuture;
 import java.util.logging.Level;
 
-import static org.jackhuang.hmcl.Metadata.CHANGELOG_URL;
 import static org.jackhuang.hmcl.ui.FXUtils.onEscPressed;
 import static org.jackhuang.hmcl.util.Logging.LOG;
 import static org.jackhuang.hmcl.util.i18n.I18n.i18n;
@@ -41,15 +44,17 @@ public class UpgradeDialog extends JFXDialogLayout {
         }
 
         {
-            String url = CHANGELOG_URL + remoteVersion.getChannel().channelName + ".html";
+            String url = Metadata.CHANGELOG_URL + remoteVersion.getChannel().channelName + ".html";
             try {
                 WebView webView = new WebView();
                 webView.getEngine().setUserDataDirectory(Metadata.HMCL_DIRECTORY.toFile());
                 WebEngine engine = webView.getEngine();
-                engine.load(url);
-                engine.getLoadWorker().stateProperty().addListener((observable, oldValue, newValue) -> {
-                    if (newValue == Worker.State.FAILED) {
-                        LOG.warning("Failed to load update log, trying to open it in browser");
+                CompletableFuture.runAsync(() -> {
+                    try {
+                        String page = HttpRequest.GET(url).getString();
+                        Platform.runLater(() -> engine.loadContent(page));
+                    } catch (IOException e) {
+                        LOG.log(Level.WARNING, "Failed to load update log, trying to open it in browser", e);
                         FXUtils.openLink(url);
                         setBody();
                     }

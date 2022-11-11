@@ -65,8 +65,7 @@ import static org.jackhuang.hmcl.util.io.ChecksumMismatchException.verifyChecksu
  * Cato Management.
  */
 public final class MultiplayerManager {
-    // static final String HIPER_VERSION = "1.2.2";
-    private static final String HIPER_DOWNLOAD_URL = "https://gitcode.net/to/hiper/-/raw/master/";
+    private static final String HIPER_DOWNLOAD_URL = "https://gitcode.net/glavo/hiper/-/raw/master/";
     private static final String HIPER_PACKAGES_URL = HIPER_DOWNLOAD_URL + "packages.sha1";
     private static final String HIPER_POINTS_URL = "https://cert.mcer.cn/point.yml";
     private static final Path HIPER_TEMP_CONFIG_PATH = Metadata.HMCL_DIRECTORY.resolve("hiper.yml");

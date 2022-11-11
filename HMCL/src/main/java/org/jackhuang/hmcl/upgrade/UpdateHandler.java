@@ -17,10 +17,7 @@
  */
 package org.jackhuang.hmcl.upgrade;
 
-import com.google.gson.Gson;
-import com.google.gson.JsonParseException;
 import javafx.application.Platform;
-
 import org.jackhuang.hmcl.Main;
 import org.jackhuang.hmcl.Metadata;
 import org.jackhuang.hmcl.task.Task;
@@ -30,7 +27,6 @@ import org.jackhuang.hmcl.ui.UpgradeDialog;
 import org.jackhuang.hmcl.ui.construct.MessageDialogPane.MessageType;
 import org.jackhuang.hmcl.util.StringUtils;
 import org.jackhuang.hmcl.util.TaskCancellationAction;
-import org.jackhuang.hmcl.util.io.FileUtils;
 import org.jackhuang.hmcl.util.io.JarUtils;
 import org.jackhuang.hmcl.util.platform.JavaVersion;
 
@@ -39,7 +35,10 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
 import java.util.concurrent.CancellationException;
 import java.util.logging.Level;
 import java.util.regex.Matcher;
@@ -57,8 +56,6 @@ public final class UpdateHandler {
      * @return whether to exit
      */
     public static boolean processArguments(String[] args) {
-        breakForceUpdateFeature();
-
         if (isNestedApplication()) {
             // updated from old versions
             try {
@@ -94,7 +91,7 @@ public final class UpdateHandler {
         Controllers.dialog(new UpgradeDialog(version, () -> {
             Path downloaded;
             try {
-                downloaded = Files.createTempFile("hmcl-update-", ".jar");
+                downloaded = Files.createTempFile("hpmcl-update-", ".jar");
             } catch (IOException e) {
                 LOG.log(Level.WARNING, "Failed to create temp file", e);
                 return;
@@ -110,7 +107,7 @@ public final class UpdateHandler {
 
                 if (success) {
                     try {
-                        if (!IntegrityChecker.isSelfVerified()) {
+                        if (!version.isForce() && !IntegrityChecker.isSelfVerified()) {
                             throw new IOException("Current JAR is not verified");
                         }
 
@@ -175,7 +172,7 @@ public final class UpdateHandler {
 
     private static Optional<Path> tryRename(Path path, String newVersion) {
         String filename = path.getFileName().toString();
-        Matcher matcher = Pattern.compile("^(?<prefix>[hH][mM][cC][lL][.-])(?<version>\\d+(?:\\.\\d+)*)(?<suffix>\\.[^.]+)$").matcher(filename);
+        Matcher matcher = Pattern.compile("^(?<prefix>[hH][pP][mM][cC][lL][.-])(?<version>\\d+(?:\\.\\d+)*)(?<suffix>\\.[^.]+)$").matcher(filename);
         if (matcher.find()) {
             String newFilename = matcher.group("prefix") + newVersion + matcher.group("suffix");
             if (!newFilename.equals(filename)) {
@@ -228,30 +225,12 @@ public final class UpdateHandler {
     private static boolean isFirstLaunchAfterUpgrade() {
         Optional<Path> currentPath = JarUtils.thisJar();
         if (currentPath.isPresent()) {
-            Path updated = Metadata.HMCL_DIRECTORY.resolve("HMCL-" + Metadata.VERSION + ".jar");
+            Path updated = Metadata.HMCL_DIRECTORY.resolve("HPMCL-" + Metadata.VERSION + ".jar");
             if (currentPath.get().toAbsolutePath().equals(updated.toAbsolutePath())) {
                 return true;
             }
         }
         return false;
-    }
-
-    private static void breakForceUpdateFeature() {
-        Path hmclVersionJson = Metadata.HMCL_DIRECTORY.resolve("hmclver.json");
-        if (Files.isRegularFile(hmclVersionJson)) {
-            try {
-                Map<?, ?> content = new Gson().fromJson(FileUtils.readText(hmclVersionJson), Map.class);
-                Object ver = content.get("ver");
-                if (ver instanceof String && ((String) ver).startsWith("3.")) {
-                    Files.delete(hmclVersionJson);
-                    LOG.info("Successfully broke the force update feature");
-                }
-            } catch (IOException e) {
-                LOG.log(Level.WARNING, "Failed to break the force update feature", e);
-            } catch (JsonParseException e) {
-                hmclVersionJson.toFile().delete();
-            }
-        }
     }
     // ====
 }

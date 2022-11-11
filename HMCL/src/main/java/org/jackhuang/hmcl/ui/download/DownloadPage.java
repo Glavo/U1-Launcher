@@ -20,7 +20,11 @@ package org.jackhuang.hmcl.ui.download;
 import com.jfoenix.controls.JFXButton;
 import javafx.beans.property.ReadOnlyObjectProperty;
 import javafx.beans.property.ReadOnlyObjectWrapper;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.scene.Node;
+import javafx.scene.control.Tooltip;
+import org.jackhuang.hmcl.Metadata;
 import org.jackhuang.hmcl.download.*;
 import org.jackhuang.hmcl.download.game.GameRemoteVersion;
 import org.jackhuang.hmcl.mod.RemoteMod;
@@ -46,6 +50,7 @@ import org.jackhuang.hmcl.ui.versions.*;
 import org.jackhuang.hmcl.ui.wizard.Navigation;
 import org.jackhuang.hmcl.ui.wizard.WizardController;
 import org.jackhuang.hmcl.ui.wizard.WizardProvider;
+import org.jackhuang.hmcl.util.StringUtils;
 import org.jackhuang.hmcl.util.TaskCancellationAction;
 import org.jackhuang.hmcl.util.io.NetworkUtils;
 import org.jackhuang.hmcl.util.platform.OperatingSystem;
@@ -55,6 +60,8 @@ import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.CancellationException;
+import java.util.function.Consumer;
+import java.util.function.Function;
 import java.util.function.Supplier;
 
 import static org.jackhuang.hmcl.ui.FXUtils.runInFX;
@@ -103,6 +110,12 @@ public class DownloadPage extends DecoratorAnimatedPage implements DecoratorPage
         });
 
         {
+            Function<TabHeader.Tab<DownloadListPage>, EventHandler<ActionEvent>> consumer;
+            if (StringUtils.isBlank(CurseForgeRemoteModRepository.apiKey))
+                consumer = t -> e -> Controllers.dialog(i18n("download.no_api_key"));
+            else
+                consumer = t -> e -> tab.select(t);
+
             AdvancedListBox sideBar = new AdvancedListBox()
                     .startCategory(i18n("download.game"))
                     .addNavigationDrawerItem(item -> {
@@ -110,37 +123,36 @@ public class DownloadPage extends DecoratorAnimatedPage implements DecoratorPage
                         item.setLeftGraphic(wrap(SVG::gamepad));
                         item.activeProperty().bind(tab.getSelectionModel().selectedItemProperty().isEqualTo(newGameTab));
                         item.setOnAction(e -> tab.select(newGameTab));
-                    })
-                    .addNavigationDrawerItem(settingsItem -> {
+                    }).addNavigationDrawerItem(settingsItem -> {
                         settingsItem.setTitle(i18n("modpack"));
                         settingsItem.setLeftGraphic(wrap(SVG::pack));
                         settingsItem.activeProperty().bind(tab.getSelectionModel().selectedItemProperty().isEqualTo(modpackTab));
-                        settingsItem.setOnAction(e -> tab.select(modpackTab));
+                        settingsItem.setOnAction(consumer.apply(modpackTab));
                     })
                     .startCategory(i18n("download.content"))
                     .addNavigationDrawerItem(item -> {
                         item.setTitle(i18n("mods"));
                         item.setLeftGraphic(wrap(SVG::puzzle));
                         item.activeProperty().bind(tab.getSelectionModel().selectedItemProperty().isEqualTo(modTab));
-                        item.setOnAction(e -> tab.select(modTab));
+                        item.setOnAction(consumer.apply(modTab));
                     })
                     .addNavigationDrawerItem(item -> {
                         item.setTitle(i18n("resourcepack"));
                         item.setLeftGraphic(wrap(SVG::textureBox));
                         item.activeProperty().bind(tab.getSelectionModel().selectedItemProperty().isEqualTo(resourcePackTab));
-                        item.setOnAction(e -> tab.select(resourcePackTab));
+                        item.setOnAction(consumer.apply(resourcePackTab));
                     })
-//                    .addNavigationDrawerItem(item -> {
-//                        item.setTitle(i18n("download.curseforge.customization"));
-//                        item.setLeftGraphic(wrap(SVG::script));
-//                        item.activeProperty().bind(tab.getSelectionModel().selectedItemProperty().isEqualTo(customizationTab));
-//                        item.setOnAction(e -> tab.select(customizationTab));
-//                    })
+//                  .addNavigationDrawerItem(item -> {
+//                      item.setTitle(i18n("download.curseforge.customization"));
+//                      item.setLeftGraphic(wrap(SVG::script));
+//                      item.activeProperty().bind(tab.getSelectionModel().selectedItemProperty().isEqualTo(customizationTab));
+//                      item.setOnAction(consumer.apply(customizationTab));
+//                  })
                     .addNavigationDrawerItem(item -> {
                         item.setTitle(i18n("world"));
                         item.setLeftGraphic(wrap(SVG::earth));
                         item.activeProperty().bind(tab.getSelectionModel().selectedItemProperty().isEqualTo(worldTab));
-                        item.setOnAction(e -> tab.select(worldTab));
+                        item.setOnAction(consumer.apply(worldTab));
                     });
             FXUtils.setLimitWidth(sideBar, 200);
             setLeft(sideBar);

@@ -35,10 +35,16 @@ public class AboutPage extends StackPane {
         ComponentList about = new ComponentList();
         {
             IconedTwoLineListItem launcher = new IconedTwoLineListItem();
-            launcher.setImage(new Image("/assets/img/craft_table.png", 32, 32, false, true));
-            launcher.setTitle("Hello Minecraft! Launcher");
+            launcher.setImage(new Image("/assets/img/icon.png", 32, 32, false, true));
+            launcher.setTitle("HiPer Minecraft Launcher");
             launcher.setSubtitle(Metadata.VERSION);
-            launcher.setExternalLink("https://hmcl.huangyuhui.net");
+            launcher.setExternalLink("https://github.com/Glavo/HPMCL");
+
+            IconedTwoLineListItem hmcl = new IconedTwoLineListItem();
+            hmcl.setImage(new Image("/assets/img/craft_table.png", 32, 32, false, true));
+            hmcl.setTitle("Hello Minecraft! Launcher");
+            hmcl.setSubtitle(i18n("about.hmcl.statement"));
+            hmcl.setExternalLink("https://hmcl.huangyuhui.net/");
 
             IconedTwoLineListItem author = new IconedTwoLineListItem();
             author.setImage(new Image("/assets/img/yellow_fish.jpg", 32, 32, false, true));
@@ -46,7 +52,13 @@ public class AboutPage extends StackPane {
             author.setSubtitle(i18n("about.author.statement"));
             author.setExternalLink("https://space.bilibili.com/1445341");
 
-            about.getContent().setAll(launcher, author);
+            IconedTwoLineListItem glavo = new IconedTwoLineListItem();
+            glavo.setImage(new Image("/assets/img/glavo.jpg", 32, 32, false, true));
+            glavo.setTitle("Glavo");
+            glavo.setSubtitle(i18n("about.thanks_to.glavo.statement"));
+            glavo.setExternalLink("https://space.bilibili.com/20314891");
+
+            about.getContent().setAll(launcher, hmcl, author, glavo);
         }
 
         ComponentList thanks = new ComponentList();
@@ -62,12 +74,6 @@ public class AboutPage extends StackPane {
             bangbang93.setTitle("bangbang93");
             bangbang93.setSubtitle(i18n("about.thanks_to.bangbang93.statement"));
             bangbang93.setExternalLink("https://bmclapi2.bangbang93.com/");
-            
-            IconedTwoLineListItem glavo = new IconedTwoLineListItem();
-            glavo.setImage(new Image("/assets/img/glavo.jpg", 32, 32, false, true));
-            glavo.setTitle("Glavo");
-            glavo.setSubtitle(i18n("about.thanks_to.glavo.statement"));
-            glavo.setExternalLink("https://github.com/Glavo");
             
             IconedTwoLineListItem gamerteam = new IconedTwoLineListItem();
             gamerteam.setTitle("gamerteam");
@@ -104,7 +110,7 @@ public class AboutPage extends StackPane {
             contributors.setSubtitle(i18n("about.thanks_to.contributors.statement"));
             contributors.setExternalLink("https://github.com/huanghongxun/HMCL/graphs/contributors");
 
-            thanks.getContent().setAll(yushijinhun, bangbang93, glavo, mcbbs, mcmod, noin, gamerteam, redLnn, contributors);
+            thanks.getContent().setAll(yushijinhun, bangbang93, mcbbs, mcmod, noin, gamerteam, redLnn, contributors);
         }
 
         ComponentList community = new ComponentList();
@@ -117,13 +123,13 @@ public class AboutPage extends StackPane {
 
             IconedTwoLineListItem discord = new IconedTwoLineListItem();
             discord.setImage(new Image("/assets/img/discord.png", 32, 32, false, true));
-            discord.setTitle(i18n("about.community.discord"));
+            discord.setTitle("HMCL Discord");
             discord.setSubtitle(i18n("about.community.discord.statement"));
             discord.setExternalLink("https://discord.gg/jVvC7HfM6U");
 
             IconedTwoLineListItem kookapp = new IconedTwoLineListItem();
             kookapp.setImage(new Image("/assets/img/kookapp.png", 32, 32, false, true));
-            kookapp.setTitle(i18n("about.community.kookapp"));
+            kookapp.setTitle("HMCL KOOK");
             kookapp.setSubtitle(i18n("about.community.kookapp.statement"));
             kookapp.setExternalLink("https://kook.top/Kx7n3t");
 
@@ -195,7 +201,7 @@ public class AboutPage extends StackPane {
             IconedTwoLineListItem openSource = new IconedTwoLineListItem();
             openSource.setTitle(i18n("about.open_source"));
             openSource.setSubtitle(i18n("about.open_source.statement"));
-            openSource.setExternalLink("https://github.com/huanghongxun/HMCL");
+            openSource.setExternalLink("https://github.com/Glavo/HPMCL");
 
             legal.getContent().setAll(copyright, claim, openSource);
         }

@@ -77,7 +77,7 @@ public class DecoratorController {
     public DecoratorController(Stage stage, Node mainPage) {
         decorator = new Decorator(stage);
         decorator.setOnCloseButtonAction(Launcher::stopApplication);
-        decorator.titleTransparentProperty().bind(config().titleTransparentProperty());
+        decorator.setTitleTransparent(true); // decorator.titleTransparentProperty().bind(config().titleTransparentProperty());
 
         navigator = new Navigator();
         navigator.setOnNavigated(this::onNavigated);
@@ -163,7 +163,7 @@ public class DecoratorController {
                         config().backgroundImageUrlProperty()));
     }
 
-    private Image defaultBackground = newImage("/assets/img/background.jpg");
+    private final Image defaultBackground = newImage("/assets/img/background.jpg");
 
     /**
      * Load background image from bg/, background.png, background.jpg

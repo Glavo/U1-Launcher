@@ -136,7 +136,7 @@ public abstract class SettingsView extends StackPane {
                         TextFlow noteWrapper = new TextFlow(new Text(i18n("update.note")));
                         VBox.setMargin(noteWrapper, new Insets(10, 0, 0, 0));
 
-                        content.getChildren().setAll(chkUpdateStable, chkUpdateDev, noteWrapper);
+                        content.getChildren().setAll(/*chkUpdateStable, */chkUpdateDev, noteWrapper);
 
                         updatePane.getContent().add(content);
                     }

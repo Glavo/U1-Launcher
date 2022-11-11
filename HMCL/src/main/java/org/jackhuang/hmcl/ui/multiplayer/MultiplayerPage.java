@@ -161,7 +161,7 @@ public class MultiplayerPage extends DecoratorAnimatedPage implements DecoratorP
         if (globalConfig().getMultiplayerAgreementVersion() < MultiplayerManager.HIPER_AGREEMENT_VERSION) {
             JFXDialogLayout agreementPane = new JFXDialogLayout();
             agreementPane.setHeading(new Label(i18n("launcher.agreement")));
-            agreementPane.setBody(new Label(i18n("multiplayer.agreement.prompt")));
+            agreementPane.setBody(FXUtils.segmentToTextFlow(i18n("multiplayer.agreement.prompt"), Controllers::onHyperlinkAction));
             JFXHyperlink agreementLink = new JFXHyperlink(i18n("launcher.agreement"));
             agreementLink.setOnAction(e -> HMCLService.openRedirectLink("multiplayer-agreement"));
             JFXButton yesButton = new JFXButton(i18n("launcher.agreement.accept"));

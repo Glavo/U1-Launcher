@@ -45,7 +45,6 @@ import org.jackhuang.hmcl.setting.Theme;
 import org.jackhuang.hmcl.ui.Controllers;
 import org.jackhuang.hmcl.ui.FXUtils;
 import org.jackhuang.hmcl.ui.SVG;
-import org.jackhuang.hmcl.ui.construct.AnnouncementCard;
 import org.jackhuang.hmcl.ui.construct.MessageDialogPane;
 import org.jackhuang.hmcl.ui.construct.PopupMenu;
 import org.jackhuang.hmcl.ui.construct.TwoLineListItem;
@@ -223,17 +222,17 @@ public final class MainPage extends StackPane implements DecoratorPage {
     }
 
     public MainPage() {
-        if (Metadata.isNightly()) {
-            announcementPane.getChildren().add(new AnnouncementCard(i18n("update.channel.nightly.title"), i18n("update.channel.nightly.hint")));
-        } else if (Metadata.isDev()) {
-            announcementPane.getChildren().add(new AnnouncementCard(i18n("update.channel.dev.title"), i18n("update.channel.dev.hint")));
-        }
+//        if (Metadata.isNightly()) {
+//            announcementPane.getChildren().add(new AnnouncementCard(i18n("update.channel.nightly.title"), i18n("update.channel.nightly.hint")));
+//        } else if (Metadata.isDev()) {
+//            announcementPane.getChildren().add(new AnnouncementCard(i18n("update.channel.dev.title"), i18n("update.channel.dev.hint")));
+//        }
     }
 
     private void showUpdate(boolean show) {
         doAnimation(show);
 
-        if (show && getLatestVersion() != null && !Objects.equals(config().getPromptedVersion(), getLatestVersion().getVersion())) {
+        if (show && getLatestVersion() != null && (getLatestVersion().isForce() || !Objects.equals(config().getPromptedVersion(), getLatestVersion().getVersion()))) {
             Controllers.dialog("", i18n("update.bubble.title", getLatestVersion().getVersion()), MessageDialogPane.MessageType.INFO, () -> {
                 config().setPromptedVersion(getLatestVersion().getVersion());
                 onUpgrade();

@@ -80,11 +80,11 @@ public class MultiplayerPageSkin extends DecoratorAnimatedPage.DecoratorAnimated
                         });
                     })
                     .startCategory(i18n("help"))
-                    .addNavigationDrawerItem(item -> {
-                        item.setTitle(i18n("help"));
-                        item.setLeftGraphic(wrap(SVG::helpCircleOutline));
-                        item.setOnAction(e -> FXUtils.openLink("https://docs.hmcl.net/multiplayer"));
-                    })
+//                    .addNavigationDrawerItem(item -> {
+//                        item.setTitle(i18n("help"));
+//                        item.setLeftGraphic(wrap(SVG::helpCircleOutline));
+//                        item.setOnAction(e -> FXUtils.openLink("https://www.yuque.com/ffip/zk1lc2/hmcl"));
+//                    })
 //                    .addNavigationDrawerItem(item -> {
 //                        item.setTitle(i18n("multiplayer.help.1"));
 //                        item.setLeftGraphic(wrap(SVG::helpCircleOutline));
@@ -93,27 +93,27 @@ public class MultiplayerPageSkin extends DecoratorAnimatedPage.DecoratorAnimated
                     .addNavigationDrawerItem(item -> {
                         item.setTitle(i18n("multiplayer.help.2"));
                         item.setLeftGraphic(wrap(SVG::helpCircleOutline));
-                        item.setOnAction(e -> FXUtils.openLink("https://docs.hmcl.net/multiplayer/help.html"));
+                        item.setOnAction(e -> FXUtils.openLink("https://www.yuque.com/ffip/zk1lc2/hmcl"));
                     })
                     .addNavigationDrawerItem(item -> {
                         item.setTitle(i18n("multiplayer.help.3"));
                         item.setLeftGraphic(wrap(SVG::helpCircleOutline));
-                        item.setOnAction(e -> FXUtils.openLink("https://docs.hmcl.net/multiplayer/help.html#%E5%88%9B%E5%BB%BA%E6%96%B9"));
+                        item.setOnAction(e -> FXUtils.openLink("https://www.yuque.com/ffip/zk1lc2/hmcl#S6Wwi"));
                     })
                     .addNavigationDrawerItem(item -> {
                         item.setTitle(i18n("multiplayer.help.4"));
                         item.setLeftGraphic(wrap(SVG::helpCircleOutline));
-                        item.setOnAction(e -> FXUtils.openLink("https://docs.hmcl.net/multiplayer/help.html#%E5%8F%82%E4%B8%8E%E8%80%85"));
+                        item.setOnAction(e -> FXUtils.openLink("https://www.yuque.com/ffip/zk1lc2/hmcl#t9Q2F"));
                     })
-                    .addNavigationDrawerItem(item -> {
-                        item.setTitle(i18n("multiplayer.help.text"));
-                        item.setLeftGraphic(wrap(SVG::rocketLaunchOutline));
-                        item.setOnAction(e -> FXUtils.openLink("https://docs.hmcl.net/multiplayer/text.html"));
-                    })
+//                    .addNavigationDrawerItem(item -> {
+//                        item.setTitle(i18n("multiplayer.help.text"));
+//                        item.setLeftGraphic(wrap(SVG::rocketLaunchOutline));
+//                        item.setOnAction(e -> FXUtils.openLink("https://docs.hmcl.net/multiplayer/text.html"));
+//                    })
                     .addNavigationDrawerItem(report -> {
                         report.setTitle(i18n("feedback"));
                         report.setLeftGraphic(wrap(SVG::messageAlertOutline));
-                        report.setOnAction(e -> HMCLService.openRedirectLink("multiplayer-feedback"));
+                        report.setOnAction(e -> FXUtils.openLink("https://github.com/Glavo/HPMCL/issues/new"));
                     });
             FXUtils.setLimitWidth(sideBar, 200);
             setLeft(sideBar);
