@@ -143,7 +143,7 @@ public final class MultiplayerManager {
     }
 
     public static Path getConfigPath(String token) {
-        return HIPER_CONFIG_DIR.resolve(Hex.encodeHex(DigestUtils.digest("SHA-1", token)) + ".yml");
+        return HIPER_CONFIG_DIR.resolve(Hex.encodeHex(DigestUtils.digest("SHA-1", token.getBytes(StandardCharsets.UTF_8))) + ".yml");
     }
 
     public static void clearConfiguration() {

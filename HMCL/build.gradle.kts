@@ -28,7 +28,7 @@ buildscript {
 }
 
 plugins {
-    id("com.github.johnrengelman.shadow") version "7.0.0"
+    id("com.github.johnrengelman.shadow") version "7.1.2"
 }
 
 val jarBaseName = "HPMCL"
