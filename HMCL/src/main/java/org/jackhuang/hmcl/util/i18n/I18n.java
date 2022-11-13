@@ -17,7 +17,6 @@
  */
 package org.jackhuang.hmcl.util.i18n;
 
-import org.jackhuang.hmcl.setting.ConfigHolder;
 import org.jackhuang.hmcl.util.i18n.Locales.SupportedLocale;
 
 import java.util.MissingResourceException;
@@ -31,13 +30,7 @@ public final class I18n {
     private I18n() {}
 
     public static SupportedLocale getCurrentLocale() {
-        try {
-            return ConfigHolder.config().getLocalization();
-        } catch (IllegalStateException e) {
-            // e is thrown by ConfigHolder.config(), indicating the config hasn't been loaded
-            // fallback to use default locale
-            return Locales.DEFAULT;
-        }
+        return Locales.ZH_CN;
     }
 
     public static ResourceBundle getResourceBundle() {

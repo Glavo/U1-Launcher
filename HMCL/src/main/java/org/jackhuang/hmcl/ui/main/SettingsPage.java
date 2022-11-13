@@ -32,7 +32,6 @@ import org.jackhuang.hmcl.upgrade.UpdateChannel;
 import org.jackhuang.hmcl.upgrade.UpdateChecker;
 import org.jackhuang.hmcl.upgrade.UpdateHandler;
 import org.jackhuang.hmcl.util.Logging;
-import org.jackhuang.hmcl.util.i18n.Locales;
 import org.jackhuang.hmcl.util.io.FileUtils;
 
 import java.awt.*;
@@ -60,8 +59,8 @@ public final class SettingsPage extends SettingsView {
         FXUtils.smoothScrolling(scroll);
 
         // ==== Languages ====
-        cboLanguage.getItems().setAll(Locales.LOCALES);
-        selectedItemPropertyFor(cboLanguage).bindBidirectional(config().localizationProperty());
+        // cboLanguage.getItems().setAll(Locales.LOCALES);
+        // selectedItemPropertyFor(cboLanguage).bindBidirectional(config().localizationProperty());
         // ====
 
         fileCommonLocation.selectedDataProperty().bindBidirectional(config().commonDirTypeProperty());

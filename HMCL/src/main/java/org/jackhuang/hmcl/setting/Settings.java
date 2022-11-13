@@ -46,7 +46,7 @@ public final class Settings {
     }
 
     private Settings() {
-        config().localizationProperty().addListener(unused -> updateSystemLocale());
+        // config().localizationProperty().addListener(unused -> updateSystemLocale());
         updateSystemLocale();
 
         DownloadProviders.init();
@@ -81,6 +81,6 @@ public final class Settings {
     }
 
     private static void updateSystemLocale() {
-        Locale.setDefault(config().getLocalization().getLocale());
+        Locale.setDefault(Locale.SIMPLIFIED_CHINESE);
     }
 }
