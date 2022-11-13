@@ -63,7 +63,7 @@ public final class LogExporter {
                 if (Files.exists(runDirectory.resolve("logs").resolve("latest.log"))) {
                     zipper.putFile(runDirectory.resolve("logs").resolve("latest.log"), "latest.log");
                 }
-                zipper.putTextFile(Logging.getLogs(), "hmcl.log");
+                zipper.putTextFile(Logging.getLogs(), "hpmcl.log");
                 zipper.putTextFile(logs, "minecraft.log");
                 zipper.putTextFile(Logging.filterForbiddenToken(launchScript), OperatingSystem.CURRENT_OS == OperatingSystem.WINDOWS ? "launch.bat" : "launch.sh");
 

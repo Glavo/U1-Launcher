@@ -84,7 +84,7 @@ public class PersonalizationPage extends StackPane {
         }
         {
             OptionToggleButton titleTransparentButton = new OptionToggleButton();
-            themeList.getContent().add(titleTransparentButton);
+            // themeList.getContent().add(titleTransparentButton);
             titleTransparentButton.selectedProperty().bindBidirectional(config().titleTransparentProperty());
             titleTransparentButton.setTitle(i18n("settings.launcher.title_transparent"));
         }
@@ -207,7 +207,7 @@ public class PersonalizationPage extends StackPane {
                     }
                 }
 
-                Label lblFontDisplay = new Label("Hello Minecraft! Launcher");
+                Label lblFontDisplay = new Label("HiPer Minecraft Launcher");
                 lblFontDisplay.fontProperty().bind(Bindings.createObjectBinding(
                         () -> Font.font(config().getLauncherFontFamily(), 12),
                         config().launcherFontFamilyProperty()));

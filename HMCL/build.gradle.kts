@@ -31,6 +31,7 @@ plugins {
     id("com.github.johnrengelman.shadow") version "7.1.2"
 }
 
+val jarBaseName = "HPMCL"
 val buildNumber = System.getenv("BUILD_NUMBER")?.toInt().let { number ->
     val offset = System.getenv("BUILD_NUMBER_OFFSET")?.toInt() ?: 0
     if (number != null) {
@@ -40,7 +41,7 @@ val buildNumber = System.getenv("BUILD_NUMBER")?.toInt().let { number ->
         if (!shortCommit.isNullOrEmpty()) "dev-$shortCommit" else "SNAPSHOT"
     }
 }
-val versionRoot = System.getenv("VERSION_ROOT") ?: "3.5"
+val versionRoot = System.getenv("VERSION_ROOT") ?: "1.0"
 val versionType = System.getenv("VERSION_TYPE") ?: "nightly"
 
 val microsoftAuthId = System.getenv("MICROSOFT_AUTH_ID") ?: ""
@@ -60,8 +61,8 @@ fun createChecksum(file: File) {
     val algorithms = linkedMapOf(
         "MD5" to "md5",
         "SHA-1" to "sha1",
-        "SHA-256" to "sha256",
-        "SHA-512" to "sha512"
+        //"SHA-256" to "sha256",
+        //"SHA-512" to "sha512"
     )
 
     algorithms.forEach { (algorithm, ext) ->
@@ -125,6 +126,7 @@ tasks.getByName<JavaCompile>(java11.compileJavaTaskName) {
 
 tasks.jar {
     enabled = false
+    archiveBaseName.set(jarBaseName)
     dependsOn(tasks["shadowJar"])
 }
 
@@ -132,6 +134,7 @@ val jarPath = tasks.jar.get().archiveFile.get().asFile
 
 tasks.getByName<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar>("shadowJar") {
     archiveClassifier.set(null as String?)
+    archiveBaseName.set(jarBaseName)
 
     minimize {
         exclude(dependency("com.google.code.gson:.*:.*"))

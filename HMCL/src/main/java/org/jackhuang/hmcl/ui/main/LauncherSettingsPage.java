@@ -100,18 +100,18 @@ public class LauncherSettingsPage extends DecoratorAnimatedPage implements Decor
                         helpItem.activeProperty().bind(tab.getSelectionModel().selectedItemProperty().isEqualTo(helpTab));
                         helpItem.setOnAction(e -> tab.select(helpTab));
                     })
-                    .addNavigationDrawerItem(feedbackItem -> {
-                        feedbackItem.setTitle(i18n("feedback"));
-                        feedbackItem.setLeftGraphic(wrap(SVG::messageAlertOutline));
-                        feedbackItem.activeProperty().bind(tab.getSelectionModel().selectedItemProperty().isEqualTo(feedbackTab));
-                        feedbackItem.setOnAction(e -> tab.select(feedbackTab));
-                    })
-                    .addNavigationDrawerItem(sponsorItem -> {
-                        sponsorItem.setTitle(i18n("sponsor"));
-                        sponsorItem.setLeftGraphic(wrap(SVG::handHearOutline));
-                        sponsorItem.activeProperty().bind(tab.getSelectionModel().selectedItemProperty().isEqualTo(sponsorTab));
-                        sponsorItem.setOnAction(e -> tab.select(sponsorTab));
-                    })
+//                    .addNavigationDrawerItem(feedbackItem -> {
+//                        feedbackItem.setTitle(i18n("feedback"));
+//                        feedbackItem.setLeftGraphic(wrap(SVG::messageAlertOutline));
+//                        feedbackItem.activeProperty().bind(tab.getSelectionModel().selectedItemProperty().isEqualTo(feedbackTab));
+//                        feedbackItem.setOnAction(e -> tab.select(feedbackTab));
+//                    })
+//                    .addNavigationDrawerItem(sponsorItem -> {
+//                        sponsorItem.setTitle(i18n("sponsor"));
+//                        sponsorItem.setLeftGraphic(wrap(SVG::handHearOutline));
+//                        sponsorItem.activeProperty().bind(tab.getSelectionModel().selectedItemProperty().isEqualTo(sponsorTab));
+//                        sponsorItem.setOnAction(e -> tab.select(sponsorTab));
+//                    })
                     .addNavigationDrawerItem(aboutItem -> {
                         aboutItem.setTitle(i18n("about"));
                         aboutItem.setLeftGraphic(wrap(SVG::informationOutline));

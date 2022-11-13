@@ -46,12 +46,18 @@ public final class IntegrityChecker {
 
     private static final String SIGNATURE_FILE = "META-INF/hmcl_signature";
     private static final String PUBLIC_KEY_FILE = "assets/hmcl_signature_publickey.der";
+    private static final String HPMCL_PUBLIC_KEY_FILE = "assets/hpmcl_signature_publickey.der";
 
-    private static PublicKey getPublicKey() throws IOException {
-        try (InputStream in = IntegrityChecker.class.getResourceAsStream("/" + PUBLIC_KEY_FILE)) {
-            if (in == null) {
-                throw new IOException("Public key not found");
-            }
+    private static PublicKey getPublicKey(ZipFile zipFile) throws IOException {
+        String publicKeyFile;
+        if (zipFile.getEntry(HPMCL_PUBLIC_KEY_FILE) != null)
+            publicKeyFile = HPMCL_PUBLIC_KEY_FILE;
+        else if (zipFile.getEntry(PUBLIC_KEY_FILE) != null)
+            publicKeyFile = PUBLIC_KEY_FILE;
+        else
+            throw new IOException("Public key not found");
+
+        try (InputStream in = IntegrityChecker.class.getResourceAsStream("/" + publicKeyFile)) {
             return KeyFactory.getInstance("RSA").generatePublic(new X509EncodedKeySpec(IOUtils.readFullyAsByteArray(in)));
         } catch (GeneralSecurityException e) {
             throw new IOException("Failed to load public key", e);
@@ -59,12 +65,11 @@ public final class IntegrityChecker {
     }
 
     private static boolean verifyJar(Path jarPath) throws IOException {
-        PublicKey publickey = getPublicKey();
-        MessageDigest md = DigestUtils.getDigest("SHA-512");
-
+        PublicKey publickey;
         byte[] signature = null;
         Map<String, byte[]> fileFingerprints = new TreeMap<>();
         try (ZipFile zip = new ZipFile(jarPath.toFile())) {
+            publickey = getPublicKey(zip);
             for (ZipEntry entry : zip.stream().toArray(ZipEntry[]::new)) {
                 String filename = entry.getName();
                 try (InputStream in = zip.getInputStream(entry)) {
@@ -75,8 +80,7 @@ public final class IntegrityChecker {
                     if (SIGNATURE_FILE.equals(filename)) {
                         signature = IOUtils.readFullyAsByteArray(in);
                     } else {
-                        md.reset();
-                        fileFingerprints.put(filename, DigestUtils.digest(md, in));
+                        fileFingerprints.put(filename, DigestUtils.digest("SHA-512", in));
                     }
                 }
             }
@@ -90,8 +94,7 @@ public final class IntegrityChecker {
             Signature verifier = Signature.getInstance("SHA512withRSA");
             verifier.initVerify(publickey);
             for (Entry<String, byte[]> entry : fileFingerprints.entrySet()) {
-                md.reset();
-                verifier.update(md.digest(entry.getKey().getBytes(UTF_8)));
+                verifier.update(DigestUtils.digest("SHA-512", entry.getKey().getBytes(UTF_8)));
                 verifier.update(entry.getValue());
             }
             return verifier.verify(signature);
@@ -128,7 +131,7 @@ public final class IntegrityChecker {
     }
 
     private static void verifySelf() throws IOException {
-        Path self = JarUtils.thisJar().orElseThrow(() -> new IOException("Failed to find current HMCL location"));
+        Path self = JarUtils.thisJar().orElseThrow(() -> new IOException("Failed to find current HPMCL location"));
         requireVerifiedJar(self);
     }
 }

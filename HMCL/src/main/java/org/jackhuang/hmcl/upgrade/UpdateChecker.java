@@ -26,13 +26,13 @@ import org.jackhuang.hmcl.Metadata;
 import org.jackhuang.hmcl.util.io.NetworkUtils;
 
 import java.io.IOException;
+import java.util.Objects;
 import java.util.logging.Level;
 
 import static org.jackhuang.hmcl.util.Lang.mapOf;
 import static org.jackhuang.hmcl.util.Lang.thread;
 import static org.jackhuang.hmcl.util.Logging.LOG;
 import static org.jackhuang.hmcl.util.Pair.pair;
-import static org.jackhuang.hmcl.util.versioning.VersionNumber.asVersion;
 
 public final class UpdateChecker {
     private UpdateChecker() {}
@@ -41,12 +41,12 @@ public final class UpdateChecker {
     private static BooleanBinding outdated = Bindings.createBooleanBinding(
             () -> {
                 RemoteVersion latest = latestVersion.get();
-                if (latest == null || isDevelopmentVersion(Metadata.VERSION)) {
+                if (latest == null || (isDevelopmentVersion(Metadata.VERSION) && !latest.isForce())) {
                     return false;
                 } else {
                     // We can update from development version to stable version,
                     // which can be downgrading.
-                    return asVersion(latest.getVersion()).compareTo(asVersion(Metadata.VERSION)) != 0;
+                    return !Objects.equals(latest.getVersion(), Metadata.VERSION);
                 }
             },
             latestVersion);
@@ -85,9 +85,14 @@ public final class UpdateChecker {
             throw new IOException("Self verification failed");
         }
 
-        String url = NetworkUtils.withQuery(Metadata.UPDATE_URL, mapOf(
-                pair("version", Metadata.VERSION),
-                pair("channel", channel.channelName)));
+        String url = System.getProperty("hmcl.update_source.override");
+        if (url != null) {
+            url = NetworkUtils.withQuery(url, mapOf(
+                    pair("version", Metadata.VERSION),
+                    pair("channel", channel.channelName)));
+        } else {
+            url = "https://gitcode.net/glavo/hpmcl-meta/-/raw/main/update/" + channel.channelName + ".json";
+        }
 
         return RemoteVersion.fetch(channel, url);
     }

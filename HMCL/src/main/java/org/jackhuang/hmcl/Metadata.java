@@ -28,24 +28,23 @@ import java.nio.file.Path;
 public final class Metadata {
     private Metadata() {}
 
-    public static final String NAME = "HMCL";
-    public static final String FULL_NAME = "Hello Minecraft! Launcher";
+    public static final String NAME = "HPMCL";
+    public static final String FULL_NAME = "HiPer Minecraft Launcher";
     public static final String VERSION = System.getProperty("hmcl.version.override", JarUtils.getManifestAttribute("Implementation-Version", "@develop@"));
 
     public static final String TITLE = NAME + " " + VERSION;
     public static final String FULL_TITLE = FULL_NAME + " v" + VERSION;
 
-    public static final String UPDATE_URL = System.getProperty("hmcl.update_source.override", "https://hmcl.huangyuhui.net/api/update_link");
-    public static final String CONTACT_URL = "https://github.com/huanghongxun/HMCL/issues";
+    public static final String CONTACT_URL = "https://github.com/Glavo/HPMCL/issues";
     public static final String HELP_URL = "https://hmcl.huangyuhui.net/help";
-    public static final String CHANGELOG_URL = "https://docs.hmcl.net/changelog/";
-    public static final String PUBLISH_URL = "https://www.mcbbs.net/thread-142335-1-1.html";
+    public static final String CHANGELOG_URL = "https://gitcode.net/glavo/hpmcl-meta/-/raw/main/changelog/";
+    public static final String PUBLISH_URL = "https://github.com/Glavo/HPMCL";
     public static final String EULA_URL = "https://hmcl.huangyuhui.net/eula";
 
     public static final String BUILD_CHANNEL = JarUtils.getManifestAttribute("Build-Channel", "nightly");
 
     public static final Path MINECRAFT_DIRECTORY = OperatingSystem.getWorkingDirectory("minecraft");
-    public static final Path HMCL_DIRECTORY = OperatingSystem.getWorkingDirectory("hmcl");
+    public static final Path HMCL_DIRECTORY = OperatingSystem.getWorkingDirectory("hpmcl");
 
     public static boolean isStable() {
         return "stable".equals(BUILD_CHANNEL);

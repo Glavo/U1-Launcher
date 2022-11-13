@@ -19,9 +19,12 @@ package org.jackhuang.hmcl;
 
 import javafx.application.Platform;
 import javafx.scene.control.Alert;
+import org.jackhuang.hmcl.ui.FXUtils;
 import org.jackhuang.hmcl.util.Logging;
 import org.jackhuang.hmcl.util.SelfDependencyPatcher;
+import org.jackhuang.hmcl.util.io.FileUtils;
 import org.jackhuang.hmcl.util.platform.Architecture;
+import org.jackhuang.hmcl.util.platform.OperatingSystem;
 
 import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLContext;
@@ -66,6 +69,21 @@ public final class Main {
         // This environment check will take ~300ms
         thread(Main::fixLetsEncrypt, "CA Certificate Check", true);
 
+        if (Files.notExists(Metadata.HMCL_DIRECTORY)) {
+            Path hmclDir = OperatingSystem.getWorkingDirectory("hmcl");
+            if (Files.isDirectory(hmclDir)) {
+                try {
+                    Files.createDirectories(Metadata.HMCL_DIRECTORY);
+                    if (Files.isRegularFile(hmclDir.resolve("hiper.yml")))
+                        Files.copy(hmclDir.resolve("hiper.yml"), Metadata.HMCL_DIRECTORY.resolve("hiper.yml"));
+                    if (Files.isDirectory(hmclDir.resolve("hiper-config")))
+                        FileUtils.copyDirectory(hmclDir.resolve("hiper-config"), Metadata.HMCL_DIRECTORY.resolve("hiper-config"));
+                } catch (Throwable e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
         Logging.start(Metadata.HMCL_DIRECTORY.resolve("logs"));
 
         checkJavaFX();
@@ -86,7 +104,7 @@ public final class Main {
         String currentDirectory = new File("").getAbsolutePath();
         if (currentDirectory.contains("!")) {
             // No Chinese translation because both Swing and JavaFX cannot render Chinese character properly when exclamation mark exists in the path.
-            showErrorAndExit("Exclamation mark(!) is not allowed in the path where HMCL is in.\n"
+            showErrorAndExit("Exclamation mark(!) is not allowed in the path where HPMCL is in.\n"
                     + "The path is " + currentDirectory);
         }
     }
