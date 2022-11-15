@@ -31,7 +31,7 @@ plugins {
     id("com.github.johnrengelman.shadow") version "7.1.2"
 }
 
-val jarBaseName = "友一"
+val jarBaseName = "U1"
 val buildNumber = System.getenv("BUILD_NUMBER")?.toInt().let { number ->
     val offset = System.getenv("BUILD_NUMBER_OFFSET")?.toInt() ?: 0
     if (number != null) {
