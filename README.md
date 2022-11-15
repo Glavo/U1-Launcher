@@ -10,7 +10,7 @@
 
 友一 (U1-Launcher) 的多人联机网络服务由 [速聚](https://the.bb) 独家提供，若您在使用中遇到任何问题请及时通过以上 速聚多人联机服务官方 QQ 群 进行处理。
 
-用户在使用多人联机服务过程中所遇到的任何问题与纠纷（**包括其付费业务**）均与 友一 (U1-Launcher) 开发者无关，若您在使用中遇到任何问题请及时通过以上 速聚多人联机服务官方 QQ 群 进行处理。
+用户在使用多人联机服务过程中所遇到的任何问题与纠纷（**包括其付费业务**）均与 友一 (U1-Launcher) 无关，若您在使用中遇到任何问题请及时通过以上 速聚多人联机服务官方 QQ 群 进行处理。
 
 ## 教程
 
@@ -22,16 +22,19 @@ TODO
 
 ## 开源协议
 
-> 本项目遵守 [Hello Minecraft! Launcher](https://github.com/huanghongxun/HMCL) 协议，以 [GPLv3](https://www.gnu.org/licenses/gpl-3.0.html) 协议开源，并遵循附加条款修改程序名称以示与原始版本不同。 
+根据[《HMCL 关于下游分支 HiPer Minecraft! Launcher 问题的公告》](https://www.bilibili.com/read/cv19696374)， 
+友一（原名 HiPer Minecraft Launcher）由 Glavo 监督管理，
+遵守 [Hello Minecraft! Launcher](https://github.com/huanghongxun/HMCL) 协议，
+以 [GPLv3](https://www.gnu.org/licenses/gpl-3.0.html) 协议开源，并遵循附加条款修改程序名称以示与原始版本不同。
 
 该程序在 [GPLv3](https://www.gnu.org/licenses/gpl-3.0.html) 开源协议下发布, 同时附有附加条款.
 
 ### 附加条款 (依据 GPLv3 开源协议第七条)
 1. 当您分发该程序的修改版本时, 您必须以一种合理的方式修改该程序的名称或版本号, 以示其与原始版本不同. (依据 [GPLv3, 7(c)](https://github.com/huanghongxun/HMCL/blob/11820e31a85d8989e41d97476712b07e7094b190/LICENSE#L372-L374))
 
-   该程序的名称及版本号可在[此处](https://github.com/Glavo/HPMCL/blob/main/HMCL/src/main/java/org/jackhuang/hmcl/Metadata.java#L33-L35)修改.
+   该程序的名称及版本号可在[此处](https://github.com/Glavo/U1-Launcher/blob/main/HMCL/src/main/java/org/jackhuang/hmcl/Metadata.java#L33-L35)修改.
 
-2. 您不得移除该程序所显示的版权声明. (依据 [GPLv3, 7(b)](https://github.com/Glavo/HPMCL/blob/11820e31a85d8989e41d97476712b07e7094b190/LICENSE#L368-L370))
+2. 您不得移除该程序所显示的版权声明. (依据 [GPLv3, 7(b)](https://github.com/Glavo/U1-Launcher/blob/11820e31a85d8989e41d97476712b07e7094b190/LICENSE#L368-L370))
 
 ## 贡献
 如果您想提交一个 Pull Request, 必须遵守如下要求:

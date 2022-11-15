@@ -91,7 +91,7 @@ public final class UpdateChecker {
                     pair("version", Metadata.VERSION),
                     pair("channel", channel.channelName)));
         } else {
-            url = "https://gitcode.net/glavo/hpmcl-meta/-/raw/main/update/" + channel.channelName + ".json";
+            url = "https://gitcode.net/glavo/u1-meta/-/raw/main/update/" + channel.channelName + ".json";
         }
 
         return RemoteVersion.fetch(channel, url);

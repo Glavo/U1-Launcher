@@ -676,7 +676,7 @@ public final class LauncherHelper {
             Path agentFile = Metadata.HMCL_DIRECTORY.resolve(agentFileName).toAbsolutePath();
             String agentFilePath = agentFile.toString();
             if (agentFilePath.indexOf('=') >= 0) {
-                LOG.warning("Invalid character '=' in the HPMCL directory path, unable to attach log4j-patch");
+                LOG.warning("Invalid character '=' in the U1 directory path, unable to attach log4j-patch");
                 return Optional.empty();
             }
 

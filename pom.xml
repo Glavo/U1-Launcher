@@ -1,12 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.glavo</groupId>
-    <artifactId>hpmcl</artifactId>
-    <version>HPMCL_VERSION</version>
+    <groupId>org.glavo.hiper</groupId>
+    <artifactId>u1</artifactId>
+    <version>U1_VERSION</version>
     <packaging>pom</packaging>
-    <name>HiPer Minecraft Launcher</name>
-    <description>A for of Hello Minecraft! Launcher</description>
-    <url>https://github.com/Glavo/HPMCL</url>
+    <name>U1 Minecraft Launcher</name>
+    <description>A fork of Hello Minecraft! Launcher</description>
+    <url>https://github.com/Glavo/U1-Launcher</url>
     <licenses>
         <license>
             <name>GPL 3.0</name>
@@ -26,6 +26,6 @@
         </developer>
     </developers>
     <scm>
-        <url>https://github.com/Glavo/HPMCL</url>
+        <url>https://github.com/Glavo/U1-Launcher</url>
     </scm>
 </project>

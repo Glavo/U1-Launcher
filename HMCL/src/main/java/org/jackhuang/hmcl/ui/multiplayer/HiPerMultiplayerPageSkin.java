@@ -58,7 +58,7 @@ import static org.jackhuang.hmcl.ui.versions.VersionPage.wrap;
 import static org.jackhuang.hmcl.util.Logging.LOG;
 import static org.jackhuang.hmcl.util.i18n.I18n.i18n;
 
-public class MultiplayerPageSkin extends DecoratorAnimatedPage.DecoratorAnimatedPageSkin<MultiplayerPage> {
+public class HiPerMultiplayerPageSkin extends DecoratorAnimatedPage.DecoratorAnimatedPageSkin<HiPerMultiplayerPage> {
 
     private ObservableList<Node> clients;
 
@@ -67,7 +67,7 @@ public class MultiplayerPageSkin extends DecoratorAnimatedPage.DecoratorAnimated
      *
      * @param control The control for which this Skin should attach to.
      */
-    protected MultiplayerPageSkin(MultiplayerPage control) {
+    protected HiPerMultiplayerPageSkin(HiPerMultiplayerPage control) {
         super(control);
 
         {
@@ -113,7 +113,7 @@ public class MultiplayerPageSkin extends DecoratorAnimatedPage.DecoratorAnimated
                     .addNavigationDrawerItem(report -> {
                         report.setTitle(i18n("feedback"));
                         report.setLeftGraphic(wrap(SVG::messageAlertOutline));
-                        report.setOnAction(e -> FXUtils.openLink("https://github.com/Glavo/HPMCL/issues/new"));
+                        report.setOnAction(e -> FXUtils.openLink("https://github.com/Glavo/U1-Launcher/issues/new"));
                     });
             FXUtils.setLimitWidth(sideBar, 200);
             setLeft(sideBar);
@@ -142,12 +142,12 @@ public class MultiplayerPageSkin extends DecoratorAnimatedPage.DecoratorAnimated
                         // Token acts like password, we hide it here preventing users from accidentally leaking their token when taking screenshots.
                         JFXPasswordField tokenField = new JFXPasswordField();
                         BorderPane.setAlignment(tokenField, Pos.CENTER_LEFT);
-                        BorderPane.setMargin(tokenField, new Insets(0, 8, 0, 8));
+                        BorderPane.setMargin(tokenField, new Insets(0, 8, 8, 8));
                         tokenPane.setCenter(tokenField);
                         tokenField.textProperty().bindBidirectional(globalConfig().multiplayerTokenProperty());
                         tokenField.setPromptText(i18n("multiplayer.token.prompt"));
 
-                        Validator validator = new Validator("multiplayer.token.format_invalid", StringUtils::isAlphabeticOrNumber);
+                        Validator validator = new Validator(i18n("multiplayer.token.format_invalid"), str -> str.length() >= 10 && StringUtils.isAlphabeticOrNumber(str));
                         InvalidationListener listener = any -> tokenField.validate();
                         validator.getProperties().put(validator, listener);
                         tokenField.textProperty().addListener(new WeakInvalidationListener(listener));
@@ -165,13 +165,13 @@ public class MultiplayerPageSkin extends DecoratorAnimatedPage.DecoratorAnimated
                         startButton.getStyleClass().add("jfx-button-raised");
                         startButton.setButtonType(JFXButton.ButtonType.RAISED);
                         startButton.setOnMouseClicked(e -> control.start());
-                        startButton.disableProperty().bind(MultiplayerManager.tokenInvalid);
+                        startButton.disableProperty().bind(HiPerMultiplayerManager.tokenInvalid);
 
                         startPane.getChildren().setAll(startButton);
                         startPane.setAlignment(Pos.CENTER_RIGHT);
                     }
 
-                    if (!MultiplayerManager.IS_ADMINISTRATOR)
+                    if (!HiPerMultiplayerManager.IS_ADMINISTRATOR)
                         offPane.getContent().add(hintPane);
                     offPane.getContent().addAll(tokenPane, startPane);
                 }
@@ -340,7 +340,7 @@ public class MultiplayerPageSkin extends DecoratorAnimatedPage.DecoratorAnimated
 
                     JFXButton importButton = new JFXButton(i18n("multiplayer.persistence.import.button"));
                     importButton.setOnMouseClicked(e -> {
-                        Path targetPath = MultiplayerManager.getConfigPath(globalConfig().getMultiplayerToken());
+                        Path targetPath = HiPerMultiplayerManager.getConfigPath(globalConfig().getMultiplayerToken());
                         if (Files.exists(targetPath)) {
                             LOG.warning("License file " + targetPath + " already exists");
                             Controllers.dialog(i18n("multiplayer.persistence.import.file_already_exists"), null, MessageType.ERROR);
@@ -371,7 +371,7 @@ public class MultiplayerPageSkin extends DecoratorAnimatedPage.DecoratorAnimated
                             return null;
                         });
                     });
-                    importButton.disableProperty().bind(MultiplayerManager.tokenInvalid);
+                    importButton.disableProperty().bind(HiPerMultiplayerManager.tokenInvalid);
                     importButton.getStyleClass().add("jfx-button-border");
                     importPane.setRight(importButton);
                 }
@@ -385,7 +385,7 @@ public class MultiplayerPageSkin extends DecoratorAnimatedPage.DecoratorAnimated
                     JFXButton exportButton = new JFXButton(i18n("multiplayer.persistence.export.button"));
                     exportButton.setOnMouseClicked(e -> {
                         String token = globalConfig().getMultiplayerToken();
-                        Path configPath = MultiplayerManager.getConfigPath(token);
+                        Path configPath = HiPerMultiplayerManager.getConfigPath(token);
 
                         FileChooser fileChooser = new FileChooser();
                         fileChooser.setTitle(i18n("multiplayer.persistence.export.title"));
@@ -396,7 +396,7 @@ public class MultiplayerPageSkin extends DecoratorAnimatedPage.DecoratorAnimated
                         if (file == null)
                             return;
 
-                        CompletableFuture.runAsync(Lang.wrap(() -> MultiplayerManager.downloadHiperConfig(token, configPath)), Schedulers.io())
+                        CompletableFuture.runAsync(Lang.wrap(() -> HiPerMultiplayerManager.downloadHiperConfig(token, configPath)), Schedulers.io())
                                 .handleAsync((ignored, exception) -> {
                                     if (exception != null) {
                                         LOG.log(Level.INFO, "Unable to download hiper config file", e);
@@ -419,7 +419,7 @@ public class MultiplayerPageSkin extends DecoratorAnimatedPage.DecoratorAnimated
                                 });
 
                     });
-                    exportButton.disableProperty().bind(MultiplayerManager.tokenInvalid);
+                    exportButton.disableProperty().bind(HiPerMultiplayerManager.tokenInvalid);
                     exportButton.getStyleClass().add("jfx-button-border");
                     exportPane.setRight(exportButton);
                 }
@@ -433,17 +433,13 @@ public class MultiplayerPageSkin extends DecoratorAnimatedPage.DecoratorAnimated
                 HBox pane = new HBox();
                 pane.setAlignment(Pos.CENTER_LEFT);
 
-                JFXHyperlink aboutLink = new JFXHyperlink(i18n("about"));
-                aboutLink.setOnAction(e -> HMCLService.openRedirectLink("multiplayer-about"));
-
                 HBox placeholder = new HBox();
                 HBox.setHgrow(placeholder, Priority.ALWAYS);
 
                 pane.getChildren().setAll(
                         new Label("Based on HiPer"),
-                        aboutLink,
                         placeholder,
-                        FXUtils.segmentToTextFlow(i18n("multiplayer.powered_by"), Controllers::onHyperlinkAction));
+                        FXUtils.segmentToTextFlow(i18n("multiplayer.disclaimer"), Controllers::onHyperlinkAction));
 
                 thanksPane.getContent().addAll(pane);
             }

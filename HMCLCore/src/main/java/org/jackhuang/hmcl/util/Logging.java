@@ -71,13 +71,13 @@ public final class Logging {
                 Files.delete(logFolder);
 
             Files.createDirectories(logFolder);
-            FileHandler fileHandler = new FileHandler(logFolder.resolve("hpmcl.log").toAbsolutePath().toString());
+            FileHandler fileHandler = new FileHandler(logFolder.resolve("u1.log").toAbsolutePath().toString());
             fileHandler.setLevel(Level.FINEST);
             fileHandler.setFormatter(DefaultFormatter.INSTANCE);
             fileHandler.setEncoding("UTF-8");
             LOG.addHandler(fileHandler);
         } catch (IOException e) {
-            System.err.println("Unable to create hpmcl.log\n" + StringUtils.getStackTrace(e));
+            System.err.println("Unable to create u1.log\n" + StringUtils.getStackTrace(e));
         }
 
         ConsoleHandler consoleHandler = new ConsoleHandler();

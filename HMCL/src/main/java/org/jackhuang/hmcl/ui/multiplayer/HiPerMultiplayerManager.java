@@ -64,7 +64,7 @@ import static org.jackhuang.hmcl.util.io.ChecksumMismatchException.verifyChecksu
 /**
  * Cato Management.
  */
-public final class MultiplayerManager {
+public final class HiPerMultiplayerManager {
     private static final String HIPER_DOWNLOAD_URL = "https://gitcode.net/glavo/hiper/-/raw/master/";
     private static final String HIPER_PACKAGES_URL = HIPER_DOWNLOAD_URL + "packages.sha1";
     private static final String HIPER_POINTS_URL = "https://cert.mcer.cn/point.yml";
@@ -111,7 +111,7 @@ public final class MultiplayerManager {
     static final BooleanBinding tokenInvalid = Bindings.createBooleanBinding(
             () -> {
                 String token = globalConfig().multiplayerTokenProperty().getValue();
-                return token == null || token.isEmpty() || !StringUtils.isAlphabeticOrNumber(token);
+                return token == null || token.length() < 10 || !StringUtils.isAlphabeticOrNumber(token);
             },
             globalConfig().multiplayerTokenProperty());
 
@@ -139,7 +139,7 @@ public final class MultiplayerManager {
 
     private static CompletableFuture<Map<String, String>> HASH;
 
-    private MultiplayerManager() {
+    private HiPerMultiplayerManager() {
     }
 
     public static Path getConfigPath(String token) {
@@ -245,7 +245,7 @@ public final class MultiplayerManager {
                 future.complete(null);
             } catch (IOException e) {
                 LOG.log(Level.WARNING, "Failed to verify HiPer files", e);
-                Platform.runLater(() -> Controllers.taskDialog(MultiplayerManager.downloadHiper()
+                Platform.runLater(() -> Controllers.taskDialog(HiPerMultiplayerManager.downloadHiper()
                         .whenComplete(exception -> {
                             if (exception == null)
                                 future.complete(null);

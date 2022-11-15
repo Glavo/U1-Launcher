@@ -56,22 +56,22 @@ import static org.jackhuang.hmcl.util.Lang.resolveException;
 import static org.jackhuang.hmcl.util.Logging.LOG;
 import static org.jackhuang.hmcl.util.i18n.I18n.i18n;
 
-public class MultiplayerPage extends DecoratorAnimatedPage implements DecoratorPage, PageAware {
+public class HiPerMultiplayerPage extends DecoratorAnimatedPage implements DecoratorPage, PageAware {
     private final ReadOnlyObjectWrapper<State> state = new ReadOnlyObjectWrapper<>(State.fromTitle(i18n("multiplayer")));
 
-    private final ReadOnlyObjectWrapper<MultiplayerManager.HiperSession> session = new ReadOnlyObjectWrapper<>();
+    private final ReadOnlyObjectWrapper<HiPerMultiplayerManager.HiperSession> session = new ReadOnlyObjectWrapper<>();
     private final IntegerProperty port = new SimpleIntegerProperty();
     private final StringProperty address = new SimpleStringProperty();
     private final ReadOnlyObjectWrapper<Date> expireTime = new ReadOnlyObjectWrapper<>();
 
-    private Consumer<MultiplayerManager.HiperExitEvent> onExit;
-    private Consumer<MultiplayerManager.HiperIPEvent> onIPAllocated;
-    private Consumer<MultiplayerManager.HiperShowValidUntilEvent> onValidUntil;
+    private Consumer<HiPerMultiplayerManager.HiperExitEvent> onExit;
+    private Consumer<HiPerMultiplayerManager.HiperIPEvent> onIPAllocated;
+    private Consumer<HiPerMultiplayerManager.HiperShowValidUntilEvent> onValidUntil;
 
     private final ReadOnlyObjectWrapper<LocalServerBroadcaster> broadcaster = new ReadOnlyObjectWrapper<>();
     private Consumer<Event> onBroadcasterExit = null;
 
-    public MultiplayerPage() {
+    public HiPerMultiplayerPage() {
     }
 
     @Override
@@ -81,7 +81,7 @@ public class MultiplayerPage extends DecoratorAnimatedPage implements DecoratorP
 
     @Override
     protected Skin<?> createDefaultSkin() {
-        return new MultiplayerPageSkin(this);
+        return new HiPerMultiplayerPageSkin(this);
     }
 
     public int getPort() {
@@ -132,11 +132,11 @@ public class MultiplayerPage extends DecoratorAnimatedPage implements DecoratorP
         this.expireTime.set(expireTime);
     }
 
-    public MultiplayerManager.HiperSession getSession() {
+    public HiPerMultiplayerManager.HiperSession getSession() {
         return session.get();
     }
 
-    public ReadOnlyObjectProperty<MultiplayerManager.HiperSession> sessionProperty() {
+    public ReadOnlyObjectProperty<HiPerMultiplayerManager.HiperSession> sessionProperty() {
         return session.getReadOnlyProperty();
     }
 
@@ -158,7 +158,7 @@ public class MultiplayerPage extends DecoratorAnimatedPage implements DecoratorP
     }
 
     private void checkAgreement(Runnable runnable) {
-        if (globalConfig().getMultiplayerAgreementVersion() < MultiplayerManager.HIPER_AGREEMENT_VERSION) {
+        if (globalConfig().getMultiplayerAgreementVersion() < HiPerMultiplayerManager.HIPER_AGREEMENT_VERSION) {
             JFXDialogLayout agreementPane = new JFXDialogLayout();
             agreementPane.setHeading(new Label(i18n("launcher.agreement")));
             agreementPane.setBody(FXUtils.segmentToTextFlow(i18n("multiplayer.agreement.prompt"), Controllers::onHyperlinkAction));
@@ -167,7 +167,7 @@ public class MultiplayerPage extends DecoratorAnimatedPage implements DecoratorP
             JFXButton yesButton = new JFXButton(i18n("launcher.agreement.accept"));
             yesButton.getStyleClass().add("dialog-accept");
             yesButton.setOnAction(e -> {
-                globalConfig().setMultiplayerAgreementVersion(MultiplayerManager.HIPER_AGREEMENT_VERSION);
+                globalConfig().setMultiplayerAgreementVersion(HiPerMultiplayerManager.HIPER_AGREEMENT_VERSION);
                 runnable.run();
                 agreementPane.fireEvent(new DialogCloseEvent());
             });
@@ -185,15 +185,15 @@ public class MultiplayerPage extends DecoratorAnimatedPage implements DecoratorP
     }
 
     private void downloadHiPerIfNecessary() {
-        if (!MultiplayerManager.HIPER_PATH.toFile().exists()) {
+        if (!HiPerMultiplayerManager.HIPER_PATH.toFile().exists()) {
             setDisabled(true);
-            Controllers.taskDialog(MultiplayerManager.downloadHiper()
+            Controllers.taskDialog(HiPerMultiplayerManager.downloadHiper()
                     .whenComplete(Schedulers.javafx(), exception -> {
                         setDisabled(false);
                         if (exception != null) {
                             if (exception instanceof CancellationException) {
                                 Controllers.showToast(i18n("message.cancelled"));
-                            } else if (exception instanceof MultiplayerManager.HiperUnsupportedPlatformException) {
+                            } else if (exception instanceof HiPerMultiplayerManager.HiperUnsupportedPlatformException) {
                                 Controllers.dialog(i18n("multiplayer.download.unsupported"), i18n("install.failed.downloading"), MessageDialogPane.MessageType.ERROR);
                                 fireEvent(new PageCloseEvent());
                             } else {
@@ -214,17 +214,17 @@ public class MultiplayerPage extends DecoratorAnimatedPage implements DecoratorP
         if (e instanceof CancellationException) {
             LOG.info("Connection rejected by the server");
             return i18n("message.cancelled");
-        } else if (e instanceof MultiplayerManager.HiperInvalidConfigurationException) {
+        } else if (e instanceof HiPerMultiplayerManager.HiperInvalidConfigurationException) {
             LOG.warning("HiPer invalid configuration");
             return i18n("multiplayer.token.malformed");
         } else if (e instanceof ChecksumMismatchException) {
             LOG.log(Level.WARNING, "Failed to verify HiPer files", e);
             return i18n("multiplayer.error.file_not_found");
-        } else if (e instanceof MultiplayerManager.HiperExitException) {
-            int exitCode = ((MultiplayerManager.HiperExitException) e).getExitCode();
+        } else if (e instanceof HiPerMultiplayerManager.HiperExitException) {
+            int exitCode = ((HiPerMultiplayerManager.HiperExitException) e).getExitCode();
             LOG.warning("HiPer exited unexpectedly with exit code " + exitCode);
             return i18n("multiplayer.exit", exitCode);
-        } else if (e instanceof MultiplayerManager.HiperInvalidTokenException) {
+        } else if (e instanceof HiPerMultiplayerManager.HiperInvalidTokenException) {
             LOG.warning("invalid token");
             return i18n("multiplayer.token.invalid");
         } else {
@@ -234,7 +234,7 @@ public class MultiplayerPage extends DecoratorAnimatedPage implements DecoratorP
     }
 
     public void start() {
-        MultiplayerManager.startHiper(globalConfig().getMultiplayerToken())
+        HiPerMultiplayerManager.startHiper(globalConfig().getMultiplayerToken())
                 .thenAcceptAsync(session -> {
                     this.session.set(session);
                     onExit = session.onExit().registerWeak(this::onExit);
@@ -289,38 +289,38 @@ public class MultiplayerPage extends DecoratorAnimatedPage implements DecoratorP
         this.onBroadcasterExit = null;
     }
 
-    private void onIPAllocated(MultiplayerManager.HiperIPEvent event) {
+    private void onIPAllocated(HiPerMultiplayerManager.HiperIPEvent event) {
         runInFX(() -> this.address.set(event.getIP()));
     }
 
-    private void onValidUntil(MultiplayerManager.HiperShowValidUntilEvent event) {
+    private void onValidUntil(HiPerMultiplayerManager.HiperShowValidUntilEvent event) {
         runInFX(() -> this.expireTime.set(event.getValidUntil()));
     }
 
-    private void onExit(MultiplayerManager.HiperExitEvent event) {
+    private void onExit(HiPerMultiplayerManager.HiperExitEvent event) {
         runInFX(() -> {
             switch (event.getExitCode()) {
                 case 0:
                     break;
-                case MultiplayerManager.HiperExitEvent.CERTIFICATE_EXPIRED:
-                    MultiplayerManager.clearConfiguration();
+                case HiPerMultiplayerManager.HiperExitEvent.CERTIFICATE_EXPIRED:
+                    HiPerMultiplayerManager.clearConfiguration();
                     Controllers.dialog(i18n("multiplayer.token.expired"));
                     break;
-                case MultiplayerManager.HiperExitEvent.INVALID_CONFIGURATION:
-                    MultiplayerManager.clearConfiguration();
+                case HiPerMultiplayerManager.HiperExitEvent.INVALID_CONFIGURATION:
+                    HiPerMultiplayerManager.clearConfiguration();
                     Controllers.dialog(i18n("multiplayer.token.malformed"));
                     break;
-                case MultiplayerManager.HiperExitEvent.NO_SUDO_PRIVILEGES:
+                case HiPerMultiplayerManager.HiperExitEvent.NO_SUDO_PRIVILEGES:
                     if (OperatingSystem.CURRENT_OS == OperatingSystem.WINDOWS) {
                         Controllers.confirm(i18n("multiplayer.error.failed_sudo.windows"), null, MessageDialogPane.MessageType.WARNING, () -> {
                             FXUtils.openLink("https://docs.hmcl.net/multiplayer/admin.html");
                         }, null);
                     } else if (OperatingSystem.CURRENT_OS == OperatingSystem.LINUX) {
-                        Controllers.dialog(i18n("multiplayer.error.failed_sudo.linux", MultiplayerManager.HIPER_PATH.toString()), null, MessageDialogPane.MessageType.WARNING);
+                        Controllers.dialog(i18n("multiplayer.error.failed_sudo.linux", HiPerMultiplayerManager.HIPER_PATH.toString()), null, MessageDialogPane.MessageType.WARNING);
                     } else if (OperatingSystem.CURRENT_OS == OperatingSystem.OSX) {
                         Controllers.confirm(i18n("multiplayer.error.failed_sudo.mac"), null, MessageDialogPane.MessageType.INFO, () -> {
                             try {
-                                String text = "%hmcl-hiper ALL=(ALL:ALL) NOPASSWD: " + MultiplayerManager.HIPER_PATH.toString().replaceAll("[ @!(),:=\\\\]", "\\\\$0") + "\n";
+                                String text = "%hmcl-hiper ALL=(ALL:ALL) NOPASSWD: " + HiPerMultiplayerManager.HIPER_PATH.toString().replaceAll("[ @!(),:=\\\\]", "\\\\$0") + "\n";
 
                                 File sudoersTmp = File.createTempFile("sudoer", ".tmp");
                                 sudoersTmp.deleteOnExit();
@@ -342,13 +342,13 @@ public class MultiplayerPage extends DecoratorAnimatedPage implements DecoratorP
                         }, null);
                     }
                     break;
-                case MultiplayerManager.HiperExitEvent.INTERRUPTED:
+                case HiPerMultiplayerManager.HiperExitEvent.INTERRUPTED:
                     // do nothing
                     break;
-                case MultiplayerManager.HiperExitEvent.FAILED_GET_DEVICE:
+                case HiPerMultiplayerManager.HiperExitEvent.FAILED_GET_DEVICE:
                     Controllers.dialog(i18n("multiplayer.error.failed_get_device"));
                     break;
-                case MultiplayerManager.HiperExitEvent.FAILED_LOAD_CONFIG:
+                case HiPerMultiplayerManager.HiperExitEvent.FAILED_LOAD_CONFIG:
                     Controllers.dialog(i18n("multiplayer.error.failed_load_config"));
                     break;
                 default:
