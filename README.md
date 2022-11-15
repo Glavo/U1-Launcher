@@ -1,18 +1,20 @@
-#  🍒 友一 Minecraft 启动器
+#  🍒 友一 | 好朋友 好友一 | 最棒的Minecraft多人联机平台
 
-HiPer 官方 QQ 群：
+速聚多人联机服务官方 QQ 群：
 
 [①群:235256586](https://jq.qq.com/?_wv=1027&k=nWLzktPE) · [②群:212927890](https://jq.qq.com/?_wv=1027&k=5x33G0Bv) · [③群:93365639](https://jq.qq.com/?_wv=1027&k=76EsDqXD) · [④群:93364993](https://qm.qq.com/cgi-bin/qm/qr?k=N06ojqIIfSEoDId2PJSKzvbrNaGTIJmh) (推荐) · [⑤群:93364197](https://jq.qq.com/?_wv=1027&k=dudBV2zZ)
 
 ## 简介
 
-友一是一款 Minecraft 启动器，为用户提供基于 HiPer 的联机支持。
+友一 (U1-Launcher) 是基于 [Hello Minecraft! Launcher (HMCL)](https://github.com/huanghongxun/HMCL) 致力于为用户提供最棒的多人游玩体验的二次开发制品。
 
-友一是 [Hello Minecraft! Launcher (HMCL)](https://github.com/huanghongxun/HMCL) 的**非官方分支**，HMCL 官方对本分支不负任何责任。
+友一 (U1-Launcher) 的多人联机网络服务由 [速聚](https://the.bb) 独家提供，若您在使用中遇到任何问题请及时通过以上 速聚多人联机服务官方 QQ 群 进行处理。
 
-友一仅为[速聚](https://mcer.cn/)提供多人联机服务入口，使用中遇到的任何问题由速聚负责处理。
+用户在使用多人联机服务过程中所遇到的任何问题与纠纷（**包括其付费业务**）均与 友一 (U1-Launcher) 无关，若您在使用中遇到任何问题请及时通过以上 速聚多人联机服务官方 QQ 群 进行处理。
 
-用户在使用多人联机服务过程中所遇到的任何问题与纠纷（**包括其付费业务**）均与友一无关，请与速聚协商解决。
+## 教程
+
+[点此查阅详细教程](https://www.yuque.com/ffip/zk1lc2/u1) 
 
 ## 下载
 
