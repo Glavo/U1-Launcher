@@ -91,7 +91,7 @@ public final class UpdateHandler {
         Controllers.dialog(new UpgradeDialog(version, () -> {
             Path downloaded;
             try {
-                downloaded = Files.createTempFile("hpmcl-update-", ".jar");
+                downloaded = Files.createTempFile("u1-update-", ".jar");
             } catch (IOException e) {
                 LOG.log(Level.WARNING, "Failed to create temp file", e);
                 return;
@@ -172,7 +172,7 @@ public final class UpdateHandler {
 
     private static Optional<Path> tryRename(Path path, String newVersion) {
         String filename = path.getFileName().toString();
-        Matcher matcher = Pattern.compile("^(?<prefix>[hH][pP][mM][cC][lL][.-])(?<version>\\d+(?:\\.\\d+)*)(?<suffix>\\.[^.]+)$").matcher(filename);
+        Matcher matcher = Pattern.compile("^(?<prefix>友一[.-])(?<version>\\d+(?:\\.\\d+)*)(?<suffix>\\.[^.]+)$").matcher(filename);
         if (matcher.find()) {
             String newFilename = matcher.group("prefix") + newVersion + matcher.group("suffix");
             if (!newFilename.equals(filename)) {
@@ -225,7 +225,7 @@ public final class UpdateHandler {
     private static boolean isFirstLaunchAfterUpgrade() {
         Optional<Path> currentPath = JarUtils.thisJar();
         if (currentPath.isPresent()) {
-            Path updated = Metadata.HMCL_DIRECTORY.resolve("HPMCL-" + Metadata.VERSION + ".jar");
+            Path updated = Metadata.HMCL_DIRECTORY.resolve("友一-" + Metadata.VERSION + ".jar");
             if (currentPath.get().toAbsolutePath().equals(updated.toAbsolutePath())) {
                 return true;
             }

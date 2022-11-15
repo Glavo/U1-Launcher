@@ -46,12 +46,12 @@ public final class IntegrityChecker {
 
     private static final String SIGNATURE_FILE = "META-INF/hmcl_signature";
     private static final String PUBLIC_KEY_FILE = "assets/hmcl_signature_publickey.der";
-    private static final String HPMCL_PUBLIC_KEY_FILE = "assets/hpmcl_signature_publickey.der";
+    private static final String U1_PUBLIC_KEY_FILE = "assets/hpmcl_signature_publickey.der";
 
     private static PublicKey getPublicKey(ZipFile zipFile) throws IOException {
         String publicKeyFile;
-        if (zipFile.getEntry(HPMCL_PUBLIC_KEY_FILE) != null)
-            publicKeyFile = HPMCL_PUBLIC_KEY_FILE;
+        if (zipFile.getEntry(U1_PUBLIC_KEY_FILE) != null)
+            publicKeyFile = U1_PUBLIC_KEY_FILE;
         else if (zipFile.getEntry(PUBLIC_KEY_FILE) != null)
             publicKeyFile = PUBLIC_KEY_FILE;
         else
@@ -131,7 +131,7 @@ public final class IntegrityChecker {
     }
 
     private static void verifySelf() throws IOException {
-        Path self = JarUtils.thisJar().orElseThrow(() -> new IOException("Failed to find current HPMCL location"));
+        Path self = JarUtils.thisJar().orElseThrow(() -> new IOException("Failed to find current U1 location"));
         requireVerifiedJar(self);
     }
 }

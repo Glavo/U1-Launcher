@@ -171,8 +171,8 @@ public final class Launcher extends Application {
             LOG.info("Java VM Version: " + System.getProperty("java.vm.name") + " (" + System.getProperty("java.vm.info") + "), " + System.getProperty("java.vm.vendor"));
             LOG.info("Java Home: " + System.getProperty("java.home"));
             LOG.info("Current Directory: " + Paths.get("").toAbsolutePath());
-            LOG.info("HPMCL Directory: " + Metadata.HMCL_DIRECTORY);
-            LOG.info("HPMCL Jar Path: " + JarUtils.thisJar().map(it -> it.toAbsolutePath().toString()).orElse("Not Found"));
+            LOG.info("U1 Directory: " + Metadata.HMCL_DIRECTORY);
+            LOG.info("U1 Jar Path: " + JarUtils.thisJar().map(it -> it.toAbsolutePath().toString()).orElse("Not Found"));
             LOG.info("Memory: " + Runtime.getRuntime().maxMemory() / 1024 / 1024 + "MB");
             ManagementFactory.getMemoryPoolMXBeans().stream().filter(bean -> bean.getName().equals("Metaspace")).findAny()
                     .ifPresent(bean -> LOG.info("Metaspace: " + bean.getUsage().getUsed() / 1024 / 1024 + "MB"));

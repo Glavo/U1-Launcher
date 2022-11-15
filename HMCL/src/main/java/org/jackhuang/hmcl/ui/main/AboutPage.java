@@ -36,9 +36,9 @@ public class AboutPage extends StackPane {
         {
             IconedTwoLineListItem launcher = new IconedTwoLineListItem();
             launcher.setImage(new Image("/assets/img/icon.png", 32, 32, false, true));
-            launcher.setTitle("HiPer Minecraft Launcher");
+            launcher.setTitle("友一");
             launcher.setSubtitle(Metadata.VERSION);
-            launcher.setExternalLink("https://github.com/Glavo/HPMCL");
+            launcher.setExternalLink("https://github.com/Glavo/U1-Launcher");
 
             IconedTwoLineListItem hmcl = new IconedTwoLineListItem();
             hmcl.setImage(new Image("/assets/img/craft_table.png", 32, 32, false, true));
@@ -201,7 +201,7 @@ public class AboutPage extends StackPane {
             IconedTwoLineListItem openSource = new IconedTwoLineListItem();
             openSource.setTitle(i18n("about.open_source"));
             openSource.setSubtitle(i18n("about.open_source.statement"));
-            openSource.setExternalLink("https://github.com/Glavo/HPMCL");
+            openSource.setExternalLink("https://github.com/Glavo/U1-Launcher");
 
             legal.getContent().setAll(copyright, claim, openSource);
         }

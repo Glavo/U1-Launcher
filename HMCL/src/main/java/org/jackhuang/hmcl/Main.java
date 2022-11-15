@@ -70,16 +70,26 @@ public final class Main {
         thread(Main::fixLetsEncrypt, "CA Certificate Check", true);
 
         if (Files.notExists(Metadata.HMCL_DIRECTORY)) {
-            Path hmclDir = OperatingSystem.getWorkingDirectory("hmcl");
-            if (Files.isDirectory(hmclDir)) {
+            Path oldDir = OperatingSystem.getWorkingDirectory("hpmcl");
+            if (Files.isDirectory(oldDir)) {
                 try {
-                    Files.createDirectories(Metadata.HMCL_DIRECTORY);
-                    if (Files.isRegularFile(hmclDir.resolve("hiper.yml")))
-                        Files.copy(hmclDir.resolve("hiper.yml"), Metadata.HMCL_DIRECTORY.resolve("hiper.yml"));
-                    if (Files.isDirectory(hmclDir.resolve("hiper-config")))
-                        FileUtils.copyDirectory(hmclDir.resolve("hiper-config"), Metadata.HMCL_DIRECTORY.resolve("hiper-config"));
+                    System.out.printf("Copy %s to %s%n", oldDir, Metadata.HMCL_DIRECTORY);
+                    FileUtils.copyDirectory(oldDir, Metadata.HMCL_DIRECTORY);
                 } catch (Throwable e) {
                     e.printStackTrace();
+                }
+            } else {
+                oldDir = OperatingSystem.getWorkingDirectory("hmcl");
+                if (Files.isDirectory(oldDir)) {
+                    try {
+                        Files.createDirectories(Metadata.HMCL_DIRECTORY);
+                        if (Files.isRegularFile(oldDir.resolve("hiper.yml")))
+                            Files.copy(oldDir.resolve("hiper.yml"), Metadata.HMCL_DIRECTORY.resolve("hiper.yml"));
+                        if (Files.isDirectory(oldDir.resolve("hiper-config")))
+                            FileUtils.copyDirectory(oldDir.resolve("hiper-config"), Metadata.HMCL_DIRECTORY.resolve("hiper-config"));
+                    } catch (Throwable e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         }
@@ -104,7 +114,7 @@ public final class Main {
         String currentDirectory = new File("").getAbsolutePath();
         if (currentDirectory.contains("!")) {
             // No Chinese translation because both Swing and JavaFX cannot render Chinese character properly when exclamation mark exists in the path.
-            showErrorAndExit("Exclamation mark(!) is not allowed in the path where HPMCL is in.\n"
+            showErrorAndExit("Exclamation mark(!) is not allowed in the path where U1 is in.\n"
                     + "The path is " + currentDirectory);
         }
     }

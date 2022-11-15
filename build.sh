@@ -17,25 +17,25 @@ mkdir -p ./build
 ./gradlew build
 
 
-HPMCL_JAR_SHA1=$(cat "./HMCL/build/libs/HPMCL-$VERSION.jar.sha1")
-HPMCL_PACK_SHA1=$(cat "./HMCL/build/libs/HPMCL-$VERSION.pack.sha1")
-HPMCL_PACK_XZ_SHA1=$(cat "./HMCL/build/libs/HPMCL-$VERSION.pack.xz.sha1")
+U1_JAR_SHA1=$(cat "./HMCL/build/libs/友一-$VERSION.jar.sha1")
+U1_PACK_SHA1=$(cat "./HMCL/build/libs/友一-$VERSION.pack.sha1")
+U1_PACK_XZ_SHA1=$(cat "./HMCL/build/libs/友一-$VERSION.pack.xz.sha1")
 
-cat pom.xml | sed -e "s/HPMCL_VERSION/$VERSION/" > "./HMCL/build/libs/HPMCL-$VERSION.pom"
-cat version.json | sed -e "s/HPMCL_VERSION/$VERSION/g" \
-  | sed -e "s/HPMCL_JAR_SHA1/$HPMCL_JAR_SHA1/" | sed -e "s/HPMCL_PACK_SHA1/$HPMCL_PACK_SHA1/" | sed -e "s/HPMCL_PACK_XZ_SHA1/$HPMCL_PACK_XZ_SHA1/" > ./build/hpmcl-$VERSION.json
+cat pom.xml | sed -e "s/U1_VERSION/$VERSION/" > "./HMCL/build/libs/友一-$VERSION.pom"
+cat version.json | sed -e "s/U1_VERSION/$VERSION/g" \
+  | sed -e "s/U1_JAR_SHA1/$U1_JAR_SHA1/" | sed -e "s/U1_PACK_SHA1/$U1_PACK_SHA1/" | sed -e "s/U1_PACK_XZ_SHA1/$U1_PACK_XZ_SHA1/" > ./build/u1-$VERSION.json
 
 allExts=(pom jar exe pack pack.xz)
 
 for ext in ${allExts[@]}; do
-  cp "./HMCL/build/libs/HPMCL-$VERSION.$ext" "./build/hpmcl-$VERSION.$ext"
-  gpg -ab "./build/hpmcl-$VERSION.$ext"
+  cp "./HMCL/build/libs/友一-$VERSION.$ext" "./build/u1-$VERSION.$ext"
+  gpg -ab "./build/u1-$VERSION.$ext"
 done
 
 cd ./build
 
-jar -cvf hpmcl-$VERSION-bundle.jar \
-  ./hpmcl-$VERSION.pom ./hpmcl-$VERSION.pom.asc \
-  ./hpmcl-$VERSION.jar ./hpmcl-$VERSION.jar.asc ./hpmcl-$VERSION.exe ./hpmcl-$VERSION.exe.asc \
-  ./hpmcl-$VERSION.pack ./hpmcl-$VERSION.pack.asc ./hpmcl-$VERSION.pack.xz ./hpmcl-$VERSION.pack.xz.asc
+jar -cvf u1-$VERSION-bundle.jar \
+  ./u1-$VERSION.pom ./u1-$VERSION.pom.asc \
+  ./u1-$VERSION.jar ./u1-$VERSION.jar.asc ./u1-$VERSION.exe ./u1-$VERSION.exe.asc \
+  ./u1-$VERSION.pack ./u1-$VERSION.pack.asc ./u1-$VERSION.pack.xz ./u1-$VERSION.pack.xz.asc
 
