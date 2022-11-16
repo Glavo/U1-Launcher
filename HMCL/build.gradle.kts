@@ -31,7 +31,7 @@ plugins {
     id("com.github.johnrengelman.shadow") version "7.1.2"
 }
 
-val jarBaseName = "友一"
+val jarBaseName = "U1"
 val buildNumber = System.getenv("BUILD_NUMBER")?.toInt().let { number ->
     val offset = System.getenv("BUILD_NUMBER_OFFSET")?.toInt() ?: 0
     if (number != null) {
@@ -41,7 +41,7 @@ val buildNumber = System.getenv("BUILD_NUMBER")?.toInt().let { number ->
         if (!shortCommit.isNullOrEmpty()) "dev-$shortCommit" else "SNAPSHOT"
     }
 }
-val versionRoot = System.getenv("VERSION_ROOT") ?: "1.0"
+val versionRoot = System.getenv("VERSION_ROOT") ?: "1.1"
 val versionType = System.getenv("VERSION_TYPE") ?: "nightly"
 
 val microsoftAuthId = System.getenv("MICROSOFT_AUTH_ID") ?: ""
