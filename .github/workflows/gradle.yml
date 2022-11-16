@@ -28,5 +28,5 @@ jobs:
     - name: Upload Artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: HMCL-${{ env.SHORT_SHA }}
+        name: U1-${{ env.SHORT_SHA }}
         path: HMCL/build/libs
