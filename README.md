@@ -4,9 +4,12 @@
 
 [①群:235256586](https://jq.qq.com/?_wv=1027&k=nWLzktPE) · [②群:212927890](https://jq.qq.com/?_wv=1027&k=5x33G0Bv) · [③群:93365639](https://jq.qq.com/?_wv=1027&k=76EsDqXD) · [④群:93364993](https://qm.qq.com/cgi-bin/qm/qr?k=N06ojqIIfSEoDId2PJSKzvbrNaGTIJmh) (推荐) · [⑤群:93364197](https://jq.qq.com/?_wv=1027&k=dudBV2zZ)
 
+
+[点此进入官网了解更多](https://www.mcer.cn) 
+
 ## 简介
 
-友一 (U1-Launcher) 是基于 [Hello Minecraft! Launcher (HMCL)](https://github.com/huanghongxun/HMCL) 致力于为用户提供最棒的多人游玩体验的二次开发制品。
+友一 (U1-Launcher) 是基于 [Hello Minecraft! Launcher (HMCL)](https://github.com/huanghongxun/HMCL) 开发的 Minecraft 启动器，致力于为用户提供最棒的多人游玩体验。
 
 友一 (U1-Launcher) 的多人联机网络服务由 [速聚](https://the.bb) 独家提供，若您在使用中遇到任何问题请及时通过以上 速聚多人联机服务官方 QQ 群 进行处理。
 
@@ -23,7 +26,7 @@ TODO
 ## 开源协议
 
 根据[《HMCL 关于下游分支 HiPer Minecraft! Launcher 问题的公告》](https://www.bilibili.com/read/cv19696374)， 
-友一（原名 HiPer Minecraft Launcher）由 Glavo 监督管理，
+友一（原名 HiPer Minecraft Launcher）及其网站由 Glavo 监督管理，
 遵守 [Hello Minecraft! Launcher](https://github.com/huanghongxun/HMCL) 协议，
 以 [GPLv3](https://www.gnu.org/licenses/gpl-3.0.html) 协议开源，并遵循附加条款修改程序名称以示与原始版本不同。
 

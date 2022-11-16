@@ -172,7 +172,7 @@ public final class UpdateHandler {
 
     private static Optional<Path> tryRename(Path path, String newVersion) {
         String filename = path.getFileName().toString();
-        Matcher matcher = Pattern.compile("^(?<prefix>友一[.-])(?<version>\\d+(?:\\.\\d+)*)(?<suffix>\\.[^.]+)$").matcher(filename);
+        Matcher matcher = Pattern.compile("^(?<prefix>(友一|[Uu]1|[Hh][Pp][Mm][Cc][Ll])[.-])(?<version>\\d+(?:\\.\\d+)*)(?<suffix>\\.[^.]+)$").matcher(filename);
         if (matcher.find()) {
             String newFilename = matcher.group("prefix") + newVersion + matcher.group("suffix");
             if (!newFilename.equals(filename)) {
@@ -225,7 +225,7 @@ public final class UpdateHandler {
     private static boolean isFirstLaunchAfterUpgrade() {
         Optional<Path> currentPath = JarUtils.thisJar();
         if (currentPath.isPresent()) {
-            Path updated = Metadata.HMCL_DIRECTORY.resolve("友一-" + Metadata.VERSION + ".jar");
+            Path updated = Metadata.HMCL_DIRECTORY.resolve("U1-" + Metadata.VERSION + ".jar");
             if (currentPath.get().toAbsolutePath().equals(updated.toAbsolutePath())) {
                 return true;
             }
