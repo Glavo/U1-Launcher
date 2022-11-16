@@ -52,9 +52,8 @@ public class LauncherSettingsPage extends DecoratorAnimatedPage implements Decor
         personalizationTab.setNodeSupplier(PersonalizationPage::new);
         downloadTab.setNodeSupplier(DownloadSettingsPage::new);
         helpTab.setNodeSupplier(HelpPage::new);
-        sponsorTab.setNodeSupplier(SponsorPage::new);
         aboutTab.setNodeSupplier(AboutPage::new);
-        tab = new TabHeader(gameTab, settingsTab, personalizationTab, downloadTab, helpTab, sponsorTab, aboutTab);
+        tab = new TabHeader(gameTab, settingsTab, personalizationTab, downloadTab, helpTab, aboutTab);
 
         tab.select(gameTab);
         gameTab.initializeIfNeeded();
