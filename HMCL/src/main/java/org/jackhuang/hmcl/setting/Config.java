@@ -159,7 +159,7 @@ public final class Config implements Cloneable, Observable {
     private IntegerProperty logLines = new SimpleIntegerProperty(100);
 
     @SerializedName("titleTransparent")
-    private BooleanProperty titleTransparent = new SimpleBooleanProperty(false);
+    private BooleanProperty titleTransparent = new SimpleBooleanProperty(true);
 
     @SerializedName("authlibInjectorServers")
     private ObservableList<AuthlibInjectorServer> authlibInjectorServers = FXCollections.observableArrayList(server -> new Observable[] { server });

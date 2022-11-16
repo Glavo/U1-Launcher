@@ -163,10 +163,10 @@ public class DecoratorController {
                         config().backgroundImageUrlProperty()));
     }
 
-    private final Image defaultBackground = newImage("/assets/img/background.jpg");
+    private final Image defaultBackground = newImage("/assets/img/background.gif");
 
     /**
-     * Load background image from bg/, background.png, background.jpg
+     * Load background image from bg/, background.png, background.gif
      */
     private Image loadDefaultBackgroundImage() {
         Optional<Image> image = randomImageIn(Paths.get("bg"));
@@ -174,7 +174,7 @@ public class DecoratorController {
             image = tryLoadImage(Paths.get("background.png"));
         }
         if (!image.isPresent()) {
-            image = tryLoadImage(Paths.get("background.jpg"));
+            image = tryLoadImage(Paths.get("background.gif"));
         }
         return image.orElse(defaultBackground);
     }

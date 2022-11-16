@@ -52,7 +52,7 @@ public class Decorator extends Control {
     private final BooleanProperty canBack = new SimpleBooleanProperty(false);
     private final BooleanProperty canClose = new SimpleBooleanProperty(false);
     private final BooleanProperty showCloseAsHome = new SimpleBooleanProperty(false);
-    private final BooleanProperty titleTransparent = new SimpleBooleanProperty(false);
+    private final BooleanProperty titleTransparent = new SimpleBooleanProperty(true);
     private final Stage primaryStage;
     private Navigation.NavigationDirection navigationDirection = Navigation.NavigationDirection.START;
     private StackPane drawerWrapper;

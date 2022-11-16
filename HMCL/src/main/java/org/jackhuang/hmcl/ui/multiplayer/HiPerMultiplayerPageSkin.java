@@ -83,7 +83,7 @@ public class HiPerMultiplayerPageSkin extends DecoratorAnimatedPage.DecoratorAni
 //                    .addNavigationDrawerItem(item -> {
 //                        item.setTitle(i18n("help"));
 //                        item.setLeftGraphic(wrap(SVG::helpCircleOutline));
-//                        item.setOnAction(e -> FXUtils.openLink("https://www.yuque.com/ffip/zk1lc2/hmcl"));
+//                        item.setOnAction(e -> FXUtils.openLink("https://www.yuque.com/ffip/zk1lc2/u1"));
 //                    })
 //                    .addNavigationDrawerItem(item -> {
 //                        item.setTitle(i18n("multiplayer.help.1"));
@@ -93,17 +93,17 @@ public class HiPerMultiplayerPageSkin extends DecoratorAnimatedPage.DecoratorAni
                     .addNavigationDrawerItem(item -> {
                         item.setTitle(i18n("multiplayer.help.2"));
                         item.setLeftGraphic(wrap(SVG::helpCircleOutline));
-                        item.setOnAction(e -> FXUtils.openLink("https://www.yuque.com/ffip/zk1lc2/hmcl"));
+                        item.setOnAction(e -> FXUtils.openLink("https://www.yuque.com/ffip/zk1lc2/u1"));
                     })
                     .addNavigationDrawerItem(item -> {
                         item.setTitle(i18n("multiplayer.help.3"));
                         item.setLeftGraphic(wrap(SVG::helpCircleOutline));
-                        item.setOnAction(e -> FXUtils.openLink("https://www.yuque.com/ffip/zk1lc2/hmcl#S6Wwi"));
+                        item.setOnAction(e -> FXUtils.openLink("https://www.yuque.com/ffip/zk1lc2/u1#S6Wwi"));
                     })
                     .addNavigationDrawerItem(item -> {
                         item.setTitle(i18n("multiplayer.help.4"));
                         item.setLeftGraphic(wrap(SVG::helpCircleOutline));
-                        item.setOnAction(e -> FXUtils.openLink("https://www.yuque.com/ffip/zk1lc2/hmcl#t9Q2F"));
+                        item.setOnAction(e -> FXUtils.openLink("https://www.yuque.com/ffip/zk1lc2/u1#t9Q2F"));
                     })
 //                    .addNavigationDrawerItem(item -> {
 //                        item.setTitle(i18n("multiplayer.help.text"));
