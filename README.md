@@ -4,6 +4,8 @@
 
 [①群:235256586](https://jq.qq.com/?_wv=1027&k=nWLzktPE) · [②群:212927890](https://jq.qq.com/?_wv=1027&k=5x33G0Bv) · [③群:93365639](https://jq.qq.com/?_wv=1027&k=76EsDqXD) · [④群:93364993](https://qm.qq.com/cgi-bin/qm/qr?k=N06ojqIIfSEoDId2PJSKzvbrNaGTIJmh) (推荐) · [⑤群:93364197](https://jq.qq.com/?_wv=1027&k=dudBV2zZ)
 
+[点此进入官网了解更多](https://www.mcer.cn)
+
 ## 简介
 
 友一 (U1-Launcher) 是基于 [Hello Minecraft! Launcher (HMCL)](https://github.com/huanghongxun/HMCL) 开发的 Minecraft 启动器，致力于为用户提供最棒的多人游玩体验。

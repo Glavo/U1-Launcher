@@ -81,6 +81,10 @@ public class Theme {
     }
 
     public String[] getStylesheets(String overrideFontFamily) {
+        // Override color
+        String color = "#43A047";
+        Color paint = Color.web(color);
+
         Color textFill = getForegroundColor();
 
         String fontFamily = System.getProperty("hmcl.font.override", overrideFontFamily);

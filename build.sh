@@ -9,6 +9,7 @@ export VERSION_TYPE=dev
 if [ -z "$BUILD_NUMBER" ]; then echo "BUILD_NUMBER unset"; exit 1; fi
 if [ -z "$VERSION_TYPE" ]; then echo "VERSION_TYPE unset"; exit 1; fi
 if [ -z "$HMCL_SIGNATURE_KEY" ]; then echo "HMCL_SIGNATURE_KEY unset"; exit 1; fi
+if [ -z "$CURSEFORGE_API_KEY" ]; then echo "CURSEFORGE_API_KEY unset"; exit 1; fi
 
 VERSION="1.1.$BUILD_NUMBER"
 

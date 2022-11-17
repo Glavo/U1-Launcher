@@ -305,8 +305,7 @@ public final class Controllers {
     public static void onHyperlinkAction(String href) {
         if (href.startsWith("hmcl://")) {
             if ("hmcl://settings/feedback".equals(href)) {
-                Controllers.getSettingsPage().showFeedback();
-                Controllers.navigate(Controllers.getSettingsPage());
+                FXUtils.openLink("https://github.com/Glavo/U1-Launcher/issues/new");
             }
         } else {
             FXUtils.openLink(href);

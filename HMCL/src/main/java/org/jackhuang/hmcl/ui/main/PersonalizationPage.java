@@ -84,11 +84,11 @@ public class PersonalizationPage extends StackPane {
         }
         {
             OptionToggleButton titleTransparentButton = new OptionToggleButton();
-            // themeList.getContent().add(titleTransparentButton);
+            themeList.getContent().add(titleTransparentButton);
             titleTransparentButton.selectedProperty().bindBidirectional(config().titleTransparentProperty());
             titleTransparentButton.setTitle(i18n("settings.launcher.title_transparent"));
         }
-        content.getChildren().addAll(ComponentList.createComponentListTitle(i18n("settings.launcher.appearance")), themeList);
+        // content.getChildren().addAll(ComponentList.createComponentListTitle(i18n("settings.launcher.appearance")), themeList);
 
         {
             ComponentList componentList = new ComponentList();

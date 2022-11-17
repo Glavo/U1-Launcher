@@ -83,27 +83,22 @@ public class HiPerMultiplayerPageSkin extends DecoratorAnimatedPage.DecoratorAni
 //                    .addNavigationDrawerItem(item -> {
 //                        item.setTitle(i18n("help"));
 //                        item.setLeftGraphic(wrap(SVG::helpCircleOutline));
-//                        item.setOnAction(e -> FXUtils.openLink("https://www.yuque.com/ffip/zk1lc2/hmcl"));
-//                    })
-//                    .addNavigationDrawerItem(item -> {
-//                        item.setTitle(i18n("multiplayer.help.1"));
-//                        item.setLeftGraphic(wrap(SVG::helpCircleOutline));
-//                        item.setOnAction(e -> FXUtils.openLink("https://docs.hmcl.net/multiplayer/admin.html"));
+//                        item.setOnAction(e -> FXUtils.openLink("https://www.yuque.com/ffip/zk1lc2/u1"));
 //                    })
                     .addNavigationDrawerItem(item -> {
                         item.setTitle(i18n("multiplayer.help.2"));
                         item.setLeftGraphic(wrap(SVG::helpCircleOutline));
-                        item.setOnAction(e -> FXUtils.openLink("https://www.yuque.com/ffip/zk1lc2/hmcl"));
+                        item.setOnAction(e -> FXUtils.openLink("https://www.yuque.com/ffip/zk1lc2/u1"));
                     })
                     .addNavigationDrawerItem(item -> {
                         item.setTitle(i18n("multiplayer.help.3"));
                         item.setLeftGraphic(wrap(SVG::helpCircleOutline));
-                        item.setOnAction(e -> FXUtils.openLink("https://www.yuque.com/ffip/zk1lc2/hmcl#S6Wwi"));
+                        item.setOnAction(e -> FXUtils.openLink("https://www.yuque.com/ffip/zk1lc2/u1#S6Wwi"));
                     })
                     .addNavigationDrawerItem(item -> {
                         item.setTitle(i18n("multiplayer.help.4"));
                         item.setLeftGraphic(wrap(SVG::helpCircleOutline));
-                        item.setOnAction(e -> FXUtils.openLink("https://www.yuque.com/ffip/zk1lc2/hmcl#t9Q2F"));
+                        item.setOnAction(e -> FXUtils.openLink("https://www.yuque.com/ffip/zk1lc2/u1#t9Q2F"));
                     })
 //                    .addNavigationDrawerItem(item -> {
 //                        item.setTitle(i18n("multiplayer.help.text"));
@@ -155,7 +150,7 @@ public class HiPerMultiplayerPageSkin extends DecoratorAnimatedPage.DecoratorAni
 
                         JFXHyperlink applyLink = new JFXHyperlink(i18n("multiplayer.token.apply"));
                         BorderPane.setAlignment(applyLink, Pos.CENTER_RIGHT);
-                        applyLink.setOnAction(e -> HMCLService.openRedirectLink("multiplayer-static-token"));
+                        applyLink.setOnAction(e -> FXUtils.openLink("https://www.yuque.com/ffip/hiper/u1#jXK4P"));
                         tokenPane.setRight(applyLink);
                     }
 

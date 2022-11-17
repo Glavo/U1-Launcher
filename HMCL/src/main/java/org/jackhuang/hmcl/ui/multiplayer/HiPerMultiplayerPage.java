@@ -313,7 +313,7 @@ public class HiPerMultiplayerPage extends DecoratorAnimatedPage implements Decor
                 case HiPerMultiplayerManager.HiperExitEvent.NO_SUDO_PRIVILEGES:
                     if (OperatingSystem.CURRENT_OS == OperatingSystem.WINDOWS) {
                         Controllers.confirm(i18n("multiplayer.error.failed_sudo.windows"), null, MessageDialogPane.MessageType.WARNING, () -> {
-                            FXUtils.openLink("https://docs.hmcl.net/multiplayer/admin.html");
+                            FXUtils.openLink("https://www.yuque.com/ffip/zk1lc2/u1");
                         }, null);
                     } else if (OperatingSystem.CURRENT_OS == OperatingSystem.LINUX) {
                         Controllers.dialog(i18n("multiplayer.error.failed_sudo.linux", HiPerMultiplayerManager.HIPER_PATH.toString()), null, MessageDialogPane.MessageType.WARNING);

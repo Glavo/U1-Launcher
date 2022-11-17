@@ -163,7 +163,7 @@ public class DecoratorController {
                         config().backgroundImageUrlProperty()));
     }
 
-    private final Image defaultBackground = newImage("/assets/img/background.jpg");
+    private final Image defaultBackground = newImage("/assets/img/background.gif");
 
     /**
      * Load background image from bg/, background.png, background.jpg
