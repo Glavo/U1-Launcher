@@ -99,7 +99,7 @@ public final class UpdateChecker {
 
     private static boolean isDevelopmentVersion(String version) {
         return version.contains("@") || // eg. @develop@
-                version.contains("SNAPSHOT"); // eg. 3.1.SNAPSHOT
+                version.contains("SNAPSHOT"); // eg. 3.5.SNAPSHOT
     }
 
     public static void requestCheckUpdate(UpdateChannel channel) {
