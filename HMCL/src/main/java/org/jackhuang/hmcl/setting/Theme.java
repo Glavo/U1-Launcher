@@ -89,7 +89,6 @@ public class Theme {
         String color = "#43A047";
         Color paint = Color.web(color);
 
-        Color textFill = getForegroundColor();
         String css = "/assets/css/blue.css";
 
         String fontFamily = System.getProperty("hmcl.font.override", overrideFontFamily);

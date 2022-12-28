@@ -42,7 +42,6 @@ import org.jackhuang.hmcl.util.i18n.Locales.SupportedLocale;
 import java.util.Arrays;
 
 import static org.jackhuang.hmcl.setting.ConfigHolder.config;
-import static org.jackhuang.hmcl.ui.FXUtils.stringConverter;
 import static org.jackhuang.hmcl.util.i18n.I18n.i18n;
 
 public abstract class SettingsView extends StackPane {

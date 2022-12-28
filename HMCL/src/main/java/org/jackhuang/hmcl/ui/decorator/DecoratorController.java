@@ -182,7 +182,7 @@ public class DecoratorController {
 
         return image.orElseGet(() -> {
             if (defaultBackground == null)
-                defaultBackground = newImage("/assets/img/background.jpg");
+                defaultBackground = newImage("/assets/img/background.gif");
             return defaultBackground;
         });
     }
