@@ -312,8 +312,7 @@ public class CreateAccountPane extends JFXDialogLayout implements DialogAware {
 
                 vbox.getChildren().setAll(hintPane);
 
-                btnAccept.setText(i18n("account.methods.microsoft.snapshot.access"));
-                btnAccept.setOnAction(e -> FXUtils.openLink("https://hmcl.huangyuhui.net/"));
+                btnAccept.setDisable(true);
             }
 
             detailsPane = vbox;
