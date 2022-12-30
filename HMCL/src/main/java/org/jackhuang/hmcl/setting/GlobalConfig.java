@@ -48,6 +48,8 @@ public class GlobalConfig implements Cloneable, Observable {
 
     private IntegerProperty platformPromptVersion = new SimpleIntegerProperty();
 
+    private StringProperty multiplayerToken = new SimpleStringProperty();
+
     private BooleanProperty multiplayerRelay = new SimpleBooleanProperty();
 
     private IntegerProperty multiplayerAgreementVersion = new SimpleIntegerProperty(0);
