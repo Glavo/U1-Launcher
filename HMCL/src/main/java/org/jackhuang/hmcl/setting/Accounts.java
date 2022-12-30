@@ -86,7 +86,7 @@ public final class Accounts {
     public static final AuthlibInjectorAccountFactory FACTORY_AUTHLIB_INJECTOR = new AuthlibInjectorAccountFactory(AUTHLIB_INJECTOR_DOWNLOADER, Accounts::getOrCreateAuthlibInjectorServer);
     public static final MicrosoftAccountFactory FACTORY_MICROSOFT = new MicrosoftAccountFactory(new MicrosoftService(OAUTH_CALLBACK));
     public static final BoundAuthlibInjectorAccountFactory FACTORY_LITTLE_SKIN = getAccountFactoryByAuthlibInjectorServer(new AuthlibInjectorServer("https://littleskin.cn/api/yggdrasil/"));
-    public static final List<AccountFactory<?>> FACTORIES = immutableListOf(FACTORY_OFFLINE, FACTORY_MICROSOFT, FACTORY_AUTHLIB_INJECTOR);
+    public static final List<AccountFactory<?>> FACTORIES = immutableListOf(FACTORY_OFFLINE, FACTORY_MOJANG, FACTORY_MICROSOFT, FACTORY_AUTHLIB_INJECTOR);
 
     // ==== login type / account factory mapping ====
     private static final Map<String, AccountFactory<?>> type2factory = new HashMap<>();
@@ -134,6 +134,7 @@ public final class Accounts {
             throw new IllegalArgumentException("Failed to determine account type: " + account);
     }
 
+    private static final String GLOBAL_PREFIX = "$GLOBAL:";
     private static final ObservableList<Map<Object, Object>> globalAccountStorages = FXCollections.observableArrayList();
 
     private static final ObservableList<Account> accounts = observableArrayList(account -> new Observable[] { account });
@@ -250,10 +251,20 @@ public final class Accounts {
 
         String selectedAccountIdentifier = config().getSelectedAccount();
         if (selected == null && selectedAccountIdentifier != null) {
+            boolean portable = true;
+            if (selectedAccountIdentifier.startsWith(GLOBAL_PREFIX)) {
+                portable = false;
+                selectedAccountIdentifier = selectedAccountIdentifier.substring(GLOBAL_PREFIX.length());
+            }
+
             for (Account account : accounts) {
                 if (selectedAccountIdentifier.equals(account.getIdentifier())) {
-                    selected = account;
-                    break;
+                    if (portable == account.isPortable()) {
+                        selected = account;
+                        break;
+                    } else if (selected == null) {
+                        selected = account;
+                    }
                 }
             }
         }
@@ -288,7 +299,10 @@ public final class Accounts {
         selectedAccount.addListener(listener);
         selectedAccount.addListener(onInvalidating(() -> {
             Account account = selectedAccount.get();
-            config().setSelectedAccount(account != null ? account.getIdentifier() : null);
+            if (account != null)
+                config().setSelectedAccount(account.isPortable() ? account.getIdentifier() : GLOBAL_PREFIX + account.getIdentifier());
+            else
+                config().setSelectedAccount(null);
         }));
         accounts.addListener(listener);
         accounts.addListener(onInvalidating(Accounts::updateAccountStorages));
@@ -308,9 +322,7 @@ public final class Accounts {
             });
         }
 
-        if (!config().getAuthlibInjectorServers().isEmpty()) {
-            triggerAuthlibInjectorUpdateCheck();
-        }
+        triggerAuthlibInjectorUpdateCheck();
 
         Schedulers.io().execute(() -> {
             try {
@@ -373,6 +385,10 @@ public final class Accounts {
     }
 
     private static AuthlibInjectorServer getOrCreateAuthlibInjectorServer(String url) {
+        if (url.equals(FACTORY_LITTLE_SKIN.getServer().getUrl())) {
+            return FACTORY_LITTLE_SKIN.getServer();
+        }
+
         return config().getAuthlibInjectorServers().stream()
                 .filter(server -> url.equals(server.getUrl()))
                 .findFirst()

@@ -274,14 +274,14 @@ public enum OperatingSystem {
         String home = System.getProperty("user.home", ".");
         switch (OperatingSystem.CURRENT_OS) {
             case LINUX:
-                return Paths.get(home, "." + folder);
+                return Paths.get(home, "." + folder).toAbsolutePath();
             case WINDOWS:
                 String appdata = System.getenv("APPDATA");
-                return Paths.get(appdata == null ? home : appdata, "." + folder);
+                return Paths.get(appdata == null ? home : appdata, "." + folder).toAbsolutePath();
             case OSX:
-                return Paths.get(home, "Library", "Application Support", folder);
+                return Paths.get(home, "Library", "Application Support", folder).toAbsolutePath();
             default:
-                return Paths.get(home, folder);
+                return Paths.get(home, folder).toAbsolutePath();
         }
     }
 
