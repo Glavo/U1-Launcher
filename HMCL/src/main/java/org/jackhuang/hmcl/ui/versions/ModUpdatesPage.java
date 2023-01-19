@@ -18,13 +18,15 @@
 package org.jackhuang.hmcl.ui.versions;
 
 import com.jfoenix.controls.*;
-import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
 import javafx.beans.property.*;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.CheckBoxTableCell;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import org.apache.commons.lang3.mutable.MutableObject;
@@ -67,33 +69,28 @@ public class ModUpdatesPage extends BorderPane implements DecoratorPage {
 
         getStyleClass().add("gray-background");
 
-        JFXTreeTableColumn<ModUpdateObject, Boolean> enabledColumn = new JFXTreeTableColumn<>();
-        enabledColumn.setCellFactory(column -> new JFXCheckBoxTreeTableCell<>());
+        TableColumn<ModUpdateObject, Boolean> enabledColumn = new TableColumn<>();
+        enabledColumn.setCellFactory(CheckBoxTableCell.forTableColumn(enabledColumn));
         setupCellValueFactory(enabledColumn, ModUpdateObject::enabledProperty);
         enabledColumn.setEditable(true);
         enabledColumn.setMaxWidth(40);
         enabledColumn.setMinWidth(40);
 
-        JFXTreeTableColumn<ModUpdateObject, String> fileNameColumn = new JFXTreeTableColumn<>(i18n("mods.check_updates.file"));
+        TableColumn<ModUpdateObject, String> fileNameColumn = new TableColumn<>(i18n("mods.check_updates.file"));
         setupCellValueFactory(fileNameColumn, ModUpdateObject::fileNameProperty);
 
-        JFXTreeTableColumn<ModUpdateObject, String> currentVersionColumn = new JFXTreeTableColumn<>(i18n("mods.check_updates.current_version"));
+        TableColumn<ModUpdateObject, String> currentVersionColumn = new TableColumn<>(i18n("mods.check_updates.current_version"));
         setupCellValueFactory(currentVersionColumn, ModUpdateObject::currentVersionProperty);
 
-        JFXTreeTableColumn<ModUpdateObject, String> targetVersionColumn = new JFXTreeTableColumn<>(i18n("mods.check_updates.target_version"));
+        TableColumn<ModUpdateObject, String> targetVersionColumn = new TableColumn<>(i18n("mods.check_updates.target_version"));
         setupCellValueFactory(targetVersionColumn, ModUpdateObject::targetVersionProperty);
 
-        JFXTreeTableColumn<ModUpdateObject, String> sourceColumn = new JFXTreeTableColumn<>(i18n("mods.check_updates.source"));
+        TableColumn<ModUpdateObject, String> sourceColumn = new TableColumn<>(i18n("mods.check_updates.source"));
         setupCellValueFactory(sourceColumn, ModUpdateObject::sourceProperty);
 
         objects = FXCollections.observableList(updates.stream().map(ModUpdateObject::new).collect(Collectors.toList()));
 
-        RecursiveTreeItem<ModUpdateObject> root = new RecursiveTreeItem<>(
-                objects,
-                RecursiveTreeObject::getChildren);
-
-        JFXTreeTableView<ModUpdateObject> table = new JFXTreeTableView<>(root);
-        table.setShowRoot(false);
+        TableView<ModUpdateObject> table = new TableView<>(objects);
         table.setEditable(true);
         table.getColumns().setAll(enabledColumn, fileNameColumn, currentVersionColumn, targetVersionColumn, sourceColumn);
 
@@ -118,13 +115,8 @@ public class ModUpdatesPage extends BorderPane implements DecoratorPage {
         setBottom(actions);
     }
 
-    private <T> void setupCellValueFactory(JFXTreeTableColumn<ModUpdateObject, T> column, Function<ModUpdateObject, ObservableValue<T>> mapper) {
-        column.setCellValueFactory(param -> {
-            if (column.validateValue(param))
-                return mapper.apply(param.getValue().getValue());
-            else
-                return column.getComputedValue(param);
-        });
+    private <T> void setupCellValueFactory(TableColumn<ModUpdateObject, T> column, Function<ModUpdateObject, ObservableValue<T>> mapper) {
+        column.setCellValueFactory(param -> mapper.apply(param.getValue()));
     }
 
     private void updateMods() {
@@ -182,7 +174,7 @@ public class ModUpdatesPage extends BorderPane implements DecoratorPage {
         }
     }
 
-    private static class ModUpdateObject extends RecursiveTreeObject<ModUpdateObject> {
+    private static final class ModUpdateObject {
         final LocalModFile.ModUpdate data;
         final BooleanProperty enabled = new SimpleBooleanProperty();
         final StringProperty fileName = new SimpleStringProperty();
