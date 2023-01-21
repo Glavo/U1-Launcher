@@ -388,7 +388,7 @@ public final class HiPerMultiplayerManager {
 
                 if (logJson.containsKey("network")) {
                     Map<?, ?> network = tryCast(logJson.get("network"), Map.class).orElse(Collections.emptyMap());
-                    if (network.containsKey("IP") && msg.contains("Main HostMap created")) {
+                    if (network.containsKey("IP") && msg.contains("Main point map created")) {
                         Optional<String> ip = tryCast(network.get("IP"), String.class);
                         ip.ifPresent(s -> onIPAllocated.fireEvent(new HiperIPEvent(this, s)));
                     }
