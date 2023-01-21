@@ -1,4 +1,4 @@
-﻿#include "stdafx.h"
+#include "stdafx.h"
 #include "java.h"
 #include "os.h"
 #include "version.h"
@@ -75,10 +75,4 @@ bool FindJavaInRegistry(std::wstring& path) {
          FindJavaByRegistryKey(HKEY_LOCAL_MACHINE, JRE_NEW, path) ||
          FindJavaByRegistryKey(HKEY_LOCAL_MACHINE, JDK_OLD, path) ||
          FindJavaByRegistryKey(HKEY_LOCAL_MACHINE, JRE_OLD, path);
-}
-
-bool FindJava(std::wstring& path) {
-  return ERROR_SUCCESS == MyGetEnvironmentVariable(L"HMCL_JAVA_HOME", path) ||
-         ERROR_SUCCESS == MyGetEnvironmentVariable(L"JAVA_HOME", path) ||
-         FindJavaInRegistry(path);
 }
