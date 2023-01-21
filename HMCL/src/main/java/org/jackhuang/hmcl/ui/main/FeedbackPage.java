@@ -40,6 +40,30 @@ public class FeedbackPage extends SpinnerPane {
         JFXScrollPane.smoothScrolling(scrollPane);
         setContent(scrollPane);
 
+        ComponentList hiper = new ComponentList();
+        {
+            String idxCharArray = "①②③④⑤⑥⑦⑧⑨⑩";
+            String[] groups = {
+                    "https://jq.qq.com/?_wv=1027&k=nWLzktPE",
+                    "https://jq.qq.com/?_wv=1027&k=5x33G0Bv",
+                    "https://jq.qq.com/?_wv=1027&k=76EsDqXD",
+                    "https://qm.qq.com/cgi-bin/qm/qr?k=N06ojqIIfSEoDId2PJSKzvbrNaGTIJmh",
+                    "https://jq.qq.com/?_wv=1027&k=dudBV2zZ"
+            };
+
+            for (int i = 0; i < groups.length; i++) {
+                String group = groups[i];
+
+                IconedTwoLineListItem item = new IconedTwoLineListItem();
+                item.setImage(new Image("/assets/img/icon.png"));
+                item.setTitle(i18n("feedback.hiper_qq_group", idxCharArray.charAt(i)));
+                item.setSubtitle(i18n("feedback.hiper_qq_group.statement", idxCharArray.charAt(i)));
+                item.setExternalLink(group);
+
+                hiper.getContent().add(item);
+            }
+        }
+
         ComponentList community = new ComponentList();
         {
             IconedTwoLineListItem users = new IconedTwoLineListItem();
@@ -70,11 +94,14 @@ public class FeedbackPage extends SpinnerPane {
         }
 
         content.getChildren().addAll(
+                ComponentList.createComponentListTitle("HiPer"),
+                hiper,
+
                 ComponentList.createComponentListTitle(i18n("feedback.channel")),
                 community
         );
 
-        this.setContent(content);
+        scrollPane.setContent(content);
     }
 
 }
