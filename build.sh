@@ -21,14 +21,11 @@ mkdir -p ./build
 
 
 U1_JAR_SHA1=$(cat "./HMCL/build/libs/U1-$VERSION.jar.sha1")
-U1_PACK_SHA1=$(cat "./HMCL/build/libs/U1-$VERSION.pack.sha1")
-U1_PACK_XZ_SHA1=$(cat "./HMCL/build/libs/U1-$VERSION.pack.xz.sha1")
 
 cat pom.xml | sed -e "s/U1_VERSION/$VERSION/" > "./HMCL/build/libs/U1-$VERSION.pom"
-cat version.json | sed -e "s/U1_VERSION/$VERSION/g" \
-  | sed -e "s/U1_JAR_SHA1/$U1_JAR_SHA1/" | sed -e "s/U1_PACK_SHA1/$U1_PACK_SHA1/" | sed -e "s/U1_PACK_XZ_SHA1/$U1_PACK_XZ_SHA1/" > ./build/u1-$VERSION.json
+cat version.json | sed -e "s/U1_VERSION/$VERSION/g" | sed -e "s/U1_JAR_SHA1/$U1_JAR_SHA1/" > ./build/u1-$VERSION.json
 
-allExts=(pom jar exe pack pack.xz)
+allExts=(pom jar exe)
 
 for ext in ${allExts[@]}; do
   cp "./HMCL/build/libs/U1-$VERSION.$ext" "./build/u1-$VERSION.$ext"
@@ -39,6 +36,4 @@ cd ./build
 
 jar -cvf u1-$VERSION-bundle.jar \
   ./u1-$VERSION.pom ./u1-$VERSION.pom.asc \
-  ./u1-$VERSION.jar ./u1-$VERSION.jar.asc ./u1-$VERSION.exe ./u1-$VERSION.exe.asc \
-  ./u1-$VERSION.pack ./u1-$VERSION.pack.asc ./u1-$VERSION.pack.xz ./u1-$VERSION.pack.xz.asc
-
+  ./u1-$VERSION.jar ./u1-$VERSION.jar.asc ./u1-$VERSION.exe ./u1-$VERSION.exe.asc
