@@ -1,8 +1,4 @@
 {
-  "pack": "https://maven.aliyun.com/repository/central/org/glavo/hiper/u1/U1_VERSION/u1-U1_VERSION.pack",
-  "packsha1": "U1_PACK_SHA1",
-  "packxz": "https://maven.aliyun.com/repository/central/org/glavo/hiper/u1/U1_VERSION/u1-U1_VERSION.pack.xz",
-  "packxzsha1": "U1_PACK_XZ_SHA1",
   "jar": "https://maven.aliyun.com/repository/central/org/glavo/hiper/u1/U1_VERSION/u1-U1_VERSION.jar",
   "jarsha1": "U1_JAR_SHA1",
   "version": "U1_VERSION",
