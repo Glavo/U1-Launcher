@@ -2,7 +2,7 @@
 
 速聚多人联机服务官方 QQ 群：
 
-[①群:235256586](https://jq.qq.com/?_wv=1027&k=nWLzktPE) · [②群:212927890](https://jq.qq.com/?_wv=1027&k=5x33G0Bv) · [③群:93365639](https://jq.qq.com/?_wv=1027&k=76EsDqXD) · [④群:93364993](https://qm.qq.com/cgi-bin/qm/qr?k=N06ojqIIfSEoDId2PJSKzvbrNaGTIJmh) (推荐) · [⑤群:93364197](https://jq.qq.com/?_wv=1027&k=dudBV2zZ)
+[①群:235256586](https://jq.qq.com/?_wv=1027&k=nWLzktPE) · [②群:212927890](https://jq.qq.com/?_wv=1027&k=5x33G0Bv) · [③群:93365639](https://jq.qq.com/?_wv=1027&k=76EsDqXD) · [④群:93364993](https://jq.qq.com/?_wv=1027&k=YvTgcD4F) (推荐) · [⑤群:93364197](https://jq.qq.com/?_wv=1027&k=dudBV2zZ)
 
 [点此进入官网了解更多](https://www.mcer.cn)
 

@@ -47,7 +47,7 @@ public class FeedbackPage extends SpinnerPane {
                     "https://jq.qq.com/?_wv=1027&k=nWLzktPE",
                     "https://jq.qq.com/?_wv=1027&k=5x33G0Bv",
                     "https://jq.qq.com/?_wv=1027&k=76EsDqXD",
-                    "https://qm.qq.com/cgi-bin/qm/qr?k=N06ojqIIfSEoDId2PJSKzvbrNaGTIJmh",
+                    "https://jq.qq.com/?_wv=1027&k=YvTgcD4F",
                     "https://jq.qq.com/?_wv=1027&k=dudBV2zZ"
             };
 
