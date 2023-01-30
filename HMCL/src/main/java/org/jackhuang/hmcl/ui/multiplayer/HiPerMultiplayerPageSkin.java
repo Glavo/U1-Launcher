@@ -297,9 +297,9 @@ public class HiPerMultiplayerPageSkin extends DecoratorAnimatedPage.DecoratorAni
 
                         FXUtils.onChangeAndOperate(control.broadcasterProperty(), broadcaster -> {
                             if (broadcaster == null) {
-                                slavePane.getChildren().setAll(titlePane, hintPane, hintPane2, notBroadcastingPane);
+                                slavePane.getChildren().setAll(titlePane, hintPane);
                             } else {
-                                slavePane.getChildren().setAll(titlePane, hintPane, hintPane2, broadcastingPane);
+                                slavePane.getChildren().setAll(titlePane, hintPane);
                             }
                         });
                     }
