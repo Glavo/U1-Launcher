@@ -19,7 +19,12 @@ package org.jackhuang.hmcl.util.i18n;
 
 import org.jackhuang.hmcl.util.i18n.Locales.SupportedLocale;
 
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.util.Map;
 import java.util.MissingResourceException;
+import java.util.Properties;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 
@@ -27,7 +32,8 @@ import static org.jackhuang.hmcl.util.Logging.LOG;
 
 public final class I18n {
 
-    private I18n() {}
+    private I18n() {
+    }
 
     public static SupportedLocale getCurrentLocale() {
         return Locales.ZH_CN;
@@ -37,17 +43,32 @@ public final class I18n {
         return getCurrentLocale().getResourceBundle();
     }
 
+    private static Properties loadMessages(String path) {
+        Properties messages = new Properties();
+        try (Reader reader = new InputStreamReader(I18n.class.getResourceAsStream(path))) {
+            messages.load(reader);
+        } catch (IOException e) {
+            LOG.log(Level.WARNING, "Failed to load " + path, e);
+        }
+        return messages;
+    }
+
+    private static final Properties defaultMessages = loadMessages("/assets/lang/I18N_zh_CN.properties");
+    private static final Properties overrideMessages = loadMessages("/assets/lang/I18N_override.properties");
+
     public static String i18n(String key, Object... formatArgs) {
         return String.format(i18n(key), formatArgs);
     }
 
     public static String i18n(String key) {
-        try {
-            return getResourceBundle().getString(key);
-        } catch (MissingResourceException e) {
-            LOG.log(Level.SEVERE, "Cannot find key " + key + " in resource bundle", e);
-            return key;
+        String message = overrideMessages.getProperty(key);
+        if (message == null)
+            message = defaultMessages.getProperty(key);
+        if (message == null) {
+            LOG.log(Level.SEVERE, "Cannot find key " + key + " in resource bundle");
+            message = key;
         }
+        return message;
     }
 
     public static boolean hasKey(String key) {
