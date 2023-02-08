@@ -11,6 +11,9 @@ plugins {
     id("com.github.johnrengelman.shadow") version "7.1.2"
 }
 
+val isOfficial = System.getenv("HMCL_SIGNATURE_KEY") != null
+        || (System.getenv("GITHUB_REPOSITORY_OWNER") == "Glavo" && System.getenv("GITHUB_BASE_REF").isNullOrEmpty())
+
 val jarBaseName = "U1"
 val buildNumber = System.getenv("BUILD_NUMBER")?.toInt().let { number ->
     val offset = System.getenv("BUILD_NUMBER_OFFSET")?.toInt() ?: 0
@@ -18,11 +21,12 @@ val buildNumber = System.getenv("BUILD_NUMBER")?.toInt().let { number ->
         (number - offset).toString()
     } else {
         val shortCommit = System.getenv("GITHUB_SHA")?.toLowerCase()?.substring(0, 7)
-        if (!shortCommit.isNullOrEmpty()) "dev-$shortCommit" else "SNAPSHOT"
+        val prefix = if (isOfficial) "dev" else "unofficial"
+        if (!shortCommit.isNullOrEmpty()) "$prefix-$shortCommit" else "SNAPSHOT"
     }
 }
 val versionRoot = System.getenv("VERSION_ROOT") ?: "1.2"
-val versionType = System.getenv("VERSION_TYPE") ?: "nightly"
+val versionType = System.getenv("VERSION_TYPE") ?: if (isOfficial) "nightly" else "unofficial"
 
 val microsoftAuthId = System.getenv("MICROSOFT_AUTH_ID") ?: ""
 val microsoftAuthSecret = System.getenv("MICROSOFT_AUTH_SECRET") ?: ""
@@ -133,6 +137,10 @@ tasks.getByName<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar>("sha
                 "javafx.controls/javafx.scene.control.skin"
             ).joinToString(" ")
         )
+
+        System.getenv("GITHUB_SHA")?.also {
+            attributes("GitHub-SHA" to it)
+        }
     }
 
     doLast {
