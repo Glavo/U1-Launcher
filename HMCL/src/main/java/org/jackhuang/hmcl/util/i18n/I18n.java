@@ -22,6 +22,7 @@ import org.jackhuang.hmcl.util.i18n.Locales.SupportedLocale;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.nio.charset.StandardCharsets;
 import java.util.Map;
 import java.util.MissingResourceException;
 import java.util.Properties;
@@ -45,7 +46,7 @@ public final class I18n {
 
     private static Properties loadMessages(String path) {
         Properties messages = new Properties();
-        try (Reader reader = new InputStreamReader(I18n.class.getResourceAsStream(path))) {
+        try (Reader reader = new InputStreamReader(I18n.class.getResourceAsStream(path), StandardCharsets.UTF_8)) {
             messages.load(reader);
         } catch (IOException e) {
             LOG.log(Level.WARNING, "Failed to load " + path, e);
